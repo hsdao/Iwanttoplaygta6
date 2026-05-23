@@ -1,0 +1,3852 @@
+{
+  "lines": [
+    {
+      "id": "sukhumvit",
+      "name": "BTS Sukhumvit Line",
+      "color": "#9ACA3C",
+      "speedKmh": 50
+    },
+    {
+      "id": "silom",
+      "name": "BTS Silom Line",
+      "color": "#006D38",
+      "speedKmh": 50
+    },
+    {
+      "id": "gold",
+      "name": "Gold Line",
+      "color": "#C9A227",
+      "speedKmh": 25
+    },
+    {
+      "id": "blue",
+      "name": "MRT Blue Line",
+      "color": "#1F4490",
+      "speedKmh": 45
+    },
+    {
+      "id": "purple",
+      "name": "MRT Purple Line",
+      "color": "#7D3F98",
+      "speedKmh": 50
+    },
+    {
+      "id": "arl",
+      "name": "Airport Rail Link",
+      "color": "#B7282E",
+      "speedKmh": 90
+    },
+    {
+      "id": "dark_red",
+      "name": "SRT Dark Red Line",
+      "color": "#A91A1A",
+      "speedKmh": 80
+    },
+    {
+      "id": "light_red",
+      "name": "SRT Light Red Line",
+      "color": "#F38FA9",
+      "speedKmh": 70
+    },
+    {
+      "id": "yellow",
+      "name": "MRT Yellow Line",
+      "color": "#FFD324",
+      "speedKmh": 35
+    },
+    {
+      "id": "pink",
+      "name": "MRT Pink Line",
+      "color": "#E6007E",
+      "speedKmh": 35
+    },
+    {
+      "id": "pink_mt",
+      "name": "MRT Pink Line (Muang Thong Spur)",
+      "color": "#E6007E",
+      "speedKmh": 35
+    }
+  ],
+  "stations": [
+    {
+      "id": "khu_khot",
+      "name": "Khu Khot",
+      "nameTh": "คูคต",
+      "lat": 13.9323658,
+      "lng": 100.6465227
+    },
+    {
+      "id": "yaek_kor_por_aor",
+      "name": "Yaek Kor Por Aor",
+      "nameTh": "แยก คปอ.",
+      "lat": 13.9116,
+      "lng": 100.6464
+    },
+    {
+      "id": "royal_thai_air_force_museum",
+      "name": "Royal Thai Air Force Museum",
+      "nameTh": "พิพิธภัณฑ์กองทัพอากาศ",
+      "lat": 13.9116,
+      "lng": 100.6398
+    },
+    {
+      "id": "bhumibol_adulyadej_hospital",
+      "name": "Bhumibol Adulyadej Hospital",
+      "nameTh": "โรงพยาบาลภูมิพลอดุลยเดช",
+      "lat": 13.9082,
+      "lng": 100.6354
+    },
+    {
+      "id": "saphan_mai",
+      "name": "Saphan Mai",
+      "nameTh": "สะพานใหม่",
+      "lat": 13.910714,
+      "lng": 100.6173961
+    },
+    {
+      "id": "sai_yud",
+      "name": "Sai Yud",
+      "nameTh": "สายหยุด",
+      "lat": 13.8966129,
+      "lng": 100.6090774
+    },
+    {
+      "id": "phahon_yothin_59",
+      "name": "Phahon Yothin 59",
+      "nameTh": "พหลโยธิน 59",
+      "lat": 13.8824483,
+      "lng": 100.6007312
+    },
+    {
+      "id": "wat_phra_sri_mahathat_bts",
+      "name": "Wat Phra Sri Mahathat",
+      "nameTh": "วัดพระศรีมหาธาตุ",
+      "lat": 13.8752766,
+      "lng": 100.5967316
+    },
+    {
+      "id": "infantry_regiment_11",
+      "name": "11th Infantry Regiment",
+      "nameTh": "กรมทหารราบที่ 11",
+      "lat": 13.8675784,
+      "lng": 100.5919727
+    },
+    {
+      "id": "bang_bua",
+      "name": "Bang Bua",
+      "nameTh": "บางบัว",
+      "lat": 13.856049,
+      "lng": 100.5851786
+    },
+    {
+      "id": "royal_forest_department",
+      "name": "Royal Forest Department",
+      "nameTh": "กรมป่าไม้",
+      "lat": 13.856049,
+      "lng": 100.5851786
+    },
+    {
+      "id": "kasetsart_university",
+      "name": "Kasetsart University",
+      "nameTh": "มหาวิทยาลัยเกษตรศาสตร์",
+      "lat": 13.8423141,
+      "lng": 100.577105
+    },
+    {
+      "id": "sena_nikhom",
+      "name": "Sena Nikhom",
+      "nameTh": "เสนานิคม",
+      "lat": 13.8364057,
+      "lng": 100.5736286
+    },
+    {
+      "id": "ratchayothin",
+      "name": "Ratchayothin",
+      "nameTh": "รัชโยธิน",
+      "lat": 13.8297477,
+      "lng": 100.5697222
+    },
+    {
+      "id": "phahon_yothin_24",
+      "name": "Phahon Yothin 24",
+      "nameTh": "พหลโยธิน 24",
+      "lat": 13.8241206,
+      "lng": 100.5664253
+    },
+    {
+      "id": "ha_yaek_lat_phrao",
+      "name": "Ha Yaek Lat Phrao",
+      "nameTh": "ห้าแยกลาดพร้าว",
+      "lat": 13.8166807,
+      "lng": 100.5620359
+    },
+    {
+      "id": "mo_chit",
+      "name": "Mo Chit",
+      "nameTh": "หมอชิต",
+      "lat": 13.8026054,
+      "lng": 100.5537959
+    },
+    {
+      "id": "saphan_khwai",
+      "name": "Saphan Khwai",
+      "nameTh": "สะพานควาย",
+      "lat": 13.7938228,
+      "lng": 100.5497114
+    },
+    {
+      "id": "ari",
+      "name": "Ari",
+      "nameTh": "อารีย์",
+      "lat": 13.7797077,
+      "lng": 100.5446201
+    },
+    {
+      "id": "sanam_pao",
+      "name": "Sanam Pao",
+      "nameTh": "สนามเป้า",
+      "lat": 13.7726225,
+      "lng": 100.5420729
+    },
+    {
+      "id": "victory_monument",
+      "name": "Victory Monument",
+      "nameTh": "อนุสาวรีย์ชัยสมรภูมิ",
+      "lat": 13.7627589,
+      "lng": 100.5370529
+    },
+    {
+      "id": "phaya_thai_bts",
+      "name": "Phaya Thai",
+      "nameTh": "พญาไท",
+      "lat": 13.7569644,
+      "lng": 100.5338214
+    },
+    {
+      "id": "ratchathewi",
+      "name": "Ratchathewi",
+      "nameTh": "ราชเทวี",
+      "lat": 13.7518605,
+      "lng": 100.5315534
+    },
+    {
+      "id": "siam",
+      "name": "Siam",
+      "nameTh": "สยาม",
+      "lat": 13.7456236,
+      "lng": 100.5342199
+    },
+    {
+      "id": "chit_lom",
+      "name": "Chit Lom",
+      "nameTh": "ชิดลม",
+      "lat": 13.7440974,
+      "lng": 100.5430684
+    },
+    {
+      "id": "phloen_chit",
+      "name": "Phloen Chit",
+      "nameTh": "เพลินจิต",
+      "lat": 13.7430684,
+      "lng": 100.5489762
+    },
+    {
+      "id": "nana",
+      "name": "Nana",
+      "nameTh": "นานา",
+      "lat": 13.7405358,
+      "lng": 100.5554291
+    },
+    {
+      "id": "asok",
+      "name": "Asok",
+      "nameTh": "อโศก",
+      "lat": 13.7370432,
+      "lng": 100.5603571
+    },
+    {
+      "id": "phrom_phong",
+      "name": "Phrom Phong",
+      "nameTh": "พร้อมพงษ์",
+      "lat": 13.7304345,
+      "lng": 100.5697129
+    },
+    {
+      "id": "thong_lo",
+      "name": "Thong Lo",
+      "nameTh": "ทองหล่อ",
+      "lat": 13.7242264,
+      "lng": 100.5785054
+    },
+    {
+      "id": "ekkamai",
+      "name": "Ekkamai",
+      "nameTh": "เอกมัย",
+      "lat": 13.7195385,
+      "lng": 100.585111
+    },
+    {
+      "id": "phra_khanong",
+      "name": "Phra Khanong",
+      "nameTh": "พระโขนง",
+      "lat": 13.7151693,
+      "lng": 100.5912365
+    },
+    {
+      "id": "on_nut",
+      "name": "On Nut",
+      "nameTh": "อ่อนนุช",
+      "lat": 13.7056249,
+      "lng": 100.601004
+    },
+    {
+      "id": "bang_chak",
+      "name": "Bang Chak",
+      "nameTh": "บางจาก",
+      "lat": 13.6967594,
+      "lng": 100.6053402
+    },
+    {
+      "id": "punnawithi",
+      "name": "Punnawithi",
+      "nameTh": "ปุณณวิถี",
+      "lat": 13.689279,
+      "lng": 100.6089963
+    },
+    {
+      "id": "udom_suk",
+      "name": "Udom Suk",
+      "nameTh": "อุดมสุข",
+      "lat": 13.6798746,
+      "lng": 100.6094698
+    },
+    {
+      "id": "bang_na",
+      "name": "Bang Na",
+      "nameTh": "บางนา",
+      "lat": 13.668138,
+      "lng": 100.6046633
+    },
+    {
+      "id": "bearing",
+      "name": "Bearing",
+      "nameTh": "แบริ่ง",
+      "lat": 13.6611846,
+      "lng": 100.6018056
+    },
+    {
+      "id": "samrong_bts",
+      "name": "Samrong",
+      "nameTh": "สำโรง",
+      "lat": 13.64650,
+      "lng": 100.59584
+    },
+    {
+      "id": "pu_chao",
+      "name": "Pu Chao",
+      "nameTh": "ปู่เจ้า",
+      "lat": 13.6611846,
+      "lng": 100.6018056
+    },
+    {
+      "id": "chang_erawan",
+      "name": "Chang Erawan",
+      "nameTh": "ช้างเอราวัณ",
+      "lat": 13.6611846,
+      "lng": 100.6018056
+    },
+    {
+      "id": "royal_thai_naval_academy",
+      "name": "Royal Thai Naval Academy",
+      "nameTh": "โรงเรียนนายเรือ",
+      "lat": 13.6367271,
+      "lng": 100.6098956
+    },
+    {
+      "id": "pak_nam",
+      "name": "Pak Nam",
+      "nameTh": "ปากน้ำ",
+      "lat": 13.6372768,
+      "lng": 100.5920064
+    },
+    {
+      "id": "srinagarindra_bts",
+      "name": "Srinagarindra",
+      "nameTh": "ศรีนครินทร์",
+      "lat": 13.6372768,
+      "lng": 100.5920064
+    },
+    {
+      "id": "phraek_sa",
+      "name": "Phraek Sa",
+      "nameTh": "แพรกษา",
+      "lat": 13.6215944,
+      "lng": 100.5901599
+    },
+    {
+      "id": "sai_luat",
+      "name": "Sai Luat",
+      "nameTh": "สายลวด",
+      "lat": 13.6215944,
+      "lng": 100.5901599
+    },
+    {
+      "id": "kheha",
+      "name": "Kheha",
+      "nameTh": "เคหะฯ",
+      "lat": 13.6084089,
+      "lng": 100.5949057
+    },
+    {
+      "id": "national_stadium",
+      "name": "National Stadium",
+      "nameTh": "สนามกีฬาแห่งชาติ",
+      "lat": 13.74651,
+      "lng": 100.5290855
+    },
+    {
+      "id": "ratchadamri",
+      "name": "Ratchadamri",
+      "nameTh": "ราชดำริ",
+      "lat": 13.7394708,
+      "lng": 100.5394496
+    },
+    {
+      "id": "sala_daeng",
+      "name": "Sala Daeng",
+      "nameTh": "ศาลาแดง",
+      "lat": 13.7285677,
+      "lng": 100.5343416
+    },
+    {
+      "id": "chong_nonsi",
+      "name": "Chong Nonsi",
+      "nameTh": "ช่องนนทรี",
+      "lat": 13.7237969,
+      "lng": 100.529325
+    },
+    {
+      "id": "saint_louis",
+      "name": "Saint Louis",
+      "nameTh": "เซนต์หลุยส์",
+      "lat": 13.720816,
+      "lng": 100.5266863
+    },
+    {
+      "id": "surasak",
+      "name": "Surasak",
+      "nameTh": "สุรศักดิ์",
+      "lat": 13.7192683,
+      "lng": 100.5214619
+    },
+    {
+      "id": "saphan_taksin",
+      "name": "Saphan Taksin",
+      "nameTh": "สะพานตากสิน",
+      "lat": 13.7188128,
+      "lng": 100.514223
+    },
+    {
+      "id": "krung_thon_buri_bts",
+      "name": "Krung Thon Buri",
+      "nameTh": "กรุงธนบุรี",
+      "lat": 13.7188128,
+      "lng": 100.514223
+    },
+    {
+      "id": "wongwian_yai",
+      "name": "Wongwian Yai",
+      "nameTh": "วงเวียนใหญ่",
+      "lat": 13.7210816,
+      "lng": 100.4951594
+    },
+    {
+      "id": "pho_nimit",
+      "name": "Pho Nimit",
+      "nameTh": "โพธิ์นิมิตร",
+      "lat": 13.7210816,
+      "lng": 100.4951594
+    },
+    {
+      "id": "talat_phlu",
+      "name": "Talat Phlu",
+      "nameTh": "ตลาดพลู",
+      "lat": 13.7192426,
+      "lng": 100.4859681
+    },
+    {
+      "id": "wutthakat",
+      "name": "Wutthakat",
+      "nameTh": "วุฒากาศ",
+      "lat": 13.7142201,
+      "lng": 100.4766912
+    },
+    {
+      "id": "bang_wa_bts",
+      "name": "Bang Wa",
+      "nameTh": "บางหว้า",
+      "lat": 13.7142201,
+      "lng": 100.4766912
+    },
+    {
+      "id": "krung_thon_buri_gold",
+      "name": "Krung Thon Buri",
+      "nameTh": "กรุงธนบุรี",
+      "lat": 13.7188128,
+      "lng": 100.514223
+    },
+    {
+      "id": "charoen_nakhon_iconsiam",
+      "name": "Charoen Nakhon (ICONSIAM)",
+      "nameTh": "เจริญนคร (ไอคอนสยาม)",
+      "lat": 13.7264621,
+      "lng": 100.5090694
+    },
+    {
+      "id": "khlong_san",
+      "name": "Khlong San",
+      "nameTh": "คลองสาน",
+      "lat": 13.7303066,
+      "lng": 100.5077213
+    },
+    {
+      "id": "tha_phra",
+      "name": "Tha Phra",
+      "nameTh": "ท่าพระ",
+      "lat": 13.7296466,
+      "lng": 100.4740422
+    },
+    {
+      "id": "charan_13",
+      "name": "Charan 13",
+      "nameTh": "จรัญฯ 13",
+      "lat": 13.7401714,
+      "lng": 100.4707092
+    },
+    {
+      "id": "fai_chai",
+      "name": "Fai Chai",
+      "nameTh": "ไฟฉาย",
+      "lat": 13.7558013,
+      "lng": 100.4693198
+    },
+    {
+      "id": "bang_khun_non",
+      "name": "Bang Khun Non",
+      "nameTh": "บางขุนนนท์",
+      "lat": 13.7633253,
+      "lng": 100.4732959
+    },
+    {
+      "id": "bang_yi_khan",
+      "name": "Bang Yi Khan",
+      "nameTh": "บางยี่ขัน",
+      "lat": 13.777382,
+      "lng": 100.4852556
+    },
+    {
+      "id": "sirindhorn",
+      "name": "Sirindhorn",
+      "nameTh": "สิรินธร",
+      "lat": 13.7838726,
+      "lng": 100.4933267
+    },
+    {
+      "id": "bang_phlat",
+      "name": "Bang Phlat",
+      "nameTh": "บางพลัด",
+      "lat": 13.7924113,
+      "lng": 100.5048882
+    },
+    {
+      "id": "bang_o",
+      "name": "Bang O",
+      "nameTh": "บางอ้อ",
+      "lat": 13.7989803,
+      "lng": 100.5097864
+    },
+    {
+      "id": "bang_pho",
+      "name": "Bang Pho",
+      "nameTh": "บางโพ",
+      "lat": 13.8064027,
+      "lng": 100.5210095
+    },
+    {
+      "id": "tao_poon_blue",
+      "name": "Tao Poon",
+      "nameTh": "เตาปูน",
+      "lat": 13.8061627,
+      "lng": 100.5307752
+    },
+    {
+      "id": "bang_sue_blue",
+      "name": "Bang Sue",
+      "nameTh": "บางซื่อ",
+      "lat": 13.8061627,
+      "lng": 100.5307752
+    },
+    {
+      "id": "kamphaeng_phet",
+      "name": "Kamphaeng Phet",
+      "nameTh": "กำแพงเพชร",
+      "lat": 13.8026054,
+      "lng": 100.5537959
+    },
+    {
+      "id": "chatuchak_park",
+      "name": "Chatuchak Park",
+      "nameTh": "สวนจตุจักร",
+      "lat": 13.8029643,
+      "lng": 100.5532845
+    },
+    {
+      "id": "phahon_yothin_blue",
+      "name": "Phahon Yothin",
+      "nameTh": "พหลโยธิน",
+      "lat": 13.8128808,
+      "lng": 100.5614634
+    },
+    {
+      "id": "lat_phrao_blue",
+      "name": "Lat Phrao",
+      "nameTh": "ลาดพร้าว",
+      "lat": 13.8069826,
+      "lng": 100.5747847
+    },
+    {
+      "id": "ratchadaphisek",
+      "name": "Ratchadaphisek",
+      "nameTh": "รัชดาภิเษก",
+      "lat": 13.7989706,
+      "lng": 100.5745537
+    },
+    {
+      "id": "sutthisan",
+      "name": "Sutthisan",
+      "nameTh": "สุทธิสาร",
+      "lat": 13.7894884,
+      "lng": 100.5740801
+    },
+    {
+      "id": "huai_khwang",
+      "name": "Huai Khwang",
+      "nameTh": "ห้วยขวาง",
+      "lat": 13.7786878,
+      "lng": 100.5735662
+    },
+    {
+      "id": "thailand_cultural_centre",
+      "name": "Thailand Cultural Centre",
+      "nameTh": "ศูนย์วัฒนธรรมแห่งประเทศไทย",
+      "lat": 13.7662912,
+      "lng": 100.570083
+    },
+    {
+      "id": "phra_ram_9",
+      "name": "Phra Ram 9",
+      "nameTh": "พระราม 9",
+      "lat": 13.7578166,
+      "lng": 100.5652774
+    },
+    {
+      "id": "phetchaburi",
+      "name": "Phetchaburi",
+      "nameTh": "เพชรบุรี",
+      "lat": 13.7491853,
+      "lng": 100.5634165
+    },
+    {
+      "id": "sukhumvit_blue",
+      "name": "Sukhumvit",
+      "nameTh": "สุขุมวิท",
+      "lat": 13.7370432,
+      "lng": 100.5603571
+    },
+    {
+      "id": "queen_sirikit",
+      "name": "Queen Sirikit National Convention",
+      "nameTh": "ศูนย์การประชุมแห่งชาติสิริกิติ์",
+      "lat": 13.7226725,
+      "lng": 100.5599134
+    },
+    {
+      "id": "khlong_toei",
+      "name": "Khlong Toei",
+      "nameTh": "คลองเตย",
+      "lat": 13.7221264,
+      "lng": 100.5543696
+    },
+    {
+      "id": "lumphini",
+      "name": "Lumphini",
+      "nameTh": "ลุมพินี",
+      "lat": 13.7256066,
+      "lng": 100.5457249
+    },
+    {
+      "id": "si_lom",
+      "name": "Si Lom",
+      "nameTh": "สีลม",
+      "lat": 13.7291982,
+      "lng": 100.5370702
+    },
+    {
+      "id": "sam_yan",
+      "name": "Sam Yan",
+      "nameTh": "สามย่าน",
+      "lat": 13.7320608,
+      "lng": 100.5301206
+    },
+    {
+      "id": "hua_lamphong",
+      "name": "Hua Lamphong",
+      "nameTh": "หัวลำโพง",
+      "lat": 13.7375708,
+      "lng": 100.517135
+    },
+    {
+      "id": "wat_mangkon",
+      "name": "Wat Mangkon",
+      "nameTh": "วัดมังกร",
+      "lat": 13.7422095,
+      "lng": 100.5099097
+    },
+    {
+      "id": "sam_yot",
+      "name": "Sam Yot",
+      "nameTh": "สามยอด",
+      "lat": 13.7470004,
+      "lng": 100.5023022
+    },
+    {
+      "id": "sanam_chai",
+      "name": "Sanam Chai",
+      "nameTh": "สนามไชย",
+      "lat": 13.7443259,
+      "lng": 100.4946239
+    },
+    {
+      "id": "itsaraphap",
+      "name": "Itsaraphap",
+      "nameTh": "อิสรภาพ",
+      "lat": 13.7383645,
+      "lng": 100.4857002
+    },
+    {
+      "id": "bang_phai",
+      "name": "Bang Phai",
+      "nameTh": "บางไผ่",
+      "lat": 13.7246179,
+      "lng": 100.4650788
+    },
+    {
+      "id": "bang_wa_blue",
+      "name": "Bang Wa",
+      "nameTh": "บางหว้า",
+      "lat": 13.7142201,
+      "lng": 100.4766912
+    },
+    {
+      "id": "phetkasem_48",
+      "name": "Phetkasem 48",
+      "nameTh": "เพชรเกษม 48",
+      "lat": 13.7155591,
+      "lng": 100.4454508
+    },
+    {
+      "id": "phasi_charoen",
+      "name": "Phasi Charoen",
+      "nameTh": "ภาษีเจริญ",
+      "lat": 13.7202698,
+      "lng": 100.4570233
+    },
+    {
+      "id": "bang_khae",
+      "name": "Bang Khae",
+      "nameTh": "บางแค",
+      "lat": 13.7129105,
+      "lng": 100.434326
+    },
+    {
+      "id": "lak_song",
+      "name": "Lak Song",
+      "nameTh": "หลักสอง",
+      "lat": 13.7129105,
+      "lng": 100.434326
+    },
+    {
+      "id": "khlong_bang_phai",
+      "name": "Khlong Bang Phai",
+      "nameTh": "คลองบางไผ่",
+      "lat": 13.949,
+      "lng": 100.4061
+    },
+    {
+      "id": "talad_bang_yai",
+      "name": "Talad Bang Yai",
+      "nameTh": "ตลาดบางใหญ่",
+      "lat": 13.9333,
+      "lng": 100.412
+    },
+    {
+      "id": "sam_yaek_bang_yai",
+      "name": "Sam Yaek Bang Yai",
+      "nameTh": "สามแยกบางใหญ่",
+      "lat": 13.9187,
+      "lng": 100.4141
+    },
+    {
+      "id": "bang_phlu_purple",
+      "name": "Bang Phlu",
+      "nameTh": "บางพลู",
+      "lat": 13.9064,
+      "lng": 100.4204
+    },
+    {
+      "id": "bang_rak_yai",
+      "name": "Bang Rak Yai",
+      "nameTh": "บางรักใหญ่",
+      "lat": 13.8958,
+      "lng": 100.4271
+    },
+    {
+      "id": "bang_rak_noi_tha_it",
+      "name": "Bang Rak Noi Tha It",
+      "nameTh": "บางรักน้อย-ท่าอิฐ",
+      "lat": 13.876607,
+      "lng": 100.4449359
+    },
+    {
+      "id": "sai_ma",
+      "name": "Sai Ma",
+      "nameTh": "ไทรม้า",
+      "lat": 13.8748084,
+      "lng": 100.4559653
+    },
+    {
+      "id": "phra_nang_klao_bridge",
+      "name": "Phra Nang Klao Bridge",
+      "nameTh": "สะพานพระนั่งเกล้า",
+      "lat": 13.8702897,
+      "lng": 100.4801284
+    },
+    {
+      "id": "yaek_nonthaburi_1",
+      "name": "Yaek Nonthaburi 1",
+      "nameTh": "แยกนนทบุรี 1",
+      "lat": 13.865961,
+      "lng": 100.4940765
+    },
+    {
+      "id": "bang_krasor",
+      "name": "Bang Krasor",
+      "nameTh": "บางกระสอ",
+      "lat": 13.8485312,
+      "lng": 100.5147152
+    },
+    {
+      "id": "nonthaburi_civic_purple",
+      "name": "Nonthaburi Civic Center",
+      "nameTh": "ศูนย์ราชการนนทบุรี",
+      "lat": 13.8395295,
+      "lng": 100.5149681
+    },
+    {
+      "id": "ministry_of_public_health",
+      "name": "Ministry of Public Health",
+      "nameTh": "กระทรวงสาธารณสุข",
+      "lat": 13.8298636,
+      "lng": 100.526496
+    },
+    {
+      "id": "yaek_tiwanon",
+      "name": "Yaek Tiwanon",
+      "nameTh": "แยกติวานนท์",
+      "lat": 13.820081,
+      "lng": 100.5324581
+    },
+    {
+      "id": "wong_sawang",
+      "name": "Wong Sawang",
+      "nameTh": "วงศ์สว่าง",
+      "lat": 13.820081,
+      "lng": 100.5324581
+    },
+    {
+      "id": "bang_son_purple",
+      "name": "Bang Son",
+      "nameTh": "บางซ่อน",
+      "lat": 13.8061627,
+      "lng": 100.5307752
+    },
+    {
+      "id": "tao_poon_purple",
+      "name": "Tao Poon",
+      "nameTh": "เตาปูน",
+      "lat": 13.8061627,
+      "lng": 100.5307752
+    },
+    {
+      "id": "phaya_thai_arl",
+      "name": "Phaya Thai",
+      "nameTh": "พญาไท",
+      "lat": 13.7569644,
+      "lng": 100.5338214
+    },
+    {
+      "id": "ratchaprarop",
+      "name": "Ratchaprarop",
+      "nameTh": "ราชปรารภ",
+      "lat": 13.7627589,
+      "lng": 100.5370529
+    },
+    {
+      "id": "makkasan",
+      "name": "Makkasan",
+      "nameTh": "มักกะสัน",
+      "lat": 13.7491853,
+      "lng": 100.5634165
+    },
+    {
+      "id": "ramkhamhaeng",
+      "name": "Ramkhamhaeng",
+      "nameTh": "รามคำแหง",
+      "lat": 13.7456,
+      "lng": 100.5934
+    },
+    {
+      "id": "hua_mak_arl",
+      "name": "Hua Mak",
+      "nameTh": "หัวหมาก",
+      "lat": 13.7361482,
+      "lng": 100.6411384
+    },
+    {
+      "id": "ban_thap_chang",
+      "name": "Ban Thap Chang",
+      "nameTh": "บ้านทับช้าง",
+      "lat": 13.7388,
+      "lng": 100.677
+    },
+    {
+      "id": "lat_krabang",
+      "name": "Lat Krabang",
+      "nameTh": "ลาดกระบัง",
+      "lat": 13.729,
+      "lng": 100.7474
+    },
+    {
+      "id": "suvarnabhumi",
+      "name": "Suvarnabhumi",
+      "nameTh": "สุวรรณภูมิ",
+      "lat": 13.6914254,
+      "lng": 100.7504793
+    },
+    {
+      "id": "krung_thep_aphiwat_dark_red",
+      "name": "Krung Thep Aphiwat Central",
+      "nameTh": "กลางกรุงเทพอภิวัฒน์",
+      "lat": 13.8061627,
+      "lng": 100.5307752
+    },
+    {
+      "id": "chatuchak_dark_red",
+      "name": "Chatuchak",
+      "nameTh": "จตุจักร",
+      "lat": 13.8128808,
+      "lng": 100.5614634
+    },
+    {
+      "id": "wat_samian_nari",
+      "name": "Wat Samian Nari",
+      "nameTh": "วัดเสมียนนารี",
+      "lat": 13.8302,
+      "lng": 100.5519
+    },
+    {
+      "id": "bang_khen_dark_red",
+      "name": "Bang Khen",
+      "nameTh": "บางเขน",
+      "lat": 13.8451,
+      "lng": 100.5525
+    },
+    {
+      "id": "thung_song_hong",
+      "name": "Thung Song Hong",
+      "nameTh": "ทุ่งสองห้อง",
+      "lat": 13.8608,
+      "lng": 100.5538
+    },
+    {
+      "id": "lak_si_dark_red",
+      "name": "Lak Si",
+      "nameTh": "หลักสี่",
+      "lat": 13.8907652,
+      "lng": 100.5673522
+    },
+    {
+      "id": "kan_kheha",
+      "name": "Kan Kheha",
+      "nameTh": "การเคหะ",
+      "lat": 13.9036,
+      "lng": 100.5903
+    },
+    {
+      "id": "don_mueang",
+      "name": "Don Mueang",
+      "nameTh": "ดอนเมือง",
+      "lat": 13.910714,
+      "lng": 100.6173961
+    },
+    {
+      "id": "lak_hok",
+      "name": "Lak Hok",
+      "nameTh": "หลักหก",
+      "lat": 13.9521,
+      "lng": 100.6131
+    },
+    {
+      "id": "rangsit",
+      "name": "Rangsit",
+      "nameTh": "รังสิต",
+      "lat": 13.9833,
+      "lng": 100.6175
+    },
+    {
+      "id": "krung_thep_aphiwat_light_red",
+      "name": "Krung Thep Aphiwat Central",
+      "nameTh": "กลางกรุงเทพอภิวัฒน์",
+      "lat": 13.8061627,
+      "lng": 100.5307752
+    },
+    {
+      "id": "bang_son_light_red",
+      "name": "Bang Son",
+      "nameTh": "บางซ่อน",
+      "lat": 13.8061627,
+      "lng": 100.5307752
+    },
+    {
+      "id": "bang_bamru",
+      "name": "Bang Bamru",
+      "nameTh": "บางบำหรุ",
+      "lat": 13.7838726,
+      "lng": 100.4933267
+    },
+    {
+      "id": "taling_chan",
+      "name": "Taling Chan",
+      "nameTh": "ตลิ่งชัน",
+      "lat": 13.7813,
+      "lng": 100.4558
+    },
+    {
+      "id": "lat_phrao_yellow",
+      "name": "Lat Phrao",
+      "nameTh": "ลาดพร้าว",
+      "lat": 13.8069826,
+      "lng": 100.5747847
+    },
+    {
+      "id": "phawana",
+      "name": "Phawana",
+      "nameTh": "ภาวนา",
+      "lat": 13.8001638,
+      "lng": 100.5841952
+    },
+    {
+      "id": "chok_chai_4",
+      "name": "Chok Chai 4",
+      "nameTh": "โชคชัย 4",
+      "lat": 13.7944253,
+      "lng": 100.5944302
+    },
+    {
+      "id": "lat_phrao_71",
+      "name": "Lat Phrao 71",
+      "nameTh": "ลาดพร้าว 71",
+      "lat": 13.7870921,
+      "lng": 100.6075731
+    },
+    {
+      "id": "lat_phrao_83",
+      "name": "Lat Phrao 83",
+      "nameTh": "ลาดพร้าว 83",
+      "lat": 13.7837002,
+      "lng": 100.6136576
+    },
+    {
+      "id": "mahat_thai",
+      "name": "Mahat Thai",
+      "nameTh": "มหาดไทย",
+      "lat": 13.763,
+      "lng": 100.6186
+    },
+    {
+      "id": "lat_phrao_101",
+      "name": "Lat Phrao 101",
+      "nameTh": "ลาดพร้าว 101",
+      "lat": 13.7555,
+      "lng": 100.6292
+    },
+    {
+      "id": "bang_kapi",
+      "name": "Bang Kapi",
+      "nameTh": "บางกะปิ",
+      "lat": 13.7504111,
+      "lng": 100.6447881
+    },
+    {
+      "id": "yaek_lam_sali",
+      "name": "Yaek Lam Sali",
+      "nameTh": "แยกลำสาลี",
+      "lat": 13.7504111,
+      "lng": 100.6447881
+    },
+    {
+      "id": "si_kritha",
+      "name": "Si Kritha",
+      "nameTh": "ศรีกรีฑา",
+      "lat": 13.7361482,
+      "lng": 100.6411384
+    },
+    {
+      "id": "hua_mak_yellow",
+      "name": "Hua Mak",
+      "nameTh": "หัวหมาก",
+      "lat": 13.7361482,
+      "lng": 100.6411384
+    },
+    {
+      "id": "kalantan",
+      "name": "Kalantan",
+      "nameTh": "กลันตัน",
+      "lat": 13.7252705,
+      "lng": 100.6417798
+    },
+    {
+      "id": "si_nut",
+      "name": "Si Nut",
+      "nameTh": "ศรีนุช",
+      "lat": 13.7110971,
+      "lng": 100.6441957
+    },
+    {
+      "id": "srinagarindra_38",
+      "name": "Srinagarindra 38",
+      "nameTh": "ศรีนครินทร์ 38",
+      "lat": 13.7011219,
+      "lng": 100.6464727
+    },
+    {
+      "id": "suan_luang_rama_9",
+      "name": "Suan Luang Rama IX",
+      "nameTh": "สวนหลวง ร.9",
+      "lat": 13.6908637,
+      "lng": 100.6471028
+    },
+    {
+      "id": "si_udom",
+      "name": "Si Udom",
+      "nameTh": "ศรีอุดม",
+      "lat": 13.6766379,
+      "lng": 100.6461707
+    },
+    {
+      "id": "si_iam",
+      "name": "Si Iam",
+      "nameTh": "ศรีเอี่ยม",
+      "lat": 13.6766379,
+      "lng": 100.6461707
+    },
+    {
+      "id": "si_la_salle",
+      "name": "Si La Salle",
+      "nameTh": "ศรีลาซาล",
+      "lat": 13.6676858,
+      "lng": 100.6450683
+    },
+    {
+      "id": "si_bearing",
+      "name": "Si Bearing",
+      "nameTh": "ศรีแบริ่ง",
+      "lat": 13.6676858,
+      "lng": 100.6450683
+    },
+    {
+      "id": "si_dan",
+      "name": "Si Dan",
+      "nameTh": "ศรีด่าน",
+      "lat": 13.6638,
+      "lng": 100.6211
+    },
+    {
+      "id": "si_thepha",
+      "name": "Si Thepha",
+      "nameTh": "ศรีเทพา",
+      "lat": 13.668138,
+      "lng": 100.6046633
+    },
+    {
+      "id": "thipphawan",
+      "name": "Thipphawan",
+      "nameTh": "ทิพวัล",
+      "lat": 13.6611846,
+      "lng": 100.6018056
+    },
+    {
+      "id": "samrong_yellow",
+      "name": "Samrong",
+      "nameTh": "สำโรง",
+      "lat": 13.6611846,
+      "lng": 100.6018056
+    },
+    {
+      "id": "nonthaburi_civic_pink",
+      "name": "Nonthaburi Civic Center",
+      "nameTh": "ศูนย์ราชการนนทบุรี",
+      "lat": 13.8395295,
+      "lng": 100.5149681
+    },
+    {
+      "id": "khae_rai",
+      "name": "Khae Rai",
+      "nameTh": "แคราย",
+      "lat": 13.8597221,
+      "lng": 100.5181159
+    },
+    {
+      "id": "sanambin_nam",
+      "name": "Sanambin Nam",
+      "nameTh": "สนามบินน้ำ",
+      "lat": 13.8626592,
+      "lng": 100.5206536
+    },
+    {
+      "id": "samakkhi",
+      "name": "Samakkhi",
+      "nameTh": "สามัคคี",
+      "lat": 13.8512,
+      "lng": 100.5418
+    },
+    {
+      "id": "royal_irrigation_dept",
+      "name": "Royal Irrigation Department",
+      "nameTh": "กรมชลประทาน",
+      "lat": 13.8502,
+      "lng": 100.5612
+    },
+    {
+      "id": "yaek_pak_kret",
+      "name": "Yaek Pak Kret",
+      "nameTh": "แยกปากเกร็ด",
+      "lat": 13.850326,
+      "lng": 100.5818158
+    },
+    {
+      "id": "pak_kret_bypass",
+      "name": "Pak Kret Bypass",
+      "nameTh": "เลี่ยงเมืองปากเกร็ด",
+      "lat": 13.856049,
+      "lng": 100.5851786
+    },
+    {
+      "id": "chaeng_watthana_pak_kret_28",
+      "name": "Chaeng Watthana-Pak Kret 28",
+      "nameTh": "แจ้งวัฒนะ-ปากเกร็ด 28",
+      "lat": 13.8783,
+      "lng": 100.5782
+    },
+    {
+      "id": "si_rat",
+      "name": "Si Rat",
+      "nameTh": "ศรีรัช",
+      "lat": 13.8840791,
+      "lng": 100.5826859
+    },
+    {
+      "id": "muang_thong_thani",
+      "name": "Muang Thong Thani",
+      "nameTh": "เมืองทองธานี",
+      "lat": 13.8875764,
+      "lng": 100.5757143
+    },
+    {
+      "id": "chaeng_watthana_14",
+      "name": "Chaeng Watthana 14",
+      "nameTh": "แจ้งวัฒนะ 14",
+      "lat": 13.8953,
+      "lng": 100.583
+    },
+    {
+      "id": "government_complex",
+      "name": "Government Complex",
+      "nameTh": "ศูนย์ราชการเฉลิมพระเกียรติ",
+      "lat": 13.8840791,
+      "lng": 100.5826859
+    },
+    {
+      "id": "national_telecom",
+      "name": "National Telecom",
+      "nameTh": "โทรคมนาคมแห่งชาติ",
+      "lat": 13.8840791,
+      "lng": 100.5826859
+    },
+    {
+      "id": "lak_si_pink",
+      "name": "Lak Si",
+      "nameTh": "หลักสี่",
+      "lat": 13.8907652,
+      "lng": 100.5673522
+    },
+    {
+      "id": "rajabhat_phranakhon",
+      "name": "Rajabhat Phranakhon",
+      "nameTh": "ราชภัฏพระนคร",
+      "lat": 13.8875764,
+      "lng": 100.5757143
+    },
+    {
+      "id": "wat_phra_sri_mahathat_pink",
+      "name": "Wat Phra Sri Mahathat",
+      "nameTh": "วัดพระศรีมหาธาตุ",
+      "lat": 13.8752766,
+      "lng": 100.5967316
+    },
+    {
+      "id": "ram_inthra_3",
+      "name": "Ram Inthra 3",
+      "nameTh": "รามอินทรา 3",
+      "lat": 13.879,
+      "lng": 100.6158
+    },
+    {
+      "id": "lat_pla_khao",
+      "name": "Lat Pla Khao",
+      "nameTh": "ลาดปลาเค้า",
+      "lat": 13.8781,
+      "lng": 100.6245
+    },
+    {
+      "id": "ram_inthra_kor_mor_4",
+      "name": "Ram Inthra Kor Mor 4",
+      "nameTh": "รามอินทรา ก.ม.4",
+      "lat": 13.8775,
+      "lng": 100.6334
+    },
+    {
+      "id": "maiyalap",
+      "name": "Maiyalap",
+      "nameTh": "มัยลาภ",
+      "lat": 13.8769,
+      "lng": 100.6425
+    },
+    {
+      "id": "vacharaphol",
+      "name": "Vacharaphol",
+      "nameTh": "วัชรพล",
+      "lat": 13.8763,
+      "lng": 100.652
+    },
+    {
+      "id": "ram_inthra_kor_mor_6",
+      "name": "Ram Inthra Kor Mor 6",
+      "nameTh": "รามอินทรา ก.ม.6",
+      "lat": 13.8748,
+      "lng": 100.661
+    },
+    {
+      "id": "khu_bon",
+      "name": "Khu Bon",
+      "nameTh": "คู้บอน",
+      "lat": 13.8741,
+      "lng": 100.6705
+    },
+    {
+      "id": "ram_inthra_kor_mor_9",
+      "name": "Ram Inthra Kor Mor 9",
+      "nameTh": "รามอินทรา ก.ม.9",
+      "lat": 13.8737,
+      "lng": 100.6802
+    },
+    {
+      "id": "outer_ring_road_ram_inthra",
+      "name": "Outer Ring Road - Ram Inthra",
+      "nameTh": "วงแหวนรามอินทรา",
+      "lat": 13.8734,
+      "lng": 100.6908
+    },
+    {
+      "id": "nopparat",
+      "name": "Nopparat",
+      "nameTh": "นพรัตน์",
+      "lat": 13.8612,
+      "lng": 100.6997
+    },
+    {
+      "id": "bang_chan",
+      "name": "Bang Chan",
+      "nameTh": "บางชัน",
+      "lat": 13.8481,
+      "lng": 100.7093
+    },
+    {
+      "id": "setthabutbamphen",
+      "name": "Setthabutbamphen",
+      "nameTh": "เศรษฐบุตรบำเพ็ญ",
+      "lat": 13.8312,
+      "lng": 100.718
+    },
+    {
+      "id": "min_buri_market",
+      "name": "Min Buri Market",
+      "nameTh": "ตลาดมีนบุรี",
+      "lat": 13.8125125,
+      "lng": 100.7258382
+    },
+    {
+      "id": "min_buri",
+      "name": "Min Buri",
+      "nameTh": "มีนบุรี",
+      "lat": 13.8132889,
+      "lng": 100.7390249
+    },
+    {
+      "id": "impact_muang_thong",
+      "name": "Impact Muang Thong Thani",
+      "nameTh": "อิมแพ็ค เมืองทองธานี",
+      "lat": 13.9104409,
+      "lng": 100.5442604
+    },
+    {
+      "id": "lake_muang_thong",
+      "name": "Lake Muang Thong Thani",
+      "nameTh": "ทะเลสาบเมืองทองธานี",
+      "lat": 13.9104409,
+      "lng": 100.5442604
+    }
+  ],
+  "stationLines": [
+    {
+      "stationId": "khu_khot",
+      "lineId": "sukhumvit",
+      "order": 0
+    },
+    {
+      "stationId": "yaek_kor_por_aor",
+      "lineId": "sukhumvit",
+      "order": 1
+    },
+    {
+      "stationId": "royal_thai_air_force_museum",
+      "lineId": "sukhumvit",
+      "order": 2
+    },
+    {
+      "stationId": "bhumibol_adulyadej_hospital",
+      "lineId": "sukhumvit",
+      "order": 3
+    },
+    {
+      "stationId": "saphan_mai",
+      "lineId": "sukhumvit",
+      "order": 4
+    },
+    {
+      "stationId": "sai_yud",
+      "lineId": "sukhumvit",
+      "order": 5
+    },
+    {
+      "stationId": "phahon_yothin_59",
+      "lineId": "sukhumvit",
+      "order": 6
+    },
+    {
+      "stationId": "wat_phra_sri_mahathat_bts",
+      "lineId": "sukhumvit",
+      "order": 7
+    },
+    {
+      "stationId": "infantry_regiment_11",
+      "lineId": "sukhumvit",
+      "order": 8
+    },
+    {
+      "stationId": "bang_bua",
+      "lineId": "sukhumvit",
+      "order": 9
+    },
+    {
+      "stationId": "royal_forest_department",
+      "lineId": "sukhumvit",
+      "order": 10
+    },
+    {
+      "stationId": "kasetsart_university",
+      "lineId": "sukhumvit",
+      "order": 11
+    },
+    {
+      "stationId": "sena_nikhom",
+      "lineId": "sukhumvit",
+      "order": 12
+    },
+    {
+      "stationId": "ratchayothin",
+      "lineId": "sukhumvit",
+      "order": 13
+    },
+    {
+      "stationId": "phahon_yothin_24",
+      "lineId": "sukhumvit",
+      "order": 14
+    },
+    {
+      "stationId": "ha_yaek_lat_phrao",
+      "lineId": "sukhumvit",
+      "order": 15
+    },
+    {
+      "stationId": "mo_chit",
+      "lineId": "sukhumvit",
+      "order": 16
+    },
+    {
+      "stationId": "saphan_khwai",
+      "lineId": "sukhumvit",
+      "order": 17
+    },
+    {
+      "stationId": "ari",
+      "lineId": "sukhumvit",
+      "order": 18
+    },
+    {
+      "stationId": "sanam_pao",
+      "lineId": "sukhumvit",
+      "order": 19
+    },
+    {
+      "stationId": "victory_monument",
+      "lineId": "sukhumvit",
+      "order": 20
+    },
+    {
+      "stationId": "phaya_thai_bts",
+      "lineId": "sukhumvit",
+      "order": 21
+    },
+    {
+      "stationId": "ratchathewi",
+      "lineId": "sukhumvit",
+      "order": 22
+    },
+    {
+      "stationId": "siam",
+      "lineId": "sukhumvit",
+      "order": 23
+    },
+    {
+      "stationId": "chit_lom",
+      "lineId": "sukhumvit",
+      "order": 24
+    },
+    {
+      "stationId": "phloen_chit",
+      "lineId": "sukhumvit",
+      "order": 25
+    },
+    {
+      "stationId": "nana",
+      "lineId": "sukhumvit",
+      "order": 26
+    },
+    {
+      "stationId": "asok",
+      "lineId": "sukhumvit",
+      "order": 27
+    },
+    {
+      "stationId": "phrom_phong",
+      "lineId": "sukhumvit",
+      "order": 28
+    },
+    {
+      "stationId": "thong_lo",
+      "lineId": "sukhumvit",
+      "order": 29
+    },
+    {
+      "stationId": "ekkamai",
+      "lineId": "sukhumvit",
+      "order": 30
+    },
+    {
+      "stationId": "phra_khanong",
+      "lineId": "sukhumvit",
+      "order": 31
+    },
+    {
+      "stationId": "on_nut",
+      "lineId": "sukhumvit",
+      "order": 32
+    },
+    {
+      "stationId": "bang_chak",
+      "lineId": "sukhumvit",
+      "order": 33
+    },
+    {
+      "stationId": "punnawithi",
+      "lineId": "sukhumvit",
+      "order": 34
+    },
+    {
+      "stationId": "udom_suk",
+      "lineId": "sukhumvit",
+      "order": 35
+    },
+    {
+      "stationId": "bang_na",
+      "lineId": "sukhumvit",
+      "order": 36
+    },
+    {
+      "stationId": "bearing",
+      "lineId": "sukhumvit",
+      "order": 37
+    },
+    {
+      "stationId": "samrong_bts",
+      "lineId": "sukhumvit",
+      "order": 38
+    },
+    {
+      "stationId": "pu_chao",
+      "lineId": "sukhumvit",
+      "order": 39
+    },
+    {
+      "stationId": "chang_erawan",
+      "lineId": "sukhumvit",
+      "order": 40
+    },
+    {
+      "stationId": "royal_thai_naval_academy",
+      "lineId": "sukhumvit",
+      "order": 41
+    },
+    {
+      "stationId": "pak_nam",
+      "lineId": "sukhumvit",
+      "order": 42
+    },
+    {
+      "stationId": "srinagarindra_bts",
+      "lineId": "sukhumvit",
+      "order": 43
+    },
+    {
+      "stationId": "phraek_sa",
+      "lineId": "sukhumvit",
+      "order": 44
+    },
+    {
+      "stationId": "sai_luat",
+      "lineId": "sukhumvit",
+      "order": 45
+    },
+    {
+      "stationId": "kheha",
+      "lineId": "sukhumvit",
+      "order": 46
+    },
+    {
+      "stationId": "national_stadium",
+      "lineId": "silom",
+      "order": 0
+    },
+    {
+      "stationId": "siam",
+      "lineId": "silom",
+      "order": 1
+    },
+    {
+      "stationId": "ratchadamri",
+      "lineId": "silom",
+      "order": 2
+    },
+    {
+      "stationId": "sala_daeng",
+      "lineId": "silom",
+      "order": 3
+    },
+    {
+      "stationId": "chong_nonsi",
+      "lineId": "silom",
+      "order": 4
+    },
+    {
+      "stationId": "saint_louis",
+      "lineId": "silom",
+      "order": 5
+    },
+    {
+      "stationId": "surasak",
+      "lineId": "silom",
+      "order": 6
+    },
+    {
+      "stationId": "saphan_taksin",
+      "lineId": "silom",
+      "order": 7
+    },
+    {
+      "stationId": "krung_thon_buri_bts",
+      "lineId": "silom",
+      "order": 8
+    },
+    {
+      "stationId": "wongwian_yai",
+      "lineId": "silom",
+      "order": 9
+    },
+    {
+      "stationId": "pho_nimit",
+      "lineId": "silom",
+      "order": 10
+    },
+    {
+      "stationId": "talat_phlu",
+      "lineId": "silom",
+      "order": 11
+    },
+    {
+      "stationId": "wutthakat",
+      "lineId": "silom",
+      "order": 12
+    },
+    {
+      "stationId": "bang_wa_bts",
+      "lineId": "silom",
+      "order": 13
+    },
+    {
+      "stationId": "krung_thon_buri_gold",
+      "lineId": "gold",
+      "order": 0
+    },
+    {
+      "stationId": "charoen_nakhon_iconsiam",
+      "lineId": "gold",
+      "order": 1
+    },
+    {
+      "stationId": "khlong_san",
+      "lineId": "gold",
+      "order": 2
+    },
+    {
+      "stationId": "tha_phra",
+      "lineId": "blue",
+      "order": 0
+    },
+    {
+      "stationId": "charan_13",
+      "lineId": "blue",
+      "order": 1
+    },
+    {
+      "stationId": "fai_chai",
+      "lineId": "blue",
+      "order": 2
+    },
+    {
+      "stationId": "bang_khun_non",
+      "lineId": "blue",
+      "order": 3
+    },
+    {
+      "stationId": "bang_yi_khan",
+      "lineId": "blue",
+      "order": 4
+    },
+    {
+      "stationId": "sirindhorn",
+      "lineId": "blue",
+      "order": 5
+    },
+    {
+      "stationId": "bang_phlat",
+      "lineId": "blue",
+      "order": 6
+    },
+    {
+      "stationId": "bang_o",
+      "lineId": "blue",
+      "order": 7
+    },
+    {
+      "stationId": "bang_pho",
+      "lineId": "blue",
+      "order": 8
+    },
+    {
+      "stationId": "tao_poon_blue",
+      "lineId": "blue",
+      "order": 9
+    },
+    {
+      "stationId": "bang_sue_blue",
+      "lineId": "blue",
+      "order": 10
+    },
+    {
+      "stationId": "kamphaeng_phet",
+      "lineId": "blue",
+      "order": 11
+    },
+    {
+      "stationId": "chatuchak_park",
+      "lineId": "blue",
+      "order": 12
+    },
+    {
+      "stationId": "phahon_yothin_blue",
+      "lineId": "blue",
+      "order": 13
+    },
+    {
+      "stationId": "lat_phrao_blue",
+      "lineId": "blue",
+      "order": 14
+    },
+    {
+      "stationId": "ratchadaphisek",
+      "lineId": "blue",
+      "order": 15
+    },
+    {
+      "stationId": "sutthisan",
+      "lineId": "blue",
+      "order": 16
+    },
+    {
+      "stationId": "huai_khwang",
+      "lineId": "blue",
+      "order": 17
+    },
+    {
+      "stationId": "thailand_cultural_centre",
+      "lineId": "blue",
+      "order": 18
+    },
+    {
+      "stationId": "phra_ram_9",
+      "lineId": "blue",
+      "order": 19
+    },
+    {
+      "stationId": "phetchaburi",
+      "lineId": "blue",
+      "order": 20
+    },
+    {
+      "stationId": "sukhumvit_blue",
+      "lineId": "blue",
+      "order": 21
+    },
+    {
+      "stationId": "queen_sirikit",
+      "lineId": "blue",
+      "order": 22
+    },
+    {
+      "stationId": "khlong_toei",
+      "lineId": "blue",
+      "order": 23
+    },
+    {
+      "stationId": "lumphini",
+      "lineId": "blue",
+      "order": 24
+    },
+    {
+      "stationId": "si_lom",
+      "lineId": "blue",
+      "order": 25
+    },
+    {
+      "stationId": "sam_yan",
+      "lineId": "blue",
+      "order": 26
+    },
+    {
+      "stationId": "hua_lamphong",
+      "lineId": "blue",
+      "order": 27
+    },
+    {
+      "stationId": "wat_mangkon",
+      "lineId": "blue",
+      "order": 28
+    },
+    {
+      "stationId": "sam_yot",
+      "lineId": "blue",
+      "order": 29
+    },
+    {
+      "stationId": "sanam_chai",
+      "lineId": "blue",
+      "order": 30
+    },
+    {
+      "stationId": "itsaraphap",
+      "lineId": "blue",
+      "order": 31
+    },
+    {
+      "stationId": "bang_phai",
+      "lineId": "blue",
+      "order": 32
+    },
+    {
+      "stationId": "bang_wa_blue",
+      "lineId": "blue",
+      "order": 33
+    },
+    {
+      "stationId": "phetkasem_48",
+      "lineId": "blue",
+      "order": 34
+    },
+    {
+      "stationId": "phasi_charoen",
+      "lineId": "blue",
+      "order": 35
+    },
+    {
+      "stationId": "bang_khae",
+      "lineId": "blue",
+      "order": 36
+    },
+    {
+      "stationId": "lak_song",
+      "lineId": "blue",
+      "order": 37
+    },
+    {
+      "stationId": "khlong_bang_phai",
+      "lineId": "purple",
+      "order": 0
+    },
+    {
+      "stationId": "talad_bang_yai",
+      "lineId": "purple",
+      "order": 1
+    },
+    {
+      "stationId": "sam_yaek_bang_yai",
+      "lineId": "purple",
+      "order": 2
+    },
+    {
+      "stationId": "bang_phlu_purple",
+      "lineId": "purple",
+      "order": 3
+    },
+    {
+      "stationId": "bang_rak_yai",
+      "lineId": "purple",
+      "order": 4
+    },
+    {
+      "stationId": "bang_rak_noi_tha_it",
+      "lineId": "purple",
+      "order": 5
+    },
+    {
+      "stationId": "sai_ma",
+      "lineId": "purple",
+      "order": 6
+    },
+    {
+      "stationId": "phra_nang_klao_bridge",
+      "lineId": "purple",
+      "order": 7
+    },
+    {
+      "stationId": "yaek_nonthaburi_1",
+      "lineId": "purple",
+      "order": 8
+    },
+    {
+      "stationId": "bang_krasor",
+      "lineId": "purple",
+      "order": 9
+    },
+    {
+      "stationId": "nonthaburi_civic_purple",
+      "lineId": "purple",
+      "order": 10
+    },
+    {
+      "stationId": "ministry_of_public_health",
+      "lineId": "purple",
+      "order": 11
+    },
+    {
+      "stationId": "yaek_tiwanon",
+      "lineId": "purple",
+      "order": 12
+    },
+    {
+      "stationId": "wong_sawang",
+      "lineId": "purple",
+      "order": 13
+    },
+    {
+      "stationId": "bang_son_purple",
+      "lineId": "purple",
+      "order": 14
+    },
+    {
+      "stationId": "tao_poon_purple",
+      "lineId": "purple",
+      "order": 15
+    },
+    {
+      "stationId": "phaya_thai_arl",
+      "lineId": "arl",
+      "order": 0
+    },
+    {
+      "stationId": "ratchaprarop",
+      "lineId": "arl",
+      "order": 1
+    },
+    {
+      "stationId": "makkasan",
+      "lineId": "arl",
+      "order": 2
+    },
+    {
+      "stationId": "ramkhamhaeng",
+      "lineId": "arl",
+      "order": 3
+    },
+    {
+      "stationId": "hua_mak_arl",
+      "lineId": "arl",
+      "order": 4
+    },
+    {
+      "stationId": "ban_thap_chang",
+      "lineId": "arl",
+      "order": 5
+    },
+    {
+      "stationId": "lat_krabang",
+      "lineId": "arl",
+      "order": 6
+    },
+    {
+      "stationId": "suvarnabhumi",
+      "lineId": "arl",
+      "order": 7
+    },
+    {
+      "stationId": "krung_thep_aphiwat_dark_red",
+      "lineId": "dark_red",
+      "order": 0
+    },
+    {
+      "stationId": "chatuchak_dark_red",
+      "lineId": "dark_red",
+      "order": 1
+    },
+    {
+      "stationId": "wat_samian_nari",
+      "lineId": "dark_red",
+      "order": 2
+    },
+    {
+      "stationId": "bang_khen_dark_red",
+      "lineId": "dark_red",
+      "order": 3
+    },
+    {
+      "stationId": "thung_song_hong",
+      "lineId": "dark_red",
+      "order": 4
+    },
+    {
+      "stationId": "lak_si_dark_red",
+      "lineId": "dark_red",
+      "order": 5
+    },
+    {
+      "stationId": "kan_kheha",
+      "lineId": "dark_red",
+      "order": 6
+    },
+    {
+      "stationId": "don_mueang",
+      "lineId": "dark_red",
+      "order": 7
+    },
+    {
+      "stationId": "lak_hok",
+      "lineId": "dark_red",
+      "order": 8
+    },
+    {
+      "stationId": "rangsit",
+      "lineId": "dark_red",
+      "order": 9
+    },
+    {
+      "stationId": "krung_thep_aphiwat_light_red",
+      "lineId": "light_red",
+      "order": 0
+    },
+    {
+      "stationId": "bang_son_light_red",
+      "lineId": "light_red",
+      "order": 1
+    },
+    {
+      "stationId": "bang_bamru",
+      "lineId": "light_red",
+      "order": 2
+    },
+    {
+      "stationId": "taling_chan",
+      "lineId": "light_red",
+      "order": 3
+    },
+    {
+      "stationId": "lat_phrao_yellow",
+      "lineId": "yellow",
+      "order": 0
+    },
+    {
+      "stationId": "phawana",
+      "lineId": "yellow",
+      "order": 1
+    },
+    {
+      "stationId": "chok_chai_4",
+      "lineId": "yellow",
+      "order": 2
+    },
+    {
+      "stationId": "lat_phrao_71",
+      "lineId": "yellow",
+      "order": 3
+    },
+    {
+      "stationId": "lat_phrao_83",
+      "lineId": "yellow",
+      "order": 4
+    },
+    {
+      "stationId": "mahat_thai",
+      "lineId": "yellow",
+      "order": 5
+    },
+    {
+      "stationId": "lat_phrao_101",
+      "lineId": "yellow",
+      "order": 6
+    },
+    {
+      "stationId": "bang_kapi",
+      "lineId": "yellow",
+      "order": 7
+    },
+    {
+      "stationId": "yaek_lam_sali",
+      "lineId": "yellow",
+      "order": 8
+    },
+    {
+      "stationId": "si_kritha",
+      "lineId": "yellow",
+      "order": 9
+    },
+    {
+      "stationId": "hua_mak_yellow",
+      "lineId": "yellow",
+      "order": 10
+    },
+    {
+      "stationId": "kalantan",
+      "lineId": "yellow",
+      "order": 11
+    },
+    {
+      "stationId": "si_nut",
+      "lineId": "yellow",
+      "order": 12
+    },
+    {
+      "stationId": "srinagarindra_38",
+      "lineId": "yellow",
+      "order": 13
+    },
+    {
+      "stationId": "suan_luang_rama_9",
+      "lineId": "yellow",
+      "order": 14
+    },
+    {
+      "stationId": "si_udom",
+      "lineId": "yellow",
+      "order": 15
+    },
+    {
+      "stationId": "si_iam",
+      "lineId": "yellow",
+      "order": 16
+    },
+    {
+      "stationId": "si_la_salle",
+      "lineId": "yellow",
+      "order": 17
+    },
+    {
+      "stationId": "si_bearing",
+      "lineId": "yellow",
+      "order": 18
+    },
+    {
+      "stationId": "si_dan",
+      "lineId": "yellow",
+      "order": 19
+    },
+    {
+      "stationId": "si_thepha",
+      "lineId": "yellow",
+      "order": 20
+    },
+    {
+      "stationId": "thipphawan",
+      "lineId": "yellow",
+      "order": 21
+    },
+    {
+      "stationId": "samrong_yellow",
+      "lineId": "yellow",
+      "order": 22
+    },
+    {
+      "stationId": "nonthaburi_civic_pink",
+      "lineId": "pink",
+      "order": 0
+    },
+    {
+      "stationId": "khae_rai",
+      "lineId": "pink",
+      "order": 1
+    },
+    {
+      "stationId": "sanambin_nam",
+      "lineId": "pink",
+      "order": 2
+    },
+    {
+      "stationId": "samakkhi",
+      "lineId": "pink",
+      "order": 3
+    },
+    {
+      "stationId": "royal_irrigation_dept",
+      "lineId": "pink",
+      "order": 4
+    },
+    {
+      "stationId": "yaek_pak_kret",
+      "lineId": "pink",
+      "order": 5
+    },
+    {
+      "stationId": "pak_kret_bypass",
+      "lineId": "pink",
+      "order": 6
+    },
+    {
+      "stationId": "chaeng_watthana_pak_kret_28",
+      "lineId": "pink",
+      "order": 7
+    },
+    {
+      "stationId": "si_rat",
+      "lineId": "pink",
+      "order": 8
+    },
+    {
+      "stationId": "muang_thong_thani",
+      "lineId": "pink",
+      "order": 9
+    },
+    {
+      "stationId": "chaeng_watthana_14",
+      "lineId": "pink",
+      "order": 10
+    },
+    {
+      "stationId": "government_complex",
+      "lineId": "pink",
+      "order": 11
+    },
+    {
+      "stationId": "national_telecom",
+      "lineId": "pink",
+      "order": 12
+    },
+    {
+      "stationId": "lak_si_pink",
+      "lineId": "pink",
+      "order": 13
+    },
+    {
+      "stationId": "rajabhat_phranakhon",
+      "lineId": "pink",
+      "order": 14
+    },
+    {
+      "stationId": "wat_phra_sri_mahathat_pink",
+      "lineId": "pink",
+      "order": 15
+    },
+    {
+      "stationId": "ram_inthra_3",
+      "lineId": "pink",
+      "order": 16
+    },
+    {
+      "stationId": "lat_pla_khao",
+      "lineId": "pink",
+      "order": 17
+    },
+    {
+      "stationId": "ram_inthra_kor_mor_4",
+      "lineId": "pink",
+      "order": 18
+    },
+    {
+      "stationId": "maiyalap",
+      "lineId": "pink",
+      "order": 19
+    },
+    {
+      "stationId": "vacharaphol",
+      "lineId": "pink",
+      "order": 20
+    },
+    {
+      "stationId": "ram_inthra_kor_mor_6",
+      "lineId": "pink",
+      "order": 21
+    },
+    {
+      "stationId": "khu_bon",
+      "lineId": "pink",
+      "order": 22
+    },
+    {
+      "stationId": "ram_inthra_kor_mor_9",
+      "lineId": "pink",
+      "order": 23
+    },
+    {
+      "stationId": "outer_ring_road_ram_inthra",
+      "lineId": "pink",
+      "order": 24
+    },
+    {
+      "stationId": "nopparat",
+      "lineId": "pink",
+      "order": 25
+    },
+    {
+      "stationId": "bang_chan",
+      "lineId": "pink",
+      "order": 26
+    },
+    {
+      "stationId": "setthabutbamphen",
+      "lineId": "pink",
+      "order": 27
+    },
+    {
+      "stationId": "min_buri_market",
+      "lineId": "pink",
+      "order": 28
+    },
+    {
+      "stationId": "min_buri",
+      "lineId": "pink",
+      "order": 29
+    },
+    {
+      "stationId": "muang_thong_thani",
+      "lineId": "pink_mt",
+      "order": 0
+    },
+    {
+      "stationId": "impact_muang_thong",
+      "lineId": "pink_mt",
+      "order": 1
+    },
+    {
+      "stationId": "lake_muang_thong",
+      "lineId": "pink_mt",
+      "order": 2
+    }
+  ],
+  "segments": [
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "khu_khot",
+      "toStation": "yaek_kor_por_aor",
+      "distanceKm": 2.309
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "yaek_kor_por_aor",
+      "toStation": "royal_thai_air_force_museum",
+      "distanceKm": 0.712
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "royal_thai_air_force_museum",
+      "toStation": "bhumibol_adulyadej_hospital",
+      "distanceKm": 0.607
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "bhumibol_adulyadej_hospital",
+      "toStation": "saphan_mai",
+      "distanceKm": 1.963
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "saphan_mai",
+      "toStation": "sai_yud",
+      "distanceKm": 1.807
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "sai_yud",
+      "toStation": "phahon_yothin_59",
+      "distanceKm": 1.814
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "phahon_yothin_59",
+      "toStation": "wat_phra_sri_mahathat_bts",
+      "distanceKm": 0.907
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "wat_phra_sri_mahathat_bts",
+      "toStation": "infantry_regiment_11",
+      "distanceKm": 0.998
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "infantry_regiment_11",
+      "toStation": "bang_bua",
+      "distanceKm": 1.477
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "bang_bua",
+      "toStation": "royal_forest_department",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "royal_forest_department",
+      "toStation": "kasetsart_university",
+      "distanceKm": 1.758
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "kasetsart_university",
+      "toStation": "sena_nikhom",
+      "distanceKm": 0.757
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "sena_nikhom",
+      "toStation": "ratchayothin",
+      "distanceKm": 0.852
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "ratchayothin",
+      "toStation": "phahon_yothin_24",
+      "distanceKm": 0.72
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "phahon_yothin_24",
+      "toStation": "ha_yaek_lat_phrao",
+      "distanceKm": 0.953
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "ha_yaek_lat_phrao",
+      "toStation": "mo_chit",
+      "distanceKm": 1.8
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "mo_chit",
+      "toStation": "saphan_khwai",
+      "distanceKm": 1.121
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "saphan_khwai",
+      "toStation": "ari",
+      "distanceKm": 1.663
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "ari",
+      "toStation": "sanam_pao",
+      "distanceKm": 0.834
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "sanam_pao",
+      "toStation": "victory_monument",
+      "distanceKm": 1.223
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "victory_monument",
+      "toStation": "phaya_thai_bts",
+      "distanceKm": 0.742
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "phaya_thai_bts",
+      "toStation": "ratchathewi",
+      "distanceKm": 0.618
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "ratchathewi",
+      "toStation": "siam",
+      "distanceKm": 0.751
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "siam",
+      "toStation": "chit_lom",
+      "distanceKm": 0.979
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "chit_lom",
+      "toStation": "phloen_chit",
+      "distanceKm": 0.648
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "phloen_chit",
+      "toStation": "nana",
+      "distanceKm": 0.752
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "nana",
+      "toStation": "asok",
+      "distanceKm": 0.659
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "asok",
+      "toStation": "phrom_phong",
+      "distanceKm": 1.25
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "phrom_phong",
+      "toStation": "thong_lo",
+      "distanceKm": 1.174
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "thong_lo",
+      "toStation": "ekkamai",
+      "distanceKm": 0.884
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "ekkamai",
+      "toStation": "phra_khanong",
+      "distanceKm": 0.821
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "phra_khanong",
+      "toStation": "on_nut",
+      "distanceKm": 1.497
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "on_nut",
+      "toStation": "bang_chak",
+      "distanceKm": 1.091
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "bang_chak",
+      "toStation": "punnawithi",
+      "distanceKm": 0.921
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "punnawithi",
+      "toStation": "udom_suk",
+      "distanceKm": 1.047
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "udom_suk",
+      "toStation": "bang_na",
+      "distanceKm": 1.405
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "bang_na",
+      "toStation": "bearing",
+      "distanceKm": 0.833
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "bearing",
+      "toStation": "samrong_bts",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "samrong_bts",
+      "toStation": "pu_chao",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "pu_chao",
+      "toStation": "chang_erawan",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "chang_erawan",
+      "toStation": "royal_thai_naval_academy",
+      "distanceKm": 2.857
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "royal_thai_naval_academy",
+      "toStation": "pak_nam",
+      "distanceKm": 1.934
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "pak_nam",
+      "toStation": "srinagarindra_bts",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "srinagarindra_bts",
+      "toStation": "phraek_sa",
+      "distanceKm": 1.755
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "phraek_sa",
+      "toStation": "sai_luat",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "sukhumvit",
+      "fromStation": "sai_luat",
+      "toStation": "kheha",
+      "distanceKm": 1.553
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "national_stadium",
+      "toStation": "siam",
+      "distanceKm": 0.563
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "siam",
+      "toStation": "ratchadamri",
+      "distanceKm": 0.887
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "ratchadamri",
+      "toStation": "sala_daeng",
+      "distanceKm": 1.332
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "sala_daeng",
+      "toStation": "chong_nonsi",
+      "distanceKm": 0.758
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "chong_nonsi",
+      "toStation": "saint_louis",
+      "distanceKm": 0.437
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "saint_louis",
+      "toStation": "surasak",
+      "distanceKm": 0.59
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "surasak",
+      "toStation": "saphan_taksin",
+      "distanceKm": 0.784
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "saphan_taksin",
+      "toStation": "krung_thon_buri_bts",
+      "distanceKm": 0.482
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "krung_thon_buri_bts",
+      "toStation": "wongwian_yai",
+      "distanceKm": 2.075
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "wongwian_yai",
+      "toStation": "pho_nimit",
+      "distanceKm": 0.243
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "pho_nimit",
+      "toStation": "talat_phlu",
+      "distanceKm": 1.014
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "talat_phlu",
+      "toStation": "wutthakat",
+      "distanceKm": 1.147
+    },
+    {
+      "lineId": "silom",
+      "fromStation": "wutthakat",
+      "toStation": "bang_wa_bts",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "gold",
+      "fromStation": "krung_thon_buri_gold",
+      "toStation": "charoen_nakhon_iconsiam",
+      "distanceKm": 1.017
+    },
+    {
+      "lineId": "gold",
+      "fromStation": "charoen_nakhon_iconsiam",
+      "toStation": "khlong_san",
+      "distanceKm": 0.452
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "tha_phra",
+      "toStation": "charan_13",
+      "distanceKm": 1.256
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "charan_13",
+      "toStation": "fai_chai",
+      "distanceKm": 1.744
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "fai_chai",
+      "toStation": "bang_khun_non",
+      "distanceKm": 0.94
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_khun_non",
+      "toStation": "bang_yi_khan",
+      "distanceKm": 2.028
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_yi_khan",
+      "toStation": "sirindhorn",
+      "distanceKm": 1.132
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "sirindhorn",
+      "toStation": "bang_phlat",
+      "distanceKm": 1.569
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_phlat",
+      "toStation": "bang_o",
+      "distanceKm": 0.902
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_o",
+      "toStation": "bang_pho",
+      "distanceKm": 1.466
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_pho",
+      "toStation": "tao_poon_blue",
+      "distanceKm": 1.055
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "tao_poon_blue",
+      "toStation": "bang_sue_blue",
+      "distanceKm": 0.509
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_sue_blue",
+      "toStation": "kamphaeng_phet",
+      "distanceKm": 2.635
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "kamphaeng_phet",
+      "toStation": "chatuchak_park",
+      "distanceKm": 0.279
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "chatuchak_park",
+      "toStation": "phahon_yothin_blue",
+      "distanceKm": 1.458
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "phahon_yothin_blue",
+      "toStation": "lat_phrao_blue",
+      "distanceKm": 2.149
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "lat_phrao_blue",
+      "toStation": "ratchadaphisek",
+      "distanceKm": 0.891
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "ratchadaphisek",
+      "toStation": "sutthisan",
+      "distanceKm": 1.056
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "sutthisan",
+      "toStation": "huai_khwang",
+      "distanceKm": 1.202
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "huai_khwang",
+      "toStation": "thailand_cultural_centre",
+      "distanceKm": 1.429
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "thailand_cultural_centre",
+      "toStation": "phra_ram_9",
+      "distanceKm": 1.076
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "phra_ram_9",
+      "toStation": "phetchaburi",
+      "distanceKm": 0.981
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "phetchaburi",
+      "toStation": "sukhumvit_blue",
+      "distanceKm": 1.39
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "sukhumvit_blue",
+      "toStation": "queen_sirikit",
+      "distanceKm": 1.599
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "queen_sirikit",
+      "toStation": "khlong_toei",
+      "distanceKm": 0.602
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "khlong_toei",
+      "toStation": "lumphini",
+      "distanceKm": 1.011
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "lumphini",
+      "toStation": "si_lom",
+      "distanceKm": 1.017
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "si_lom",
+      "toStation": "sam_yan",
+      "distanceKm": 0.815
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "sam_yan",
+      "toStation": "hua_lamphong",
+      "distanceKm": 1.531
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "hua_lamphong",
+      "toStation": "wat_mangkon",
+      "distanceKm": 0.935
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "wat_mangkon",
+      "toStation": "sam_yot",
+      "distanceKm": 0.979
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "sam_yot",
+      "toStation": "sanam_chai",
+      "distanceKm": 0.881
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "sanam_chai",
+      "toStation": "itsaraphap",
+      "distanceKm": 1.182
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_phai",
+      "toStation": "bang_wa_blue",
+      "distanceKm": 1.706
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_wa_blue",
+      "toStation": "phetkasem_48",
+      "distanceKm": 3.533
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "phetkasem_48",
+      "toStation": "phasi_charoen",
+      "distanceKm": 1.355
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "phasi_charoen",
+      "toStation": "bang_khae",
+      "distanceKm": 2.585
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "bang_khae",
+      "toStation": "lak_song",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "khlong_bang_phai",
+      "toStation": "talad_bang_yai",
+      "distanceKm": 1.858
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "talad_bang_yai",
+      "toStation": "sam_yaek_bang_yai",
+      "distanceKm": 1.639
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "sam_yaek_bang_yai",
+      "toStation": "bang_phlu_purple",
+      "distanceKm": 1.527
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "bang_phlu_purple",
+      "toStation": "bang_rak_yai",
+      "distanceKm": 1.383
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "bang_rak_yai",
+      "toStation": "bang_rak_noi_tha_it",
+      "distanceKm": 2.874
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "bang_rak_noi_tha_it",
+      "toStation": "sai_ma",
+      "distanceKm": 1.207
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "sai_ma",
+      "toStation": "phra_nang_klao_bridge",
+      "distanceKm": 2.938
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "phra_nang_klao_bridge",
+      "toStation": "yaek_nonthaburi_1",
+      "distanceKm": 2.442
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "yaek_nonthaburi_1",
+      "toStation": "bang_krasor",
+      "distanceKm": 2.953
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "bang_krasor",
+      "toStation": "nonthaburi_civic_purple",
+      "distanceKm": 1.001
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "nonthaburi_civic_purple",
+      "toStation": "ministry_of_public_health",
+      "distanceKm": 1.644
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "ministry_of_public_health",
+      "toStation": "yaek_tiwanon",
+      "distanceKm": 1.264
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "yaek_tiwanon",
+      "toStation": "wong_sawang",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "wong_sawang",
+      "toStation": "bang_son_purple",
+      "distanceKm": 1.558
+    },
+    {
+      "lineId": "purple",
+      "fromStation": "bang_son_purple",
+      "toStation": "tao_poon_purple",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "arl",
+      "fromStation": "phaya_thai_arl",
+      "toStation": "ratchaprarop",
+      "distanceKm": 0.733
+    },
+    {
+      "lineId": "arl",
+      "fromStation": "ratchaprarop",
+      "toStation": "makkasan",
+      "distanceKm": 3.223
+    },
+    {
+      "lineId": "arl",
+      "fromStation": "makkasan",
+      "toStation": "ramkhamhaeng",
+      "distanceKm": 3.275
+    },
+    {
+      "lineId": "arl",
+      "fromStation": "ramkhamhaeng",
+      "toStation": "hua_mak_arl",
+      "distanceKm": 5.262
+    },
+    {
+      "lineId": "arl",
+      "fromStation": "hua_mak_arl",
+      "toStation": "ban_thap_chang",
+      "distanceKm": 3.885
+    },
+    {
+      "lineId": "arl",
+      "fromStation": "ban_thap_chang",
+      "toStation": "lat_krabang",
+      "distanceKm": 7.707
+    },
+    {
+      "lineId": "arl",
+      "fromStation": "lat_krabang",
+      "toStation": "suvarnabhumi",
+      "distanceKm": 4.227
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "krung_thep_aphiwat_dark_red",
+      "toStation": "chatuchak_dark_red",
+      "distanceKm": 3.397
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "chatuchak_dark_red",
+      "toStation": "wat_samian_nari",
+      "distanceKm": 2.185
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "wat_samian_nari",
+      "toStation": "bang_khen_dark_red",
+      "distanceKm": 1.658
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "bang_khen_dark_red",
+      "toStation": "thung_song_hong",
+      "distanceKm": 1.751
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "thung_song_hong",
+      "toStation": "lak_si_dark_red",
+      "distanceKm": 3.639
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "lak_si_dark_red",
+      "toStation": "kan_kheha",
+      "distanceKm": 2.859
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "kan_kheha",
+      "toStation": "don_mueang",
+      "distanceKm": 3.03
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "don_mueang",
+      "toStation": "lak_hok",
+      "distanceKm": 4.625
+    },
+    {
+      "lineId": "dark_red",
+      "fromStation": "lak_hok",
+      "toStation": "rangsit",
+      "distanceKm": 3.502
+    },
+    {
+      "lineId": "light_red",
+      "fromStation": "krung_thep_aphiwat_light_red",
+      "toStation": "bang_son_light_red",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "light_red",
+      "fromStation": "bang_son_light_red",
+      "toStation": "bang_bamru",
+      "distanceKm": 4.743
+    },
+    {
+      "lineId": "light_red",
+      "fromStation": "bang_bamru",
+      "toStation": "taling_chan",
+      "distanceKm": 4.063
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "lat_phrao_yellow",
+      "toStation": "phawana",
+      "distanceKm": 1.268
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "phawana",
+      "toStation": "chok_chai_4",
+      "distanceKm": 1.276
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "chok_chai_4",
+      "toStation": "lat_phrao_71",
+      "distanceKm": 1.637
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "lat_phrao_71",
+      "toStation": "lat_phrao_83",
+      "distanceKm": 0.758
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "lat_phrao_83",
+      "toStation": "mahat_thai",
+      "distanceKm": 2.363
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "mahat_thai",
+      "toStation": "lat_phrao_101",
+      "distanceKm": 1.416
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "lat_phrao_101",
+      "toStation": "bang_kapi",
+      "distanceKm": 1.776
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "bang_kapi",
+      "toStation": "yaek_lam_sali",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "yaek_lam_sali",
+      "toStation": "si_kritha",
+      "distanceKm": 1.634
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "si_kritha",
+      "toStation": "hua_mak_yellow",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "hua_mak_yellow",
+      "toStation": "kalantan",
+      "distanceKm": 1.212
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "kalantan",
+      "toStation": "si_nut",
+      "distanceKm": 1.597
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "si_nut",
+      "toStation": "srinagarindra_38",
+      "distanceKm": 1.136
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "srinagarindra_38",
+      "toStation": "suan_luang_rama_9",
+      "distanceKm": 1.143
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "suan_luang_rama_9",
+      "toStation": "si_udom",
+      "distanceKm": 1.585
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "si_udom",
+      "toStation": "si_iam",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "si_iam",
+      "toStation": "si_la_salle",
+      "distanceKm": 1.003
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "si_la_salle",
+      "toStation": "si_bearing",
+      "distanceKm": 1.363
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "si_bearing",
+      "toStation": "si_dan",
+      "distanceKm": 2.626
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "si_dan",
+      "toStation": "si_thepha",
+      "distanceKm": 1.84
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "si_thepha",
+      "toStation": "thipphawan",
+      "distanceKm": 1.387
+    },
+    {
+      "lineId": "yellow",
+      "fromStation": "thipphawan",
+      "toStation": "samrong_yellow",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "nonthaburi_civic_pink",
+      "toStation": "khae_rai",
+      "distanceKm": 2.271
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "khae_rai",
+      "toStation": "sanambin_nam",
+      "distanceKm": 0.426
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "sanambin_nam",
+      "toStation": "samakkhi",
+      "distanceKm": 2.614
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "samakkhi",
+      "toStation": "royal_irrigation_dept",
+      "distanceKm": 2.097
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "royal_irrigation_dept",
+      "toStation": "yaek_pak_kret",
+      "distanceKm": 2.226
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "yaek_pak_kret",
+      "toStation": "pak_kret_bypass",
+      "distanceKm": 0.733
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "pak_kret_bypass",
+      "toStation": "chaeng_watthana_pak_kret_28",
+      "distanceKm": 2.586
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "chaeng_watthana_pak_kret_28",
+      "toStation": "si_rat",
+      "distanceKm": 0.805
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "si_rat",
+      "toStation": "muang_thong_thani",
+      "distanceKm": 0.847
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "muang_thong_thani",
+      "toStation": "chaeng_watthana_14",
+      "distanceKm": 1.174
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "chaeng_watthana_14",
+      "toStation": "government_complex",
+      "distanceKm": 1.248
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "government_complex",
+      "toStation": "national_telecom",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "national_telecom",
+      "toStation": "lak_si_pink",
+      "distanceKm": 2.075
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "lak_si_pink",
+      "toStation": "rajabhat_phranakhon",
+      "distanceKm": 0.97
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "rajabhat_phranakhon",
+      "toStation": "wat_phra_sri_mahathat_pink",
+      "distanceKm": 2.865
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "wat_phra_sri_mahathat_pink",
+      "toStation": "ram_inthra_3",
+      "distanceKm": 2.1
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "ram_inthra_3",
+      "toStation": "lat_pla_khao",
+      "distanceKm": 0.944
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "lat_pla_khao",
+      "toStation": "ram_inthra_kor_mor_4",
+      "distanceKm": 0.963
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "ram_inthra_kor_mor_4",
+      "toStation": "maiyalap",
+      "distanceKm": 0.985
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "maiyalap",
+      "toStation": "vacharaphol",
+      "distanceKm": 1.028
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "vacharaphol",
+      "toStation": "ram_inthra_kor_mor_6",
+      "distanceKm": 0.986
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "ram_inthra_kor_mor_6",
+      "toStation": "khu_bon",
+      "distanceKm": 1.028
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "khu_bon",
+      "toStation": "ram_inthra_kor_mor_9",
+      "distanceKm": 1.048
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "ram_inthra_kor_mor_9",
+      "toStation": "outer_ring_road_ram_inthra",
+      "distanceKm": 1.145
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "outer_ring_road_ram_inthra",
+      "toStation": "nopparat",
+      "distanceKm": 1.662
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "nopparat",
+      "toStation": "bang_chan",
+      "distanceKm": 1.788
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "bang_chan",
+      "toStation": "setthabutbamphen",
+      "distanceKm": 2.101
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "setthabutbamphen",
+      "toStation": "min_buri_market",
+      "distanceKm": 2.244
+    },
+    {
+      "lineId": "pink",
+      "fromStation": "min_buri_market",
+      "toStation": "min_buri",
+      "distanceKm": 1.427
+    },
+    {
+      "lineId": "pink_mt",
+      "fromStation": "muang_thong_thani",
+      "toStation": "impact_muang_thong",
+      "distanceKm": 4.242
+    },
+    {
+      "lineId": "pink_mt",
+      "fromStation": "impact_muang_thong",
+      "toStation": "lake_muang_thong",
+      "distanceKm": 0.0
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "itsaraphap",
+      "toStation": "tha_phra",
+      "distanceKm": 1.621
+    },
+    {
+      "lineId": "blue",
+      "fromStation": "tha_phra",
+      "toStation": "bang_phai",
+      "distanceKm": 1.26
+    }
+  ],
+  "interchanges": [
+    {
+      "stationA": "phaya_thai_bts",
+      "stationB": "phaya_thai_arl",
+      "transferMin": 3.0,
+      "walkingDistanceM": 50
+    },
+    {
+      "stationA": "mo_chit",
+      "stationB": "chatuchak_park",
+      "transferMin": 3.0,
+      "walkingDistanceM": 150
+    },
+    {
+      "stationA": "ha_yaek_lat_phrao",
+      "stationB": "phahon_yothin_blue",
+      "transferMin": 3.5,
+      "walkingDistanceM": 120
+    },
+    {
+      "stationA": "asok",
+      "stationB": "sukhumvit_blue",
+      "transferMin": 4.0,
+      "walkingDistanceM": 200
+    },
+    {
+      "stationA": "sala_daeng",
+      "stationB": "si_lom",
+      "transferMin": 3.5,
+      "walkingDistanceM": 150
+    },
+    {
+      "stationA": "samrong_bts",
+      "stationB": "samrong_yellow",
+      "transferMin": 3.0,
+      "walkingDistanceM": 100
+    },
+    {
+      "stationA": "wat_phra_sri_mahathat_bts",
+      "stationB": "wat_phra_sri_mahathat_pink",
+      "transferMin": 3.5,
+      "walkingDistanceM": 80
+    },
+    {
+      "stationA": "krung_thon_buri_bts",
+      "stationB": "krung_thon_buri_gold",
+      "transferMin": 2.5,
+      "walkingDistanceM": 50
+    },
+    {
+      "stationA": "bang_wa_bts",
+      "stationB": "bang_wa_blue",
+      "transferMin": 3.5,
+      "walkingDistanceM": 100
+    },
+    {
+      "stationA": "tao_poon_blue",
+      "stationB": "tao_poon_purple",
+      "transferMin": 3.0,
+      "walkingDistanceM": 80
+    },
+    {
+      "stationA": "bang_sue_blue",
+      "stationB": "krung_thep_aphiwat_dark_red",
+      "transferMin": 4.5,
+      "walkingDistanceM": 350
+    },
+    {
+      "stationA": "bang_sue_blue",
+      "stationB": "krung_thep_aphiwat_light_red",
+      "transferMin": 4.5,
+      "walkingDistanceM": 350
+    },
+    {
+      "stationA": "krung_thep_aphiwat_dark_red",
+      "stationB": "krung_thep_aphiwat_light_red",
+      "transferMin": 1.0,
+      "walkingDistanceM": 30
+    },
+    {
+      "stationA": "bang_son_purple",
+      "stationB": "bang_son_light_red",
+      "transferMin": 3.5,
+      "walkingDistanceM": 100
+    },
+    {
+      "stationA": "phetchaburi",
+      "stationB": "makkasan",
+      "transferMin": 5.0,
+      "walkingDistanceM": 350
+    },
+    {
+      "stationA": "hua_mak_arl",
+      "stationB": "hua_mak_yellow",
+      "transferMin": 3.0,
+      "walkingDistanceM": 80
+    },
+    {
+      "stationA": "lat_phrao_blue",
+      "stationB": "lat_phrao_yellow",
+      "transferMin": 3.5,
+      "walkingDistanceM": 100
+    },
+    {
+      "stationA": "nonthaburi_civic_purple",
+      "stationB": "nonthaburi_civic_pink",
+      "transferMin": 3.0,
+      "walkingDistanceM": 50
+    },
+    {
+      "stationA": "lak_si_dark_red",
+      "stationB": "lak_si_pink",
+      "transferMin": 3.5,
+      "walkingDistanceM": 150
+    }
+  ],
+  "schedulePeriods": [
+    {
+      "name": "Morning Peak",
+      "startHour": 6,
+      "endHour": 9,
+      "waitTimes": [
+        {
+          "lineId": "sukhumvit",
+          "initialWaitMin": 1.5
+        },
+        {
+          "lineId": "silom",
+          "initialWaitMin": 1.5
+        },
+        {
+          "lineId": "gold",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "blue",
+          "initialWaitMin": 2.0
+        },
+        {
+          "lineId": "purple",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "arl",
+          "initialWaitMin": 5.0
+        },
+        {
+          "lineId": "dark_red",
+          "initialWaitMin": 6.0
+        },
+        {
+          "lineId": "light_red",
+          "initialWaitMin": 10.0
+        },
+        {
+          "lineId": "yellow",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "pink",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "pink_mt",
+          "initialWaitMin": 4.0
+        }
+      ]
+    },
+    {
+      "name": "Midday",
+      "startHour": 9,
+      "endHour": 17,
+      "waitTimes": [
+        {
+          "lineId": "sukhumvit",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "silom",
+          "initialWaitMin": 3.0
+        },
+        {
+          "lineId": "gold",
+          "initialWaitMin": 3.5
+        },
+        {
+          "lineId": "blue",
+          "initialWaitMin": 3.0
+        },
+        {
+          "lineId": "purple",
+          "initialWaitMin": 4.0
+        },
+        {
+          "lineId": "arl",
+          "initialWaitMin": 6.0
+        },
+        {
+          "lineId": "dark_red",
+          "initialWaitMin": 8.5
+        },
+        {
+          "lineId": "light_red",
+          "initialWaitMin": 10.0
+        },
+        {
+          "lineId": "yellow",
+          "initialWaitMin": 5.0
+        },
+        {
+          "lineId": "pink",
+          "initialWaitMin": 5.0
+        },
+        {
+          "lineId": "pink_mt",
+          "initialWaitMin": 6.5
+        }
+      ]
+    },
+    {
+      "name": "Evening Peak",
+      "startHour": 17,
+      "endHour": 20,
+      "waitTimes": [
+        {
+          "lineId": "sukhumvit",
+          "initialWaitMin": 1.5
+        },
+        {
+          "lineId": "silom",
+          "initialWaitMin": 1.5
+        },
+        {
+          "lineId": "gold",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "blue",
+          "initialWaitMin": 2.0
+        },
+        {
+          "lineId": "purple",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "arl",
+          "initialWaitMin": 5.0
+        },
+        {
+          "lineId": "dark_red",
+          "initialWaitMin": 6.0
+        },
+        {
+          "lineId": "light_red",
+          "initialWaitMin": 10.0
+        },
+        {
+          "lineId": "yellow",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "pink",
+          "initialWaitMin": 2.5
+        },
+        {
+          "lineId": "pink_mt",
+          "initialWaitMin": 4.0
+        }
+      ]
+    },
+    {
+      "name": "Late Night",
+      "startHour": 20,
+      "endHour": 24,
+      "waitTimes": [
+        {
+          "lineId": "sukhumvit",
+          "initialWaitMin": 3.5
+        },
+        {
+          "lineId": "silom",
+          "initialWaitMin": 4.0
+        },
+        {
+          "lineId": "gold",
+          "initialWaitMin": 5.0
+        },
+        {
+          "lineId": "blue",
+          "initialWaitMin": 4.5
+        },
+        {
+          "lineId": "purple",
+          "initialWaitMin": 5.0
+        },
+        {
+          "lineId": "arl",
+          "initialWaitMin": 6.5
+        },
+        {
+          "lineId": "dark_red",
+          "initialWaitMin": 11.0
+        },
+        {
+          "lineId": "light_red",
+          "initialWaitMin": 13.5
+        },
+        {
+          "lineId": "yellow",
+          "initialWaitMin": 5.0
+        },
+        {
+          "lineId": "pink",
+          "initialWaitMin": 5.0
+        },
+        {
+          "lineId": "pink_mt",
+          "initialWaitMin": 7.5
+        }
+      ]
+    }
+  ]
+}

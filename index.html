@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bangkok Metro Pathfinder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+/* ── Reset ── */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"DM Sans","Helvetica Neue",Arial,sans-serif;
+  font-size:13px;
+  background:#f0f4f8;
+  color:#1a202c;
+  height:100vh;
+  display:flex;
+  overflow:hidden;
+}
+
+/* ── Sidebar ── */
+aside{
+  width:320px;
+  flex-shrink:0;
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  border-right:1px solid #dde3ec;
+  z-index:10;
+}
+
+/* Sidebar header */
+.sb-header{
+  padding:14px 16px 12px;
+  border-bottom:1px solid #dde3ec;
+  flex-shrink:0;
+}
+.sb-header .brand{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  margin-bottom:3px;
+}
+.sb-header .brand-icon{
+  width:20px;height:20px;
+  color:#d97706;
+  flex-shrink:0;
+}
+.sb-header h1{
+  font-family:"Bricolage Grotesque","DM Sans",sans-serif;
+  font-size:16px;
+  font-weight:700;
+  color:#1a202c;
+}
+.sb-header .sub{font-size:11px;color:#64748b}
+
+/* Tabs */
+.tabs{display:flex;border-bottom:1px solid #dde3ec;flex-shrink:0}
+.tab-btn{
+  flex:1;padding:9px 4px;background:none;border:none;
+  color:#64748b;font-size:12px;font-family:inherit;
+  cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;
+}
+.tab-btn.active{color:#d97706;border-color:#d97706;font-weight:600}
+.tab-btn:hover:not(.active){color:#1a202c}
+
+/* Scrollable area */
+.sb-scroll{flex:1;overflow-y:auto;padding:14px 14px 8px}
+
+/* Section label */
+.sec-label{
+  font-size:10px;text-transform:uppercase;letter-spacing:.6px;
+  color:#94a3b8;margin-bottom:6px;margin-top:14px;
+}
+.sec-label:first-child{margin-top:0}
+
+/* Point picker boxes */
+.pt-box{
+  background:#f5f7fa;border:1px solid #dde3ec;border-radius:7px;
+  padding:8px 10px;font-size:12px;cursor:pointer;min-height:34px;
+  display:flex;align-items:center;gap:7px;
+  transition:border-color .15s,background .15s;
+}
+.pt-box:hover{border-color:#94a3b8}
+.pt-box.picking{border-color:#d97706;background:#fffbf0;animation:pulse 1.5s infinite}
+.pt-box.set{border-color:#16a34a;background:#f0fdf4}
+.pt-box .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.pt-box .hint{color:#94a3b8;font-style:italic}
+@keyframes pulse{0%,100%{border-color:#d97706}50%{border-color:#f59e0b}}
+
+/* Search */
+.search-wrap{position:relative;margin-top:4px}
+.search-wrap input{
+  width:100%;padding:5px 9px;
+  background:#f5f7fa;border:1px solid #dde3ec;border-radius:6px;
+  color:#1a202c;font-size:11px;outline:none;font-family:inherit;
+}
+.search-wrap input::placeholder{color:#94a3b8}
+.search-wrap input:focus{border-color:#d97706}
+.suggestions{
+  position:fixed;
+  background:#fff;border:1px solid #dde3ec;
+  border-radius:0 0 6px 6px;max-height:160px;overflow-y:auto;z-index:9999;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.sug-item{
+  padding:7px 10px;cursor:pointer;font-size:12px;
+  border-bottom:1px solid #f0f4f8;color:#1a202c;
+}
+.sug-item:hover{background:#f5f7fa}
+
+/* Mode toggle (inline segmented) */
+.seg-ctrl{
+  display:flex;border-radius:7px;overflow:hidden;
+  border:1px solid #dde3ec;font-size:11px;font-weight:500;
+}
+.seg-btn{
+  flex:1;padding:6px 4px;background:#f5f7fa;border:none;
+  color:#64748b;cursor:pointer;font-family:inherit;font-size:11px;
+  transition:all .15s;
+}
+.seg-btn.active{background:#d97706;color:#fff;font-weight:600}
+.seg-btn:hover:not(.active){background:#e8edf5;color:#1a202c}
+
+/* Time picker */
+.time-pick-row{display:flex;align-items:center;gap:8px;margin-top:2px}
+input[type=time]{
+  flex:1;padding:5px 9px;
+  background:#f5f7fa;border:1px solid #dde3ec;border-radius:6px;
+  color:#1a202c;font-size:13px;font-weight:600;font-family:inherit;
+  cursor:pointer;outline:none;
+}
+input[type=time]:focus{border-color:#d97706}
+.arrival-time{
+  font-size:11px;color:#64748b;margin-top:4px;
+}
+.arrival-time .arr-val{color:#16a34a;font-weight:700}
+
+/* Buttons */
+.btn{
+  width:100%;padding:8px;border:none;border-radius:7px;
+  font-size:13px;font-weight:600;cursor:pointer;margin-top:8px;
+  font-family:inherit;transition:opacity .15s,background .15s;
+}
+.btn:disabled{opacity:.35;cursor:default}
+.btn-primary{background:#d97706;color:#fff}
+.btn-primary:not(:disabled):hover{background:#b45309}
+.btn-danger{background:#dc2626;color:#fff}
+.btn-danger:not(:disabled):hover{background:#b91c1c}
+.btn-ghost{
+  background:#f5f7fa;border:1px solid #dde3ec;color:#64748b;
+  font-weight:500;
+}
+.btn-ghost:hover{background:#e8edf5;color:#1a202c}
+
+/* Route result */
+#result-scroll{margin-top:10px}
+.summary-card{
+  background:#f5f7fa;border:1px solid #dde3ec;border-radius:8px;
+  padding:11px 13px;margin-bottom:8px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.summary-card .time{font-size:24px;font-weight:700;color:#d97706;font-family:"Bricolage Grotesque","DM Sans",sans-serif}
+.summary-card .sub-info{font-size:11px;color:#64748b;margin-top:2px}
+.summary-card .fare-total{
+  display:inline-flex;align-items:center;gap:4px;
+  background:#fef3c7;border:1px solid #fde68a;border-radius:5px;
+  padding:2px 7px;font-size:14px;font-weight:700;color:#92400e;margin-top:5px;
+}
+.summary-card .dots{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;max-width:120px}
+.line-dot{width:13px;height:13px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.1)}
+
+/* Legs */
+.leg{display:flex;align-items:flex-start;gap:9px;padding:5px 0}
+.leg-icon{
+  width:22px;height:22px;display:flex;align-items:center;
+  justify-content:center;flex-shrink:0;font-size:13px;border-radius:50%;
+}
+.leg-body{flex:1;min-width:0}
+.leg-body .main{font-size:12px;color:#1a202c;line-height:1.4;font-weight:500}
+.leg-body .detail{font-size:11px;color:#64748b;margin-top:1px}
+.leg-time{font-size:11px;color:#64748b;flex-shrink:0;padding-top:2px;text-align:right}
+.leg-fare{
+  margin-top:3px;font-size:10px;font-weight:600;
+  background:#fef3c7;border:1px solid #fde68a;border-radius:4px;
+  padding:1px 5px;color:#92400e;white-space:nowrap;
+}
+.leg-fare.included{background:#f0fdf4;border-color:#bbf7d0;color:#166534}
+.leg-connector{width:2px;height:8px;background:#dde3ec;margin:0 0 0 10px}
+
+/* Line legend */
+.legend-grid{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.legend-item{
+  display:flex;align-items:center;gap:5px;
+  font-size:10px;color:#64748b;
+}
+.legend-swatch{width:14px;height:4px;border-radius:2px;flex-shrink:0}
+
+/* Admin tab */
+#admin-tab{display:none;flex:1;flex-direction:column;overflow:hidden}
+#admin-tab.visible{display:flex}
+.admin-sel{
+  background:#f5f7fa;border:1px dashed #dde3ec;border-radius:7px;
+  padding:9px 11px;min-height:46px;font-size:12px;color:#94a3b8;margin-bottom:8px;
+}
+.reason-input{
+  width:100%;padding:6px 9px;background:#f5f7fa;border:1px solid #dde3ec;
+  border-radius:6px;color:#1a202c;font-size:11px;outline:none;margin-bottom:6px;
+  font-family:inherit;
+}
+.reason-input:focus{border-color:#dc2626}
+.reason-input::placeholder{color:#94a3b8}
+.blocked-list{flex:1;overflow-y:auto;padding:0 14px 12px}
+.blocked-item{
+  background:#fef2f2;border:1px solid #fecaca;border-radius:7px;
+  padding:8px 10px;margin-bottom:6px;display:flex;justify-content:space-between;
+  align-items:center;font-size:11px;cursor:pointer;transition:background .1s;
+}
+.blocked-item:hover{background:#fee2e2}
+.open-btn{
+  background:#dc2626;border:none;color:#fff;border-radius:4px;
+  padding:3px 9px;cursor:pointer;font-size:10px;flex-shrink:0;font-family:inherit;
+}
+.open-btn:hover{background:#b91c1c}
+
+/* Blocked popup */
+.blocked-popup .leaflet-popup-content-wrapper{
+  background:#fff;border:2px solid #ef4444;border-radius:8px;
+  box-shadow:0 4px 16px rgba(239,68,68,.25);
+}
+.blocked-popup .leaflet-popup-tip{background:#ef4444}
+
+/* Station name labels */
+.st-lbl{background:none!important;border:none!important;box-shadow:none!important}
+.st-lbl span{
+  display:inline-block;
+  transform:translateX(-50%) translateY(6px);
+  font-size:10px;font-weight:500;color:#1a202c;
+  font-family:"DM Sans",Helvetica,sans-serif;
+  white-space:nowrap;pointer-events:none;
+  text-shadow:-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff,0 -1px 0 #fff,0 1px 0 #fff;
+}
+
+/* Station popup */
+.leaflet-popup-content-wrapper{
+  background:#fff;color:#1a202c;
+  border:1px solid #dde3ec;border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+  font-family:"DM Sans","Helvetica Neue",Arial,sans-serif;
+}
+.leaflet-popup-tip{background:#fff}
+
+/* Status bar */
+#status{
+  font-size:11px;color:#94a3b8;padding:5px 14px;
+  background:#f8fafc;border-top:1px solid #dde3ec;
+  flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+/* Error */
+.err-box{
+  background:#fef2f2;border:1px solid #fecaca;border-radius:7px;
+  padding:10px 12px;color:#dc2626;font-size:12px;margin-top:8px;
+}
+
+/* Map */
+#map{flex:1;position:relative}
+.leaflet-container{background:#e8edf5}
+
+/* Sidebar footer */
+.sb-footer{
+  padding:8px 14px;border-top:1px solid #dde3ec;text-align:center;flex-shrink:0;
+}
+.sb-footer a{font-size:11px;color:#94a3b8;text-decoration:none;transition:color .15s}
+.sb-footer a:hover{color:#d97706}
+
+/* Period label under hour slider */
+.period-lbl{font-size:10px;color:#64748b;margin-top:3px;font-style:italic}
+
+/* Alternative route tabs */
+.route-tabs{display:flex;gap:6px;margin-top:10px}
+.route-tab{
+  flex:1;padding:7px 6px;border:1.5px solid #dde3ec;border-radius:7px;
+  background:#f5f7fa;cursor:pointer;font-size:11px;font-weight:500;
+  color:#64748b;font-family:inherit;text-align:center;transition:all .15s;
+  line-height:1.5;
+}
+.route-tab.active{border-color:#d97706;background:#fffbf0;color:#92400e;font-weight:600}
+.route-tab:hover:not(.active){border-color:#94a3b8;color:#1a202c}
+
+/* Line exclusion pills */
+.excl-lines-wrap{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px}
+.excl-item{
+  display:flex;align-items:center;gap:5px;
+  padding:4px 8px;border-radius:5px;cursor:pointer;
+  font-size:11px;border:1.5px solid #dde3ec;
+  transition:all .15s;user-select:none;
+}
+.excl-item:not(.checked){
+  border-color:#dde3ec!important;background:#f5f7fa!important;color:#94a3b8;
+}
+.excl-item:not(.checked) .excl-dot{opacity:.25}
+.excl-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+
+/* Fallback walk warning */
+.fallback-warn{
+  background:#fef3c7;border:1px solid #fde68a;border-radius:6px;
+  padding:6px 10px;font-size:11px;color:#92400e;margin-bottom:6px;font-weight:500;
+}
+</style>
+</head>
+<body>
+
+<!-- ── Sidebar ──────────────────────────────────────────── -->
+<aside>
+  <!-- Header -->
+  <div class="sb-header">
+    <div class="brand">
+      <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/>
+      </svg>
+      <h1>Bangkok Metro</h1>
+    </div>
+    <div class="sub">194 ga · 11 tuyến · Thuật toán A*</div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('route')">Tìm đường</button>
+    <button class="tab-btn" onclick="showTab('admin')">Quản trị</button>
+  </div>
+
+  <!-- Route tab -->
+  <div id="route-tab" style="display:flex;flex-direction:column;flex:1;overflow:hidden">
+    <div class="sb-scroll" style="flex:1;overflow-y:auto">
+
+      <div class="sec-label">Điểm xuất phát</div>
+      <div id="from-box" class="pt-box" onclick="startPick('from')">
+        <div class="dot" style="background:#22c55e"></div>
+        <span class="hint" id="from-text">Click để chọn trên bản đồ…</span>
+      </div>
+      <div class="search-wrap" onclick="event.stopPropagation()">
+        <input type="text" placeholder="Hoặc tìm tên ga…" id="from-input"
+               oninput="suggestStation('from',this.value)"
+               onkeydown="if(event.key==='Enter')pickFirstSug('from')"
+               autocomplete="off">
+        <div class="suggestions" id="from-sug" style="display:none"></div>
+      </div>
+
+      <div class="sec-label">Điểm đến</div>
+      <div id="to-box" class="pt-box" onclick="startPick('to')">
+        <div class="dot" style="background:#ef4444"></div>
+        <span class="hint" id="to-text">Click để chọn trên bản đồ…</span>
+      </div>
+      <div class="search-wrap" onclick="event.stopPropagation()">
+        <input type="text" placeholder="Hoặc tìm tên ga…" id="to-input"
+               oninput="suggestStation('to',this.value)"
+               onkeydown="if(event.key==='Enter')pickFirstSug('to')"
+               autocomplete="off">
+        <div class="suggestions" id="to-sug" style="display:none"></div>
+      </div>
+
+      <div class="sec-label">Giờ khởi hành</div>
+      <div class="time-pick-row">
+        <input type="time" id="dep-time" value="12:00"
+               oninput="onTimeChange(this.value)">
+        <div class="period-lbl" id="period-lbl"></div>
+      </div>
+
+      <div class="sec-label">Chế độ</div>
+      <div class="seg-ctrl">
+        <button class="seg-btn active" id="mode-fastest" onclick="setMode('fastest')">⏱ Nhanh nhất</button>
+        <button class="seg-btn" id="mode-fewest" onclick="setMode('fewest_transfers')">🔄 Ít đổi tàu</button>
+      </div>
+
+      <div class="sec-label">Loại trừ tuyến</div>
+      <div id="excl-lines-wrap" class="excl-lines-wrap"></div>
+
+      <button class="btn btn-primary" id="find-btn" onclick="findRoute()" disabled>Tìm đường</button>
+      <button class="btn btn-ghost" onclick="resetAll()">Xóa tất cả</button>
+
+      <div id="route-tabs" style="display:none"></div>
+      <div id="result-scroll"></div>
+
+      <!-- Line legend -->
+      <div id="legend-section" style="margin-top:14px;padding-top:12px;border-top:1px solid #dde3ec">
+        <div class="sec-label" style="margin-top:0">Chú thích tuyến</div>
+        <div class="legend-grid" id="legend-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin tab -->
+  <div id="admin-tab">
+    <div style="padding:14px;border-bottom:1px solid #dde3ec;flex-shrink:0">
+      <div class="sec-label" style="margin-top:0">Chặn đoạn / Đóng ga</div>
+      <p style="font-size:11px;color:#94a3b8;margin-bottom:8px">Click vào đoạn tuyến hoặc biểu tượng ga trên bản đồ để chọn.</p>
+      <div id="admin-sel" class="admin-sel">Chưa chọn đoạn nào</div>
+      <input type="text" id="reason-input" class="reason-input" placeholder="Lý do bảo trì (tùy chọn)…">
+      <button class="btn btn-danger" id="block-btn" onclick="blockSeg()" disabled>Chặn đoạn này</button>
+      <button class="btn btn-ghost" id="unblock-btn" onclick="unblockSeg()" disabled>Mở đoạn này</button>
+    </div>
+    <div style="padding:10px 14px 6px;border-bottom:1px solid #dde3ec;flex-shrink:0">
+      <div class="sec-label" style="margin-top:0">Đang bị chặn</div>
+    </div>
+    <div class="blocked-list" id="blocked-list">
+      <span style="color:#94a3b8;font-size:11px;display:block;padding-top:8px">Chưa có đoạn nào.</span>
+    </div>
+  </div>
+
+  <div id="status">Đang tải dữ liệu bản đồ…</div>
+  <div class="sb-footer">
+    <a href="#" onclick="showTab('admin');return false">Quản trị viên</a>
+  </div>
+</aside>
+
+<!-- ── Map ─────────────────────────────────────────────── -->
+<div id="map"></div>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// Constants
+// ═══════════════════════════════════════════════════════════
+// Single source of truth: colors come from /api/lines → S.lines[id].color
+function lineColor(id) { return S.lines[id]?.color || '#888'; }
+
+const LINE_DISPLAY_NAMES = {
+  sukhumvit: "BTS Sukhumvit",
+  silom:     "BTS Silom",
+  gold:      "BTS Gold",
+  blue:      "MRT Blue",
+  purple:    "MRT Purple",
+  arl:       "ARL",
+  dark_red:  "SRT Dark Red",
+  light_red: "SRT Light Red",
+  yellow:    "MRT Yellow",
+  pink:      "MRT Pink",
+  pink_mt:   "MRT Pink",
+};
+
+// ═══════════════════════════════════════════════════════════
+// State
+// ═══════════════════════════════════════════════════════════
+const S = {
+  from: null, to: null,
+  pickMode: null,
+  adminMode: false,
+  adminSel: null,
+  currentMode: 'fastest',
+  routeData: null,
+  activeRouteIdx: 0,
+  stations: [],
+  lines: {},
+  routeLayers: [],
+  fromMarker: null,
+  toMarker: null,
+  railGeoJSON: null,
+  segMap: {},
+  stationCoordMap: {},       // stationId → [lat, lng]  (Leaflet order, from stationsGeo)
+  blockedGroup: null,
+  blockedStationsGroup: null,
+  labelGroup: null,
+};
+
+// ═══════════════════════════════════════════════════════════
+// Map — light CartoDB Positron tiles
+// ═══════════════════════════════════════════════════════════
+const map = L.map('map', {zoomControl:true, preferCanvas:false})
+             .setView([13.755, 100.52], 11);
+
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+  maxZoom: 19,
+  subdomains: 'abcd',
+}).addTo(map);
+
+map.on('click', onMapClick);
+
+// ═══════════════════════════════════════════════════════════
+// Load map data
+// ═══════════════════════════════════════════════════════════
+async function loadMapData() {
+  const [railRes, stRes, linesRes, stListRes] = await Promise.all([
+    fetch('/data/railways.geojson'),
+    fetch('/data/stations.geojson'),
+    fetch('/api/lines'),
+    fetch('/api/stations'),
+  ]);
+  const railways    = await railRes.json();
+  const stationsGeo = await stRes.json();
+  S.lines           = Object.fromEntries((await linesRes.json()).map(l => [l.id, l]));
+  S.stations        = await stListRes.json();
+  S.railGeoJSON     = railways;
+
+  // Build segment waypoints lookup
+  for (const f of railways.features) {
+    const p = f.properties || {};
+    if (p.lineId && p.fromStation && p.toStation) {
+      const coords = f.geometry.coordinates;
+      S.segMap[`${p.lineId}|${p.fromStation}|${p.toStation}`] = coords;
+      S.segMap[`${p.lineId}|${p.toStation}|${p.fromStation}`] = [...coords].reverse();
+    }
+  }
+
+  // Build station coordinate map from stationsGeo (canonical positions for route rendering)
+  for (const f of stationsGeo.features) {
+    const id = f.properties?.id;
+    if (id) {
+      const [lng, lat] = f.geometry.coordinates;
+      S.stationCoordMap[id] = [lat, lng];   // store as [lat, lng] for Leaflet
+    }
+  }
+
+  // ── Railway lines: casing + color pass ──
+  L.geoJSON(railways, {
+    style: () => ({
+      color: '#000', weight: 7, opacity: 0.18,
+      lineCap: 'round', lineJoin: 'round',
+    }),
+    interactive: false,
+  }).addTo(map);
+
+  L.geoJSON(railways, {
+    style: f => ({
+      color: lineColor(f.properties?.lineId) || f.properties?.color || '#888',
+      weight: 4,
+      opacity: 0.92,
+      lineCap: 'round',
+      lineJoin: 'round',
+    }),
+    onEachFeature: (f, layer) => {
+      const lid = f.properties?.lineId;
+      const fr  = f.properties?.fromStation;
+      const to  = f.properties?.toStation;
+      const name = LINE_DISPLAY_NAMES[lid] || (S.lines[lid] || {}).name || lid;
+      if (name) layer.bindTooltip(name, {sticky:true, direction:'top'});
+      layer.on('click', e => {
+        L.DomEvent.stopPropagation(e);
+        if (S.adminMode && lid && fr && to) adminSelect(lid, fr, to);
+      });
+    },
+  }).addTo(map);
+
+  // ── Station circles ──
+  L.geoJSON(stationsGeo, {
+    pointToLayer: (f, ll) => {
+      const isInterchange = f.properties?.isInterchange;
+      const colors = f.properties?.colors || [];
+      if (isInterchange) {
+        // Interchange: white center with colored stroke
+        return L.circleMarker(ll, {
+          radius: 6,
+          color: lineColor(colors[0]),
+          weight: 2.5,
+          fillColor: '#fff',
+          fillOpacity: 1,
+        });
+      }
+      return L.circleMarker(ll, {
+        radius: 4,
+        color: '#fff',
+        weight: 1.5,
+        fillColor: lineColor(colors[0]),
+        fillOpacity: 1,
+      });
+    },
+    onEachFeature: (f, layer) => {
+      const props = f.properties || {};
+      const tip = `<b style="font-family:'DM Sans',sans-serif">${props.name||props.id}</b>${
+        props.nameTh ? `<br><span style="color:#64748b;font-size:11px">${props.nameTh}</span>` : ''}`;
+      layer.bindPopup(tip, {closeButton:true, maxWidth:200});
+      layer.on('click', e => {
+        L.DomEvent.stopPropagation(e);
+        if (S.adminMode) {
+          stationAdminSelect(props.id, props.name || props.id);
+        } else if (S.pickMode) {
+          setPoint(S.pickMode, e.latlng.lat, e.latlng.lng, props.name || props.id);
+        } else {
+          layer.openPopup();
+        }
+      });
+    },
+  }).addTo(map);
+
+  // ── Station name labels (visible at zoom >= 12 only) ──
+  const labelGroup = L.layerGroup();
+  S.labelGroup = labelGroup;
+  for (const f of stationsGeo.features) {
+    const props = f.properties || {};
+    const [lng, lat] = f.geometry.coordinates;
+    const name = props.name;
+    if (!name) continue;
+    L.marker([lat, lng], {
+      icon: L.divIcon({
+        className: 'st-lbl',
+        html: `<span>${name}</span>`,
+        iconSize: [0, 0],
+        iconAnchor: [0, 0],
+      }),
+      interactive: false,
+      pane: 'tooltipPane',
+    }).addTo(labelGroup);
+  }
+
+  function syncLabels() {
+    if (map.getZoom() >= 14) {
+      if (!map.hasLayer(S.labelGroup)) S.labelGroup.addTo(map);
+    } else {
+      if (map.hasLayer(S.labelGroup)) map.removeLayer(S.labelGroup);
+    }
+  }
+  map.on('zoomend', syncLabels);
+  syncLabels();
+
+  // Build sidebar legend
+  buildLegend();
+  buildExclUI();
+  setStatus('Sẵn sàng – click bản đồ hoặc tìm tên ga để chọn điểm');
+}
+
+function buildLegend() {
+  const grid = document.getElementById('legend-grid');
+  const seen = new Set();
+  for (const [id, name] of Object.entries(LINE_DISPLAY_NAMES)) {
+    if (seen.has(name)) continue;
+    seen.add(name);
+    if (!lineColor(id)) continue;
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = `<div class="legend-swatch" style="background:${lineColor(id)}"></div><span>${name}</span>`;
+    grid.appendChild(item);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// Point picking
+// ═══════════════════════════════════════════════════════════
+function startPick(mode) {
+  S.pickMode = mode;
+  document.getElementById('from-box').classList.toggle('picking', mode==='from');
+  document.getElementById('to-box').classList.toggle('picking', mode==='to');
+  const color = mode==='from' ? '%2322c55e' : '%23ef4444';
+  map.getContainer().style.cursor =
+    `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Ccircle cx='14' cy='14' r='10' fill='none' stroke='white' stroke-width='3'/%3E%3Ccircle cx='14' cy='14' r='10' fill='none' stroke='${color}' stroke-width='2'/%3E%3Cline x1='14' y1='1' x2='14' y2='9' stroke='white' stroke-width='3'/%3E%3Cline x1='14' y1='1' x2='14' y2='9' stroke='${color}' stroke-width='2'/%3E%3Cline x1='14' y1='19' x2='14' y2='27' stroke='white' stroke-width='3'/%3E%3Cline x1='14' y1='19' x2='14' y2='27' stroke='${color}' stroke-width='2'/%3E%3Cline x1='1' y1='14' x2='9' y2='14' stroke='white' stroke-width='3'/%3E%3Cline x1='1' y1='14' x2='9' y2='14' stroke='${color}' stroke-width='2'/%3E%3Cline x1='19' y1='14' x2='27' y2='14' stroke='white' stroke-width='3'/%3E%3Cline x1='19' y1='14' x2='27' y2='14' stroke='${color}' stroke-width='2'/%3E%3Ccircle cx='14' cy='14' r='2.5' fill='${color}'/%3E%3C/svg%3E") 14 14, crosshair`;
+  setStatus(`Click bản đồ để đánh dấu điểm ${mode==='from'?'xuất phát':'đến'}…`);
+}
+
+function onMapClick(e) {
+  if (S.adminMode || !S.pickMode) return;
+  setPoint(S.pickMode, e.latlng.lat, e.latlng.lng, null);
+}
+
+function setPoint(mode, lat, lng, name) {
+  const label = name || `${lat.toFixed(5)}, ${lng.toFixed(5)}`;
+  S[mode] = {lat, lng};
+
+  const box    = document.getElementById(mode+'-box');
+  const textEl = document.getElementById(mode+'-text');
+  box.classList.remove('picking');
+  box.classList.add('set');
+  textEl.textContent = label;
+  textEl.style.color = '#1a202c';
+  textEl.style.fontStyle = 'normal';
+
+  if (mode==='from' && !S.to) startPick('to');
+  else {
+    S.pickMode = null;
+    map.getContainer().style.cursor = '';
+    document.getElementById('from-box').classList.remove('picking');
+    document.getElementById('to-box').classList.remove('picking');
+  }
+
+  // Teardrop pin matching original addUserPins.ts
+  const color  = mode==='from' ? '#5ad19f' : '#e54848';
+  const letter = mode==='from' ? 'A' : 'B';
+  const el = document.createElement('div');
+  el.style.cssText = `width:28px;height:28px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:${color};border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;cursor:pointer`;
+  const inner = document.createElement('span');
+  inner.style.cssText = 'transform:rotate(45deg);color:#fff;font-size:11px;font-weight:700;font-family:"DM Sans",sans-serif';
+  inner.textContent = letter;
+  el.appendChild(inner);
+  if (S[mode+'Marker']) map.removeLayer(S[mode+'Marker']);
+  S[mode+'Marker'] = L.marker([lat,lng], {
+    icon: L.divIcon({className:'', html:el.outerHTML, iconSize:[28,28], iconAnchor:[0,28]})
+  }).addTo(map);
+
+  document.getElementById('find-btn').disabled = !(S.from && S.to);
+  if (S.from && S.to) setStatus('Nhấn "Tìm đường" để bắt đầu');
+}
+
+// ═══════════════════════════════════════════════════════════
+// Station search autocomplete
+// ═══════════════════════════════════════════════════════════
+function suggestStation(mode, q) {
+  const box = document.getElementById(mode+'-sug');
+  if (!q || q.length < 2) { box.style.display='none'; return; }
+  const hits = S.stations.filter(s =>
+    s.name.toLowerCase().includes(q.toLowerCase()) ||
+    (s.nameTh||'').includes(q)
+  ).slice(0, 7);
+  if (!hits.length) { box.style.display='none'; return; }
+  box.innerHTML = '';
+  hits.forEach(s => {
+    const div = document.createElement('div');
+    div.className = 'sug-item';
+    div.textContent = s.name;
+    div.addEventListener('mousedown', () => pickStation(mode, s.name, s.lat, s.lng));
+    box.appendChild(div);
+  });
+  box._hits = hits;
+  const r = document.getElementById(mode+'-input').getBoundingClientRect();
+  box.style.top = r.bottom + 'px';
+  box.style.left = r.left + 'px';
+  box.style.width = r.width + 'px';
+  box.style.display = 'block';
+}
+
+function pickStation(mode, name, lat, lng) {
+  document.getElementById(mode+'-input').value = name;
+  document.getElementById(mode+'-sug').style.display = 'none';
+  setPoint(mode, lat, lng, name);
+}
+
+function pickFirstSug(mode) {
+  const box = document.getElementById(mode+'-sug');
+  if (box._hits && box._hits.length) {
+    const s = box._hits[0];
+    pickStation(mode, s.name, s.lat, s.lng);
+  }
+}
+
+document.addEventListener('click', () => {
+  document.getElementById('from-sug').style.display='none';
+  document.getElementById('to-sug').style.display='none';
+});
+
+// ═══════════════════════════════════════════════════════════
+// Mode selector
+// ═══════════════════════════════════════════════════════════
+function setMode(m) {
+  S.currentMode = m;
+  document.getElementById('mode-fastest').classList.toggle('active', m==='fastest');
+  document.getElementById('mode-fewest').classList.toggle('active', m==='fewest_transfers');
+}
+
+// ═══════════════════════════════════════════════════════════
+// Hour slider – departure time
+// ═══════════════════════════════════════════════════════════
+function periodLabel(h) {
+  h = +h;
+  if (h >= 6  && h < 9)  return '⚡ Cao điểm sáng (6:00–9:00)';
+  if (h >= 9  && h < 16) return '🕑 Giờ thường (9:00–16:00)';
+  if (h >= 16 && h < 20) return '⚡ Cao điểm chiều (16:00–20:00)';
+  if (h >= 20)           return '🌙 Buổi tối (20:00–24:00)';
+  return '🌙 Đêm muộn (0:00–6:00)';
+}
+function onTimeChange(v) {
+  const h = parseInt((v || '0').split(':')[0], 10);
+  document.getElementById('period-lbl').textContent = periodLabel(h);
+}
+
+function getArrivalStr(totalMinutes) {
+  const v = document.getElementById('dep-time').value || '00:00';
+  const [dh, dm] = v.split(':').map(Number);
+  const tot = dh * 60 + dm + Math.round(totalMinutes);
+  const ah  = Math.floor(tot / 60) % 24;
+  const am  = tot % 60;
+  return String(ah).padStart(2,'0') + ':' + String(am).padStart(2,'0');
+}
+
+// ═══════════════════════════════════════════════════════════
+// Alternative route tabs
+// ═══════════════════════════════════════════════════════════
+function showRouteTabs() {
+  const el = document.getElementById('route-tabs');
+  if (!S.routeData?.alternative) { el.style.display = 'none'; return; }
+  const r0 = S.routeData, r1 = S.routeData.alternative;
+  el.className = 'route-tabs';
+  el.style.display = 'flex';
+  el.innerHTML = `
+    <button class="route-tab${S.activeRouteIdx===0?' active':''}" onclick="selectRoute(0)">
+      <b>${r0.label||'Lộ trình 1'}</b><br>
+      ${fmtMin(r0.total_minutes)} · ${r0.transfers} đổi · ${r0.fare?.total??'?'}฿<br>
+      <span style="font-size:10px;color:#16a34a">→ ~${getArrivalStr(r0.total_minutes)}</span>
+    </button>
+    <button class="route-tab${S.activeRouteIdx===1?' active':''}" onclick="selectRoute(1)">
+      <b>${r1.label||'Lộ trình 2'}</b><br>
+      ${fmtMin(r1.total_minutes)} · ${r1.transfers} đổi · ${r1.fare?.total??'?'}฿<br>
+      <span style="font-size:10px;color:#16a34a">→ ~${getArrivalStr(r1.total_minutes)}</span>
+    </button>`;
+}
+
+function selectRoute(idx) {
+  S.activeRouteIdx = idx;
+  const route = idx === 0 ? S.routeData : S.routeData.alternative;
+  showRouteTabs();
+  renderResult(route);
+  renderRouteOnMap(route);
+  setStatus(`✓ ${route.total_minutes} phút · ${route.transfers} lần đổi tàu`);
+}
+
+// ═══════════════════════════════════════════════════════════
+// Line exclusion UI
+// ═══════════════════════════════════════════════════════════
+function buildExclUI() {
+  const wrap = document.getElementById('excl-lines-wrap');
+  if (!wrap) return;
+  // Group line IDs by display name so pink + pink_mt share one pill
+  const groups = {};
+  for (const [id, name] of Object.entries(LINE_DISPLAY_NAMES)) {
+    if (!S.lines[id]) continue;
+    if (!groups[name]) groups[name] = [];
+    groups[name].push(id);
+  }
+  wrap.innerHTML = Object.entries(groups).map(([name, ids]) => {
+    const color = lineColor(ids[0]);
+    const key   = ids[0];
+    return `<div class="excl-item checked" id="excl-${key}"
+         data-lines="${ids.join(',')}"
+         style="border-color:${color};background:${color}18"
+         onclick="toggleExcl('${key}')">
+      <div class="excl-dot" style="background:${color}"></div>
+      <span>${name}</span>
+    </div>`;
+  }).join('');
+}
+
+function toggleExcl(key) {
+  const el = document.getElementById('excl-' + key);
+  if (!el) return;
+  const checked = el.classList.toggle('checked');
+  const color   = lineColor(key);
+  if (checked) {
+    el.style.borderColor = color;
+    el.style.background  = color + '18';
+    el.style.color       = '';
+    el.querySelector('.excl-dot').style.opacity = '1';
+  } else {
+    el.style.borderColor = '#dde3ec';
+    el.style.background  = '#f5f7fa';
+    el.style.color       = '#94a3b8';
+    el.querySelector('.excl-dot').style.opacity = '0.25';
+  }
+}
+
+function getExcludedLines() {
+  const excluded = [];
+  document.querySelectorAll('.excl-item').forEach(el => {
+    if (!el.classList.contains('checked'))
+      excluded.push(...el.dataset.lines.split(','));
+  });
+  return excluded;
+}
+
+// ═══════════════════════════════════════════════════════════
+// Find route
+// ═══════════════════════════════════════════════════════════
+async function findRoute() {
+  if (!S.from || !S.to) return;
+  const btn = document.getElementById('find-btn');
+  btn.disabled = true; btn.textContent = 'Đang tính…';
+  clearRouteLayers();
+  document.getElementById('result-scroll').innerHTML = '';
+  setStatus('Đang chạy thuật toán A*…');
+
+  try {
+    const res = await fetch('/api/find-path', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        from_lat: S.from.lat, from_lon: S.from.lng,
+        to_lat:   S.to.lat,   to_lon:   S.to.lng,
+        hour:     parseInt((document.getElementById('dep-time').value||'0:0').split(':')[0], 10),
+        minute:   parseInt((document.getElementById('dep-time').value||'0:0').split(':')[1], 10),
+        mode:     S.currentMode,
+        max_walk_km: 10.0,
+        excluded_lines: getExcludedLines(),
+      }),
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      document.getElementById('result-scroll').innerHTML =
+        `<div class="err-box">❌ ${data.error}</div>`;
+      setStatus('Không tìm được đường');
+      return;
+    }
+    S.routeData = data;
+    S.activeRouteIdx = 0;
+    showRouteTabs();
+    renderResult(data);
+    renderRouteOnMap(data);
+    setStatus(`✓ ${data.total_minutes} phút · ${data.transfers} lần đổi tàu`);
+    const rs = document.getElementById('result-scroll');
+    const sb = rs.closest('.sb-scroll');
+    sb.scrollTo({top: rs.getBoundingClientRect().top - sb.getBoundingClientRect().top + sb.scrollTop, behavior:'smooth'});
+  } catch(e) {
+    document.getElementById('result-scroll').innerHTML =
+      `<div class="err-box">❌ Lỗi kết nối server – kiểm tra xem <code>python app.py</code> đã chạy chưa</div>`;
+    setStatus('Lỗi kết nối');
+    const rsE = document.getElementById('result-scroll');
+    const sbE = rsE.closest('.sb-scroll');
+    sbE.scrollTo({top: rsE.getBoundingClientRect().top - sbE.getBoundingClientRect().top + sbE.scrollTop, behavior:'smooth'});
+  } finally {
+    btn.disabled = false; btn.textContent = 'Tìm đường';
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// Render route result (sidebar legs)
+// ═══════════════════════════════════════════════════════════
+function fmtMin(m) {
+  if (m < 1) return '<1 phút';
+  m = Math.round(m);
+  return m >= 60 ? `${Math.floor(m/60)}h ${m%60}p` : `${m} phút`;
+}
+function fmtKm(k) { return k < 1 ? `${Math.round(k*1000)} m` : `${k.toFixed(1)} km`; }
+
+function renderResult(data) {
+  const area = document.getElementById('result-scroll');
+  const trainLines = [...new Set(data.legs.filter(l=>l.type==='train').map(l=>l.line_id))];
+  const dotsHtml = trainLines.map(lid =>
+    `<div class="line-dot" style="background:${lineColor(lid)}" title="${LINE_DISPLAY_NAMES[lid]||lid}"></div>`
+  ).join('');
+
+  const fareHtml = data.fare
+    ? `<div class="fare-total">🎫 ${data.fare.total}฿</div>`
+    : '';
+
+  const depVal = document.getElementById('dep-time').value || '00:00';
+  const arrVal = getArrivalStr(data.total_minutes);
+  const arrHtml = `<div class="arrival-time">🕐 ${depVal} → <span class="arr-val">~${arrVal}</span></div>`;
+
+  const fallbackHtml = (S.activeRouteIdx === 0 && S.routeData?.fallback_walk_km > 0)
+    ? `<div class="fallback-warn">⚠ Không đến được ga đích trực tiếp — đến ga gần nhất, đi bộ thêm ~${S.routeData.fallback_walk_km} km</div>`
+    : '';
+
+  let html = `${fallbackHtml}<div class="summary-card">
+    <div>
+      <div class="time">${fmtMin(data.total_minutes)}</div>
+      <div class="sub-info">${data.transfers} lần đổi tàu</div>
+      ${fareHtml}
+      ${arrHtml}
+    </div>
+    <div class="dots">${dotsHtml}</div>
+  </div>`;
+
+  for (const leg of data.legs) {
+    if (leg.type === 'walk') {
+      const isFirst = !leg.from_station;
+      html += `
+        <div class="leg">
+          <div class="leg-icon" style="background:#f5f7fa;font-size:14px">🚶</div>
+          <div class="leg-body">
+            <div class="main">Đi bộ ${fmtKm(leg.distance_km)}</div>
+            <div class="detail">${isFirst
+              ? `→ ${data.station_names[leg.to_station]||leg.to_station}`
+              : `từ ${data.station_names[leg.from_station]||leg.from_station} → điểm đến`}</div>
+          </div>
+          <div class="leg-time">${fmtMin(leg.minutes)}</div>
+        </div>
+        <div class="leg-connector"></div>`;
+
+    } else if (leg.type === 'train') {
+      const c     = lineColor(leg.line_id);
+      const first = data.station_names[leg.stations[0]] || leg.stations[0];
+      const last  = data.station_names[leg.stations[leg.stations.length-1]] || leg.stations[leg.stations.length-1];
+      const stops = leg.stations.length - 1;
+      const fareBadge = leg.fare != null
+        ? (leg.fare === 0
+            ? `<div class="leg-fare included">รวมแล้ว / Đã bao gồm</div>`
+            : `<div class="leg-fare">${leg.fare}฿</div>`)
+        : '';
+      html += `
+        <div class="leg">
+          <div class="leg-icon" style="background:${c};font-size:12px;color:#fff">🚇</div>
+          <div class="leg-body">
+            <div class="main" style="color:${c};font-weight:600">${leg.line_name}</div>
+            <div class="detail">${first} → ${last} &nbsp;(${stops} ga)</div>
+            ${fareBadge}
+          </div>
+          <div class="leg-time">${fmtMin(leg.minutes)}</div>
+        </div>
+        <div class="leg-connector" style="background:${c};opacity:.4"></div>`;
+
+    } else if (leg.type === 'transfer') {
+      html += `
+        <div class="leg">
+          <div class="leg-icon" style="background:#f5f7fa;font-size:14px">🔄</div>
+          <div class="leg-body">
+            <div class="main">Đổi tàu tại <b>${data.station_names[leg.station]||leg.station}</b></div>
+            <div class="detail">
+              <span style="color:${leg.from_color}">${leg.from_line_name}</span>
+              → <span style="color:${leg.to_color}">${leg.to_line_name}</span>
+            </div>
+          </div>
+          <div class="leg-time">${fmtMin(leg.minutes)}</div>
+        </div>
+        <div class="leg-connector"></div>`;
+    }
+  }
+  area.innerHTML = html;
+}
+
+// ═══════════════════════════════════════════════════════════
+// Render route on map
+// ═══════════════════════════════════════════════════════════
+function clearRouteLayers() {
+  S.routeLayers.forEach(l => map.removeLayer(l));
+  S.routeLayers = [];
+}
+function addLayer(layer) { S.routeLayers.push(layer.addTo(map)); }
+
+function getSegCoords(lineId, fromSid, toSid) {
+  const seg = S.segMap[`${lineId}|${fromSid}|${toSid}`];
+  return seg ? seg.map(([lng,lat]) => [lat,lng]) : null;
+}
+
+// Resolve station position from stationsGeo (canonical), fall back to API coords
+function stationLatLng(sid, apiCoords) {
+  const pt = S.stationCoordMap[sid];
+  if (pt) return pt;                                // [lat, lng] from stationsGeo
+  const sc = apiCoords && apiCoords[sid];
+  return sc ? [sc[1], sc[0]] : null;               // fallback: convert API [lng,lat]
+}
+
+function renderRouteOnMap(data) {
+  clearRouteLayers();
+  const apiCoords = data.station_coords || {};
+
+  for (const leg of data.legs) {
+    if (leg.type === 'walk') {
+      let from, to;
+      if (!leg.from_station) {
+        from = [S.from.lat, S.from.lng];
+        to   = stationLatLng(leg.to_station, apiCoords);
+      } else {
+        from = stationLatLng(leg.from_station, apiCoords);
+        to   = [S.to.lat, S.to.lng];
+      }
+      if (from && to) {
+        addLayer(L.polyline([from, to], {
+          color:'#aaaaaa', weight:3, opacity:.9,
+          dashArray:'4 6', lineCap:'round',
+          interactive: false,
+        }));
+      }
+
+    } else if (leg.type === 'train') {
+      const color = lineColor(leg.line_id);
+      const allLatLng = [];
+
+      for (let i = 0; i < leg.stations.length - 1; i++) {
+        const segCoords = getSegCoords(leg.line_id, leg.stations[i], leg.stations[i+1]);
+        if (segCoords) {
+          const slice = allLatLng.length === 0 ? segCoords : segCoords.slice(1);
+          allLatLng.push(...slice);
+        } else {
+          const a = stationLatLng(leg.stations[i],   apiCoords);
+          const b = stationLatLng(leg.stations[i+1], apiCoords);
+          if (a && allLatLng.length === 0) allLatLng.push(a);
+          if (b) allLatLng.push(b);
+        }
+      }
+
+      if (allLatLng.length >= 2) {
+        // Glow
+        addLayer(L.polyline(allLatLng, {color, weight:14, opacity:.25, lineCap:'round', lineJoin:'round', interactive:false}));
+        // Main stroke
+        addLayer(L.polyline(allLatLng, {color, weight:6, opacity:1, lineCap:'round', lineJoin:'round', interactive:false}));
+      }
+
+      // Stop circles
+      for (const sid of leg.stations) {
+        const pt = stationLatLng(sid, apiCoords);
+        if (!pt) continue;
+        addLayer(L.circleMarker(pt, {radius:7, color:'#fff', weight:2.5, fillColor:'#fff', fillOpacity:1, interactive:false}));
+        addLayer(L.circleMarker(pt, {radius:5, color:color, weight:1.5, fillColor:color, fillOpacity:1, interactive:false}));
+      }
+    }
+  }
+
+  // Fit bounds using stationsGeo coordinates (consistent with what's visible on map)
+  const allPts = [];
+  if (S.from) allPts.push([S.from.lat, S.from.lng]);
+  if (S.to)   allPts.push([S.to.lat, S.to.lng]);
+  for (const sid of Object.keys(data.station_names || {})) {
+    const pt = stationLatLng(sid, apiCoords);
+    if (pt) allPts.push(pt);
+  }
+  if (allPts.length >= 2) {
+    map.fitBounds(L.latLngBounds(allPts), {padding:[60,60], maxZoom:14, animate:true, duration:.5});
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// Admin
+// ═══════════════════════════════════════════════════════════
+function adminSelect(lid, frm, to) {
+  S.adminSel = {type:'segment', lineId: lid, fromStation: frm, toStation: to};
+  const lineName = LINE_DISPLAY_NAMES[lid] || (S.lines[lid]||{}).name || lid;
+  const color    = lineColor(lid);
+  document.getElementById('admin-sel').innerHTML =
+    `<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>
+     <span style="color:#1a202c;font-weight:600">${lineName}</span><br>
+     <span style="color:#64748b;font-size:11px;margin-left:16px">${frm.replace(/_/g,' ')} → ${to.replace(/_/g,' ')}</span>`;
+  document.getElementById('block-btn').textContent  = 'Chặn đoạn này';
+  document.getElementById('unblock-btn').textContent = 'Mở đoạn này';
+  document.getElementById('block-btn').disabled   = false;
+  document.getElementById('unblock-btn').disabled = false;
+}
+
+function stationAdminSelect(stationId, stationName) {
+  S.adminSel = {type:'station', stationId, stationName};
+  document.getElementById('admin-sel').innerHTML =
+    `<span style="font-size:13px;margin-right:5px">🚉</span>
+     <span style="color:#1a202c;font-weight:600">Ga ${stationName}</span>`;
+  document.getElementById('block-btn').textContent  = 'Đóng ga này';
+  document.getElementById('unblock-btn').textContent = 'Mở ga này';
+  document.getElementById('block-btn').disabled   = false;
+  document.getElementById('unblock-btn').disabled = false;
+}
+
+async function blockSeg() {
+  if (!S.adminSel) return;
+  const reason = document.getElementById('reason-input').value.trim();
+  if (S.adminSel.type === 'station') {
+    await fetch('/api/block-station', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({stationId: S.adminSel.stationId, reason}),
+    });
+    setStatus(`Đã đóng ga: ${S.adminSel.stationName}`);
+  } else {
+    await fetch('/api/block', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({lineId:S.adminSel.lineId, fromStation:S.adminSel.fromStation, toStation:S.adminSel.toStation, reason}),
+    });
+    setStatus(`Đã chặn: ${S.adminSel.fromStation} → ${S.adminSel.toStation}`);
+  }
+  document.getElementById('reason-input').value = '';
+  await refreshBlocked();
+  await refreshBlockedOverlay();
+  await refreshBlockedStationsOverlay();
+}
+
+async function unblockSeg() {
+  if (!S.adminSel) return;
+  if (S.adminSel.type === 'station') {
+    await fetch('/api/unblock-station', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({stationId: S.adminSel.stationId}),
+    });
+    setStatus(`Đã mở ga: ${S.adminSel.stationName}`);
+  } else {
+    await fetch('/api/unblock', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify(S.adminSel),
+    });
+    setStatus(`Đã mở: ${S.adminSel.fromStation} → ${S.adminSel.toStation}`);
+  }
+  await refreshBlocked();
+  await refreshBlockedOverlay();
+  await refreshBlockedStationsOverlay();
+}
+
+async function refreshBlocked() {
+  const [rules, closedStations] = await Promise.all([
+    fetch('/api/blocked').then(r => r.json()).catch(() => []),
+    fetch('/api/blocked-stations').then(r => r.json()).catch(() => []),
+  ]);
+  const el = document.getElementById('blocked-list');
+  if (!rules.length && !closedStations.length) {
+    el.innerHTML = '<span style="color:#94a3b8;font-size:11px;display:block;padding-top:8px">Chưa có chặn nào.</span>';
+    return;
+  }
+  const stationHtml = closedStations.map(s =>
+    `<div class="blocked-item" onclick='stationAdminSelect(${JSON.stringify(s.stationId)},${JSON.stringify(s.name)})'>
+      <div>
+        <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px">
+          <span style="font-size:11px">⛔</span>
+          <span style="font-weight:600;color:#1a202c">${s.name}</span>
+        </div>
+        ${s.reason ? `<div style="color:#94a3b8;font-size:10px;font-style:italic">"${s.reason}"</div>` : ''}
+      </div>
+      <button class="open-btn" onclick='event.stopPropagation();unblockStationDirect(${JSON.stringify(s.stationId)})'>Mở</button>
+    </div>`
+  ).join('');
+
+  const segmentHtml = rules.map(r => {
+    const c    = lineColor(r.lineId);
+    const name = LINE_DISPLAY_NAMES[r.lineId] || (S.lines[r.lineId]||{}).name || r.lineId;
+    return `<div class="blocked-item" onclick='adminSelect("${r.lineId}","${r.fromStation}","${r.toStation}")'>
+      <div>
+        <div style="display:flex;align-items:center;gap:5px;margin-bottom:2px">
+          <div style="width:8px;height:8px;border-radius:50%;background:${c};flex-shrink:0"></div>
+          <span style="font-weight:600;color:#1a202c">${name}</span>
+        </div>
+        <div style="color:#64748b;font-size:10px">${r.fromStation.replace(/_/g,' ')} → ${r.toStation.replace(/_/g,' ')}</div>
+        ${r.reason ? `<div style="color:#94a3b8;font-size:10px;font-style:italic">"${r.reason}"</div>` : ''}
+      </div>
+      <button class="open-btn" onclick='event.stopPropagation();unblockDirect(${JSON.stringify(r)})'>Mở</button>
+    </div>`;
+  }).join('');
+
+  el.innerHTML = stationHtml + segmentHtml;
+}
+
+async function unblockDirect(r) {
+  await fetch('/api/unblock', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(r)});
+  await refreshBlocked();
+  await refreshBlockedOverlay();
+}
+
+async function unblockStationDirect(stationId) {
+  await fetch('/api/unblock-station', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({stationId})});
+  await refreshBlocked();
+  await refreshBlockedStationsOverlay();
+}
+
+// ═══════════════════════════════════════════════════════════
+// Tab switching
+// ═══════════════════════════════════════════════════════════
+function showTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach((b,i) => b.classList.toggle('active', ['route','admin'][i]===tab));
+  document.getElementById('route-tab').style.display = tab==='route' ? 'flex' : 'none';
+  document.getElementById('admin-tab').classList.toggle('visible', tab==='admin');
+  S.adminMode = tab==='admin';
+  map.getContainer().style.cursor = '';
+  S.pickMode = null;
+  if (tab==='admin') { refreshBlocked(); setStatus('Admin: click đoạn tuyến hoặc biểu tượng ga để chọn'); }
+  else setStatus('Sẵn sàng');
+}
+
+// ═══════════════════════════════════════════════════════════
+// Reset
+// ═══════════════════════════════════════════════════════════
+function resetAll() {
+  S.from = S.to = S.pickMode = null;
+  if (S.fromMarker) map.removeLayer(S.fromMarker);
+  if (S.toMarker)   map.removeLayer(S.toMarker);
+  S.fromMarker = S.toMarker = null;
+  clearRouteLayers();
+  ['from','to'].forEach(m => {
+    const box = document.getElementById(m+'-box');
+    box.className = 'pt-box';
+    const t = document.getElementById(m+'-text');
+    t.textContent = 'Click để chọn trên bản đồ…';
+    t.style.color = ''; t.style.fontStyle = '';
+  });
+  document.getElementById('result-scroll').innerHTML = '';
+  document.getElementById('route-tabs').style.display = 'none';
+  S.routeData = null; S.activeRouteIdx = 0;
+  document.getElementById('find-btn').disabled = true;
+  map.getContainer().style.cursor = '';
+  setStatus('Đã xóa – sẵn sàng');
+}
+
+function setStatus(msg) { document.getElementById('status').textContent = msg; }
+
+// ═══════════════════════════════════════════════════════════
+// Blocked overlay — visible to ALL users, auto-refresh 30s
+// ═══════════════════════════════════════════════════════════
+function fmt(id) { return id.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase()); }
+
+async function refreshBlockedOverlay() {
+  if (!S.railGeoJSON) return;
+  if (S.blockedGroup) S.blockedGroup.clearLayers();
+  else { S.blockedGroup = L.layerGroup().addTo(map); }
+
+  let rules;
+  try { rules = await (await fetch('/api/blocked')).json(); }
+  catch { return; }
+  if (!rules.length) return;
+
+  const ruleMap = {};
+  for (const r of rules) {
+    ruleMap[`${r.lineId}|${r.fromStation}|${r.toStation}`] = r.reason || '';
+    ruleMap[`${r.lineId}|${r.toStation}|${r.fromStation}`] = r.reason || '';
+  }
+
+  for (const f of S.railGeoJSON.features) {
+    const p   = f.properties || {};
+    const key = `${p.lineId}|${p.fromStation}|${p.toStation}`;
+    if (!(key in ruleMap)) continue;
+
+    const reason   = ruleMap[key];
+    const coords   = f.geometry.coordinates.map(([lng,lat]) => [lat,lng]);
+    const lineName = LINE_DISPLAY_NAMES[p.lineId] || (S.lines[p.lineId]||{}).name || p.lineId || '';
+
+    // Glow
+    L.polyline(coords, {color:'#ef4444', weight:22, opacity:0.25, lineCap:'round', lineJoin:'round', interactive:false}).addTo(S.blockedGroup);
+    // Solid red
+    const solidLine = L.polyline(coords, {color:'#ef4444', weight:6, opacity:1, lineCap:'round', lineJoin:'round'});
+    solidLine.addTo(S.blockedGroup);
+    // White dashes
+    L.polyline(coords, {color:'#fff', weight:2, opacity:0.85, dashArray:'6 8', lineCap:'round', interactive:false}).addTo(S.blockedGroup);
+
+    solidLine.on('click', function(e) {
+      L.DomEvent.stopPropagation(e);
+      const reasonHtml = reason
+        ? `<div style="margin-top:6px;color:#64748b;font-size:12px;font-style:italic">"${reason}"</div>` : '';
+      L.popup({className:'blocked-popup', closeButton:true, maxWidth:260})
+        .setLatLng(e.latlng)
+        .setContent(`
+          <div style="font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.5;padding:2px">
+            <div style="color:#ef4444;font-weight:700;margin-bottom:4px">⚠ Đoạn đường bị đóng</div>
+            <div style="font-weight:600;color:#1a202c">${lineName}</div>
+            <div style="color:#64748b;font-size:12px">${fmt(p.fromStation||'')} → ${fmt(p.toStation||'')}</div>
+            ${reasonHtml}
+          </div>`)
+        .openOn(map);
+    });
+    solidLine.on('mouseover', () => { map.getContainer().style.cursor = 'pointer'; });
+    solidLine.on('mouseout',  () => { if (!S.pickMode) map.getContainer().style.cursor = ''; });
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// Blocked stations overlay
+// ═══════════════════════════════════════════════════════════
+async function refreshBlockedStationsOverlay() {
+  if (!S.stationCoordMap || !Object.keys(S.stationCoordMap).length) return;
+  if (S.blockedStationsGroup) S.blockedStationsGroup.clearLayers();
+  else { S.blockedStationsGroup = L.layerGroup().addTo(map); }
+
+  let list;
+  try { list = await (await fetch('/api/blocked-stations')).json(); }
+  catch { return; }
+  if (!list.length) return;
+
+  for (const s of list) {
+    const pt = S.stationCoordMap[s.stationId];
+    if (!pt) continue;
+    // Red halo
+    L.circleMarker(pt, {
+      radius:12, color:'#ef4444', weight:2.5,
+      fillColor:'#ef4444', fillOpacity:0.25, interactive:false,
+    }).addTo(S.blockedStationsGroup);
+    // Solid red dot
+    const dot = L.circleMarker(pt, {
+      radius:6, color:'#fff', weight:1.5,
+      fillColor:'#ef4444', fillOpacity:1,
+    });
+    const name = s.name || s.stationId;
+    dot.bindPopup(`
+      <div style="font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.5;padding:2px">
+        <div style="color:#ef4444;font-weight:700;margin-bottom:4px">⛔ Ga đóng cửa</div>
+        <div style="font-weight:600;color:#1a202c">${name}</div>
+        ${s.reason ? `<div style="color:#64748b;font-size:12px;font-style:italic">"${s.reason}"</div>` : ''}
+      </div>`, {className:'blocked-popup'});
+    dot.addTo(S.blockedStationsGroup);
+  }
+}
+
+// ── Init ──
+(function initDepTime() {
+  const now = new Date();
+  const hh  = String(now.getHours()).padStart(2,'0');
+  const mm  = String(now.getMinutes()).padStart(2,'0');
+  const val = `${hh}:${mm}`;
+  document.getElementById('dep-time').value = val;
+  onTimeChange(val);
+})();
+
+loadMapData().then(() => {
+  refreshBlockedOverlay();
+  refreshBlockedStationsOverlay();
+  setInterval(() => { refreshBlockedOverlay(); refreshBlockedStationsOverlay(); }, 30000);
+});
+</script>
+</body>
+</html>

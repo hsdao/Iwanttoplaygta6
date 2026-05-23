@@ -1,0 +1,4471 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khu_khot",
+        "name": "Khu Khot",
+        "nameTh": "คูคต",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.64662475775197,
+          13.932410099214096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yaek_kor_por_aor",
+        "name": "Yaek Kor Por Aor",
+        "nameTh": "แยก คปอ.",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.63776153753179,
+          13.932022300371159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "royal_thai_air_force_museum",
+        "name": "Royal Thai Air Force Museum",
+        "nameTh": "พิพิธภัณฑ์กองทัพอากาศ",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6259933577033,
+          13.924984780698296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bhumibol_adulyadej_hospital",
+        "name": "Bhumibol Adulyadej Hospital",
+        "nameTh": "โรงพยาบาลภูมิพลอดุลยเดช",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6188789073085,
+          13.91298511720656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "saphan_mai",
+        "name": "Saphan Mai",
+        "nameTh": "สะพานใหม่",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.61217897600432,
+          13.901826436390465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sai_yud",
+        "name": "Sai Yud",
+        "nameTh": "สายหยุด",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6086231997337,
+          13.895573511266221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phahon_yothin_59",
+        "name": "Phahon Yothin 59",
+        "nameTh": "พหลโยธิน 59",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60294697061516,
+          13.886104313067946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wat_phra_sri_mahathat_bts",
+        "name": "Wat Phra Sri Mahathat",
+        "nameTh": "วัดพระศรีมหาธาตุ",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5967,
+          13.8752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "infantry_regiment_11",
+        "name": "11th Infantry Regiment",
+        "nameTh": "กรมทหารราบที่ 11",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59258265261474,
+          13.868611114224137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_bua",
+        "name": "Bang Bua",
+        "nameTh": "บางบัว",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.58849871471529,
+          13.861375297994599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "royal_forest_department",
+        "name": "Royal Forest Department",
+        "nameTh": "กรมป่าไม้",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.58356791426979,
+          13.853269357625322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kasetsart_university",
+        "name": "Kasetsart University",
+        "nameTh": "มหาวิทยาลัยเกษตรศาสตร์",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57802265787359,
+          13.843637489325133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sena_nikhom",
+        "name": "Sena Nikhom",
+        "nameTh": "เสนานิคม",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57296057008989,
+          13.835141579683764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ratchayothin",
+        "name": "Ratchayothin",
+        "nameTh": "รัชโยธิน",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56863872371235,
+          13.827815432973765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phahon_yothin_24",
+        "name": "Phahon Yothin 24",
+        "nameTh": "พหลโยธิน 24",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56594376934993,
+          13.823097691175334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ha_yaek_lat_phrao",
+        "name": "Ha Yaek Lat Phrao",
+        "nameTh": "ห้าแยกลาดพร้าว",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5617805932236,
+          13.815976250870705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mo_chit",
+        "name": "Mo Chit",
+        "nameTh": "หมอชิต",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.55426582095754,
+          13.803470143671035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "saphan_khwai",
+        "name": "Saphan Khwai",
+        "nameTh": "สะพานควาย",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54970833452722,
+          13.793725360102854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ari",
+        "name": "Ari",
+        "nameTh": "อารีย์",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5446,
+          13.7795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sanam_pao",
+        "name": "Sanam Pao",
+        "nameTh": "สนามเป้า",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54216148670014,
+          13.77265575147959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "victory_monument",
+        "name": "Victory Monument",
+        "nameTh": "อนุสาวรีย์ชัยสมรภูมิ",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53704924263388,
+          13.762745903348943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phaya_thai_bts",
+        "name": "Phaya Thai",
+        "nameTh": "พญาไท",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53380797538813,
+          13.756846562970452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ratchathewi",
+        "name": "Ratchathewi",
+        "nameTh": "ราชเทวี",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53157914811993,
+          13.752003005053794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "siam",
+        "name": "Siam",
+        "nameTh": "สยาม",
+        "lines": [
+          "sukhumvit",
+          "silom"
+        ],
+        "colors": [
+          "#9ACA3C",
+          "#006D38"
+        ],
+        "isInterchange": true,
+        "transferMin": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53411450326519,
+          13.745666767444249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chit_lom",
+        "name": "Chit Lom",
+        "nameTh": "ชิดลม",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54351532508491,
+          13.7441536291294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phloen_chit",
+        "name": "Phloen Chit",
+        "nameTh": "เพลินจิต",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5485,
+          13.7434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nana",
+        "name": "Nana",
+        "nameTh": "นานา",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.55480338786344,
+          13.740644852796166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "asok",
+        "name": "Asok",
+        "nameTh": "อโศก",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5601,
+          13.7374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phrom_phong",
+        "name": "Phrom Phong",
+        "nameTh": "พร้อมพงษ์",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57047694373694,
+          13.730356820254485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "thong_lo",
+        "name": "Thong Lo",
+        "nameTh": "ทองหล่อ",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5781,
+          13.7242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ekkamai",
+        "name": "Ekkamai",
+        "nameTh": "เอกมัย",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5851,
+          13.7197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phra_khanong",
+        "name": "Phra Khanong",
+        "nameTh": "พระโขนง",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59120444563979,
+          13.715261561193245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "on_nut",
+        "name": "On Nut",
+        "nameTh": "อ่อนนุช",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6014,
+          13.7059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_chak",
+        "name": "Bang Chak",
+        "nameTh": "บางจาก",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.605,
+          13.6981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "punnawithi",
+        "name": "Punnawithi",
+        "nameTh": "ปุณณวิถี",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.61008570473882,
+          13.687255309048496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "udom_suk",
+        "name": "Udom Suk",
+        "nameTh": "อุดมสุข",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60953358910109,
+          13.67867216796617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_na",
+        "name": "Bang Na",
+        "nameTh": "บางนา",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6048,
+          13.6683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bearing",
+        "name": "Bearing",
+        "nameTh": "แบริ่ง",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60095132357719,
+          13.659973886448995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "samrong_bts",
+        "name": "Samrong",
+        "nameTh": "สำโรง",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59584,
+          13.64650
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pu_chao",
+        "name": "Pu Chao",
+        "nameTh": "ปู่เจ้า",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59465270985663,
+          13.6441677023155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chang_erawan",
+        "name": "Chang Erawan",
+        "nameTh": "ช้างเอราวัณ",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59053154612712,
+          13.634701474590642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "royal_thai_naval_academy",
+        "name": "Royal Thai Naval Academy",
+        "nameTh": "โรงเรียนนายเรือ",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59286800356682,
+          13.613178413377142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pak_nam",
+        "name": "Pak Nam",
+        "nameTh": "ปากน้ำ",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59758621515181,
+          13.600404868330429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "srinagarindra_bts",
+        "name": "Srinagarindra",
+        "nameTh": "ศรีนครินทร์",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59758621515181,
+          13.600433565229636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phraek_sa",
+        "name": "Phraek Sa",
+        "nameTh": "แพรกษา",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60325497589741,
+          13.597477766362104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sai_luat",
+        "name": "Sai Luat",
+        "nameTh": "สายลวด",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60998797799277,
+          13.589953228488056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kheha",
+        "name": "Kheha",
+        "nameTh": "เคหะฯ",
+        "lines": [
+          "sukhumvit"
+        ],
+        "colors": [
+          "#9ACA3C"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60672688103097,
+          13.569487207008805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "national_stadium",
+        "name": "National Stadium",
+        "nameTh": "สนามกีฬาแห่งชาติ",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.529,
+          13.7464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ratchadamri",
+        "name": "Ratchadamri",
+        "nameTh": "ราชดำริ",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53948707935393,
+          13.739541403891906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sala_daeng",
+        "name": "Sala Daeng",
+        "nameTh": "ศาลาแดง",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53437771265607,
+          13.728583568602929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chong_nonsi",
+        "name": "Chong Nonsi",
+        "nameTh": "ช่องนนทรี",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.52934715376074,
+          13.723703622771353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "saint_louis",
+        "name": "Saint Louis",
+        "nameTh": "เซนต์หลุยส์",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.52735355491234,
+          13.721018638004907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "surasak",
+        "name": "Surasak",
+        "nameTh": "สุรศักดิ์",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.52136987152329,
+          13.719261631103336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "saphan_taksin",
+        "name": "Saphan Taksin",
+        "nameTh": "สะพานตากสิน",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51390404094661,
+          13.718830749056323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "krung_thon_buri_bts",
+        "name": "Krung Thon Buri",
+        "nameTh": "กรุงธนบุรี",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.50262310379412,
+          13.720989858482696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wongwian_yai",
+        "name": "Wongwian Yai",
+        "nameTh": "วงเวียนใหญ่",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.49519994330751,
+          13.721143965684078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pho_nimit",
+        "name": "Pho Nimit",
+        "nameTh": "โพธิ์นิมิตร",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.48552420413012,
+          13.719099451918709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "talat_phlu",
+        "name": "Talat Phlu",
+        "nameTh": "ตลาดพลู",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.47642021331455,
+          13.71425907299411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wutthakat",
+        "name": "Wutthakat",
+        "nameTh": "วุฒากาศ",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.46882507955729,
+          13.713177958498548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_wa_bts",
+        "name": "Bang Wa",
+        "nameTh": "บางหว้า",
+        "lines": [
+          "silom"
+        ],
+        "colors": [
+          "#006D38"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.45799273454492,
+          13.720662209622148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "krung_thon_buri_gold",
+        "name": "Krung Thon Buri",
+        "nameTh": "กรุงธนบุรี",
+        "lines": [
+          "gold"
+        ],
+        "colors": [
+          "#C9A227"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5026231947486,
+          13.720992223991459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "charoen_nakhon_iconsiam",
+        "name": "Charoen Nakhon (ICONSIAM)",
+        "nameTh": "เจริญนคร (ไอคอนสยาม)",
+        "lines": [
+          "gold"
+        ],
+        "colors": [
+          "#C9A227"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5090188854985,
+          13.726255707830006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khlong_san",
+        "name": "Khlong San",
+        "nameTh": "คลองสาน",
+        "lines": [
+          "gold"
+        ],
+        "colors": [
+          "#C9A227"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.50769358032375,
+          13.730464592681116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tha_phra",
+        "name": "Tha Phra",
+        "nameTh": "ท่าพระ",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.47423530799182,
+          13.729169605975073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "charan_13",
+        "name": "Charan 13",
+        "nameTh": "จรัญฯ 13",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.4709,
+          13.74
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "fai_chai",
+        "name": "Fai Chai",
+        "nameTh": "ไฟฉาย",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.46940383766076,
+          13.754637656600593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_khun_non",
+        "name": "Bang Khun Non",
+        "nameTh": "บางขุนนนท์",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.47318909761498,
+          13.76325300848707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_yi_khan",
+        "name": "Bang Yi Khan",
+        "nameTh": "บางยี่ขัน",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.48373311908273,
+          13.775223918303297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sirindhorn",
+        "name": "Sirindhorn",
+        "nameTh": "สิรินธร",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.49321473790167,
+          13.78370483277196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_phlat",
+        "name": "Bang Phlat",
+        "nameTh": "บางพลัด",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.50615784124938,
+          13.794246357523221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_o",
+        "name": "Bang O",
+        "nameTh": "บางอ้อ",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51042410908343,
+          13.799866846559041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_pho",
+        "name": "Bang Pho",
+        "nameTh": "บางโพ",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.52037736365259,
+          13.80626119600187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tao_poon_blue",
+        "name": "Tao Poon",
+        "nameTh": "เตาปูน",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53074405778091,
+          13.806477002864938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_sue_blue",
+        "name": "Bang Sue",
+        "nameTh": "บางซื่อ",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5381329657763,
+          13.803625731575906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kamphaeng_phet",
+        "name": "Kamphaeng Phet",
+        "nameTh": "กำแพงเพชร",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54761613625618,
+          13.797688434600857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chatuchak_park",
+        "name": "Chatuchak Park",
+        "nameTh": "สวนจตุจักร",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.55280669925355,
+          13.8046787428529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phahon_yothin_blue",
+        "name": "Phahon Yothin",
+        "nameTh": "พหลโยธิน",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.55841694667095,
+          13.815066887619352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lat_phrao_blue",
+        "name": "Lat Phrao",
+        "nameTh": "ลาดพร้าว",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57500709634184,
+          13.805240878072468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ratchadaphisek",
+        "name": "Ratchadaphisek",
+        "nameTh": "รัชดาภิเษก",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57457811655348,
+          13.798463756754145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sutthisan",
+        "name": "Sutthisan",
+        "nameTh": "สุทธิสาร",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5740295113066,
+          13.786819685330201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "huai_khwang",
+        "name": "Huai Khwang",
+        "nameTh": "ห้วยขวาง",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57377862161752,
+          13.77813482807511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "thailand_cultural_centre",
+        "name": "Thailand Cultural Centre",
+        "nameTh": "ศูนย์วัฒนธรรมแห่งประเทศไทย",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57280708381467,
+          13.769800537130337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phra_ram_9",
+        "name": "Phra Ram 9",
+        "nameTh": "พระราม 9",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56588924116176,
+          13.759964234818966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phetchaburi",
+        "name": "Phetchaburi",
+        "nameTh": "เพชรบุรี",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56336745059775,
+          13.749048340328827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sukhumvit_blue",
+        "name": "Sukhumvit",
+        "nameTh": "สุขุมวิท",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.561253573405,
+          13.73848918059933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "queen_sirikit",
+        "name": "Queen Sirikit National Convention",
+        "nameTh": "ศูนย์การประชุมแห่งชาติสิริกิติ์",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56061171171689,
+          13.723594035406535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khlong_toei",
+        "name": "Khlong Toei",
+        "nameTh": "คลองเตย",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.55232631980562,
+          13.722518056242919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lumphini",
+        "name": "Lumphini",
+        "nameTh": "ลุมพินี",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5444,
+          13.7259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_lom",
+        "name": "Si Lom",
+        "nameTh": "สีลม",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53701432954648,
+          13.72911701114063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sam_yan",
+        "name": "Sam Yan",
+        "nameTh": "สามย่าน",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.529,
+          13.7325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hua_lamphong",
+        "name": "Hua Lamphong",
+        "nameTh": "หัวลำโพง",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51668085739408,
+          13.73772275267116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wat_mangkon",
+        "name": "Wat Mangkon",
+        "nameTh": "วัดมังกร",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5092,
+          13.7432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sam_yot",
+        "name": "Sam Yot",
+        "nameTh": "สามยอด",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5033156897627,
+          13.746822617344236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sanam_chai",
+        "name": "Sanam Chai",
+        "nameTh": "สนามไชย",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.49393910368792,
+          13.747465103485027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "itsaraphap",
+        "name": "Itsaraphap",
+        "nameTh": "อิสรภาพ",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.4865,
+          13.7401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_phai",
+        "name": "Bang Phai",
+        "nameTh": "บางไผ่",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.46566201011495,
+          13.724838826489233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_wa_blue",
+        "name": "Bang Wa",
+        "nameTh": "บางหว้า",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.45799853781006,
+          13.720656571961712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phetkasem_48",
+        "name": "Phetkasem 48",
+        "nameTh": "เพชรเกษม 48",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.45245757938272,
+          13.717715737473114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phasi_charoen",
+        "name": "Phasi Charoen",
+        "nameTh": "ภาษีเจริญ",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.44448016354266,
+          13.715132434330528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_khae",
+        "name": "Bang Khae",
+        "nameTh": "บางแค",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.43617035538523,
+          13.712839728992051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lak_song",
+        "name": "Lak Song",
+        "nameTh": "หลักสอง",
+        "lines": [
+          "blue"
+        ],
+        "colors": [
+          "#1F4490"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.42872347826358,
+          13.712494341378502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khlong_bang_phai",
+        "name": "Khlong Bang Phai",
+        "nameTh": "คลองบางไผ่",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.4083234957493,
+          13.894093054097482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "talad_bang_yai",
+        "name": "Talad Bang Yai",
+        "nameTh": "ตลาดบางใหญ่",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.40945337930162,
+          13.881653045618364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sam_yaek_bang_yai",
+        "name": "Sam Yaek Bang Yai",
+        "nameTh": "สามแยกบางใหญ่",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.41931360187476,
+          13.874839712344908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_phlu_purple",
+        "name": "Bang Phlu",
+        "nameTh": "บางพลู",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.43381153767297,
+          13.875843511822339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_rak_yai",
+        "name": "Bang Rak Yai",
+        "nameTh": "บางรักใหญ่",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.4454838797327,
+          13.876715006898891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_rak_noi_tha_it",
+        "name": "Bang Rak Noi Tha It",
+        "nameTh": "บางรักน้อย-ท่าอิฐ",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.4562753023913,
+          13.874768373952591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sai_ma",
+        "name": "Sai Ma",
+        "nameTh": "ไทรม้า",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.46669454281317,
+          13.870570942491867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phra_nang_klao_bridge",
+        "name": "Phra Nang Klao Bridge",
+        "nameTh": "สะพานพระนั่งเกล้า",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.48041163799411,
+          13.870662280822032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yaek_nonthaburi_1",
+        "name": "Yaek Nonthaburi 1",
+        "nameTh": "แยกนนทบุรี 1",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.49377870571988,
+          13.86605028924997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_krasor",
+        "name": "Bang Krasor",
+        "nameTh": "บางกระสอ",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.50439077136497,
+          13.861636752600674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nonthaburi_civic_purple",
+        "name": "Nonthaburi Civic Center",
+        "nameTh": "ศูนย์ราชการนนทบุรี",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51320061640916,
+          13.860162534932158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ministry_of_public_health",
+        "name": "Ministry of Public Health",
+        "nameTh": "กระทรวงสาธารณสุข",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51489695222284,
+          13.848891101394017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yaek_tiwanon",
+        "name": "Yaek Tiwanon",
+        "nameTh": "แยกติวานนท์",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51476382210848,
+          13.839782400066767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wong_sawang",
+        "name": "Wong Sawang",
+        "nameTh": "วงศ์สว่าง",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.52629800919823,
+          13.830166688086535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_son_purple",
+        "name": "Bang Son",
+        "nameTh": "บางซ่อน",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53185172903585,
+          13.81444818169146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "tao_poon_purple",
+        "name": "Tao Poon",
+        "nameTh": "เตาปูน",
+        "lines": [
+          "purple"
+        ],
+        "colors": [
+          "#7D3F98"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53070193253149,
+          13.80640766475284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phaya_thai_arl",
+        "name": "Phaya Thai",
+        "nameTh": "พญาไท",
+        "lines": [
+          "arl"
+        ],
+        "colors": [
+          "#B7282E"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53471866525058,
+          13.756779427290098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ratchaprarop",
+        "name": "Ratchaprarop",
+        "nameTh": "ราชปรารภ",
+        "lines": [
+          "arl"
+        ],
+        "colors": [
+          "#B7282E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54214006495818,
+          13.755082472979197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "makkasan",
+        "name": "Makkasan",
+        "nameTh": "มักกะสัน",
+        "lines": [
+          "arl"
+        ],
+        "colors": [
+          "#B7282E"
+        ],
+        "isInterchange": false,
+        "transferMin": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56046164522724,
+          13.751253358728391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ramkhamhaeng",
+        "name": "Ramkhamhaeng",
+        "nameTh": "รามคำแหง",
+        "lines": [
+          "arl"
+        ],
+        "colors": [
+          "#B7282E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60021790434826,
+          13.743010300679359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hua_mak_arl",
+        "name": "Hua Mak",
+        "nameTh": "หัวหมาก",
+        "lines": [
+          "arl"
+        ],
+        "colors": [
+          "#B7282E"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.64545266428468,
+          13.738015404832424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ban_thap_chang",
+        "name": "Ban Thap Chang",
+        "nameTh": "บ้านทับช้าง",
+        "lines": [
+          "arl"
+        ],
+        "colors": [
+          "#B7282E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.69050927401133,
+          13.732920820847895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lat_krabang",
+        "name": "Lat Krabang",
+        "nameTh": "ลาดกระบัง",
+        "lines": [
+          "arl"
+        ],
+        "colors": [
+          "#B7282E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.74859305739938,
+          13.727685142260611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "suvarnabhumi",
+        "name": "Suvarnabhumi",
+        "nameTh": "สุวรรณภูมิ",
+        "lines": [
+          "arl"
+        ],
+        "colors": [
+          "#B7282E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.75215209610008,
+          13.697762570177773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "krung_thep_aphiwat_dark_red",
+        "name": "Krung Thep Aphiwat Central",
+        "nameTh": "กลางกรุงเทพอภิวัฒน์",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54221357981254,
+          13.803763327458228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chatuchak_dark_red",
+        "name": "Chatuchak",
+        "nameTh": "จตุจักร",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5493815656198,
+          13.826500944128384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wat_samian_nari",
+        "name": "Wat Samian Nari",
+        "nameTh": "วัดเสมียนนารี",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.55759891054498,
+          13.841708502179003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_khen_dark_red",
+        "name": "Bang Khen",
+        "nameTh": "บางเขน",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56065949179856,
+          13.847032199839191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "thung_song_hong",
+        "name": "Thung Song Hong",
+        "nameTh": "ทุ่งสองห้อง",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56741350068398,
+          13.860092807526698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lak_si_dark_red",
+        "name": "Lak Si",
+        "nameTh": "หลักสี่",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.58113064387823,
+          13.884893185969759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kan_kheha",
+        "name": "Kan Kheha",
+        "nameTh": "การเคหะ",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5889023944759,
+          13.898410636112956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "don_mueang",
+        "name": "Don Mueang",
+        "nameTh": "ดอนเมือง",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59788765681589,
+          13.914773198162294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lak_hok",
+        "name": "Lak Hok",
+        "nameTh": "หลักหก",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60539420481098,
+          13.965887957576797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rangsit",
+        "name": "Rangsit",
+        "nameTh": "รังสิต",
+        "lines": [
+          "dark_red"
+        ],
+        "colors": [
+          "#A91A1A"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6022986557764,
+          13.990231102203566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "krung_thep_aphiwat_light_red",
+        "name": "Krung Thep Aphiwat Central",
+        "nameTh": "กลางกรุงเทพอภิวัฒน์",
+        "lines": [
+          "light_red"
+        ],
+        "colors": [
+          "#F38FA9"
+        ],
+        "isInterchange": false,
+        "transferMin": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54217709853606,
+          13.803729130489458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_son_light_red",
+        "name": "Bang Son",
+        "nameTh": "บางซ่อน",
+        "lines": [
+          "light_red"
+        ],
+        "colors": [
+          "#F38FA9"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53401074299171,
+          13.821997480238082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_bamru",
+        "name": "Bang Bamru",
+        "nameTh": "บางบำหรุ",
+        "lines": [
+          "light_red"
+        ],
+        "colors": [
+          "#F38FA9"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.47767689962035,
+          13.792144094374109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "taling_chan",
+        "name": "Taling Chan",
+        "nameTh": "ตลิ่งชัน",
+        "lines": [
+          "light_red"
+        ],
+        "colors": [
+          "#F38FA9"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.44010751259424,
+          13.789419126420825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lat_phrao_yellow",
+        "name": "Lat Phrao",
+        "nameTh": "ลาดพร้าว",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57501537481755,
+          13.80524899887773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "phawana",
+        "name": "Phawana",
+        "nameTh": "ภาวนา",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.58424814886297,
+          13.800147768053193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chok_chai_4",
+        "name": "Chok Chai 4",
+        "nameTh": "โชคชัย 4",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.59435760704287,
+          13.79446548012136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lat_phrao_71",
+        "name": "Lat Phrao 71",
+        "nameTh": "ลาดพร้าว 71",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60710816028632,
+          13.787349592796431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lat_phrao_83",
+        "name": "Lat Phrao 83",
+        "nameTh": "ลาดพร้าว 83",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.61372199172592,
+          13.783653476077504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "mahat_thai",
+        "name": "Mahat Thai",
+        "nameTh": "มหาดไทย",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.62375670029081,
+          13.778070853520461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lat_phrao_101",
+        "name": "Lat Phrao 101",
+        "nameTh": "ลาดพร้าว 101",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.63030332313832,
+          13.774347200072782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_kapi",
+        "name": "Bang Kapi",
+        "nameTh": "บางกะปิ",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.63981230444466,
+          13.76899194408118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yaek_lam_sali",
+        "name": "Yaek Lam Sali",
+        "nameTh": "แยกลำสาลี",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6455992519115,
+          13.761909063772748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_kritha",
+        "name": "Si Kritha",
+        "nameTh": "ศรีกรีฑา",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.64491240770525,
+          13.750749673764744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "hua_mak_yellow",
+        "name": "Hua Mak",
+        "nameTh": "หัวหมาก",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.64116293875571,
+          13.736441657937675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "kalantan",
+        "name": "Kalantan",
+        "nameTh": "กลันตัน",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6417222220918,
+          13.72562651759705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_nut",
+        "name": "Si Nut",
+        "nameTh": "ศรีนุช",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.64418081470035,
+          13.711064313463652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "srinagarindra_38",
+        "name": "Srinagarindra 38",
+        "nameTh": "ศรีนครินทร์ 38",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.64661261869321,
+          13.70070052585426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "suan_luang_rama_9",
+        "name": "Suan Luang Rama IX",
+        "nameTh": "สวนหลวง ร.9",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.64714906037642,
+          13.69076666353159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_udom",
+        "name": "Si Udom",
+        "nameTh": "ศรีอุดม",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.64630410626978,
+          13.681841131249087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_iam",
+        "name": "Si Iam",
+        "nameTh": "ศรีเอี่ยม",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.646,
+          13.6722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_la_salle",
+        "name": "Si La Salle",
+        "nameTh": "ศรีลาซาล",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6420500292781,
+          13.656137938636817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_bearing",
+        "name": "Si Bearing",
+        "nameTh": "ศรีแบริ่ง",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.63761362884304,
+          13.646431427794568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_dan",
+        "name": "Si Dan",
+        "nameTh": "ศรีด่าน",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.63002186252459,
+          13.633247416825398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_thepha",
+        "name": "Si Thepha",
+        "nameTh": "ศรีเทพา",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.62274026620315,
+          13.630017190704663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "thipphawan",
+        "name": "Thipphawan",
+        "nameTh": "ทิพวัล",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60968122825273,
+          13.636683486537677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "samrong_yellow",
+        "name": "Samrong",
+        "nameTh": "สำโรง",
+        "lines": [
+          "yellow"
+        ],
+        "colors": [
+          "#FFD324"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60095132357719,
+          13.659973886448995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nonthaburi_civic_pink",
+        "name": "Nonthaburi Civic Center",
+        "nameTh": "ศูนย์ราชการนนทบุรี",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51320061640916,
+          13.860162534932158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khae_rai",
+        "name": "Khae Rai",
+        "nameTh": "แคราย",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.52072116473619,
+          13.862497103715214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "sanambin_nam",
+        "name": "Sanambin Nam",
+        "nameTh": "สนามบินน้ำ",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51624208043376,
+          13.87419919911558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "samakkhi",
+        "name": "Samakkhi",
+        "nameTh": "สามัคคี",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51052179509418,
+          13.889292617140967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "royal_irrigation_dept",
+        "name": "Royal Irrigation Department",
+        "nameTh": "กรมชลประทาน",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.50700299531411,
+          13.89862752972283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yaek_pak_kret",
+        "name": "Yaek Pak Kret",
+        "nameTh": "แยกปากเกร็ด",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.50553984783721,
+          13.906460809594847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "pak_kret_bypass",
+        "name": "Pak Kret Bypass",
+        "nameTh": "เลี่ยงเมืองปากเกร็ด",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51582322585125,
+          13.90647304923614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chaeng_watthana_pak_kret_28",
+        "name": "Chaeng Watthana-Pak Kret 28",
+        "nameTh": "แจ้งวัฒนะ-ปากเกร็ด 28",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.52922566403458,
+          13.90416561829528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "si_rat",
+        "name": "Si Rat",
+        "nameTh": "ศรีรัช",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.53980853558534,
+          13.900485158461024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "muang_thong_thani",
+        "name": "Muang Thong Thani",
+        "nameTh": "เมืองทองธานี",
+        "lines": [
+          "pink",
+          "pink_mt"
+        ],
+        "colors": [
+          "#E6007E",
+          "#E6007E"
+        ],
+        "isInterchange": true,
+        "transferMin": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54821533118997,
+          13.897433743551673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "chaeng_watthana_14",
+        "name": "Chaeng Watthana 14",
+        "nameTh": "แจ้งวัฒนะ 14",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56016842118356,
+          13.8933240193672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "government_complex",
+        "name": "Government Complex",
+        "nameTh": "ศูนย์ราชการเฉลิมพระเกียรติ",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56733342919551,
+          13.890712293074387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "national_telecom",
+        "name": "National Telecom",
+        "nameTh": "โทรคมนาคมแห่งชาติ",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.57581323193517,
+          13.88744620552393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lak_si_pink",
+        "name": "Lak Si",
+        "nameTh": "หลักสี่",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.58116461814797,
+          13.884850381998547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "rajabhat_phranakhon",
+        "name": "Rajabhat Phranakhon",
+        "nameTh": "ราชภัฏพระนคร",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.58942793386512,
+          13.879817676247157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "wat_phra_sri_mahathat_pink",
+        "name": "Wat Phra Sri Mahathat",
+        "nameTh": "วัดพระศรีมหาธาตุ",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 3.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5967,
+          13.8752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ram_inthra_3",
+        "name": "Ram Inthra 3",
+        "nameTh": "รามอินทรา 3",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.60285326845451,
+          13.870798974674486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lat_pla_khao",
+        "name": "Lat Pla Khao",
+        "nameTh": "ลาดปลาเค้า",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6180500231709,
+          13.862663627636834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ram_inthra_kor_mor_4",
+        "name": "Ram Inthra Kor Mor 4",
+        "nameTh": "รามอินทรา ก.ม.4",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.62614728491667,
+          13.858170065241865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "maiyalap",
+        "name": "Maiyalap",
+        "nameTh": "มัยลาภ",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6322443938356,
+          13.855024611197507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "vacharaphol",
+        "name": "Vacharaphol",
+        "nameTh": "วัชรพล",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6414812283843,
+          13.849958957208486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ram_inthra_kor_mor_6",
+        "name": "Ram Inthra Kor Mor 6",
+        "nameTh": "รามอินทรา ก.ม.6",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.65041283369487,
+          13.845036607850062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "khu_bon",
+        "name": "Khu Bon",
+        "nameTh": "คู้บอน",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.65898383613813,
+          13.840504018041315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ram_inthra_kor_mor_9",
+        "name": "Ram Inthra Kor Mor 9",
+        "nameTh": "รามอินทรา ก.ม.9",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.66747936671925,
+          13.83376806785138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "outer_ring_road_ram_inthra",
+        "name": "Outer Ring Road - Ram Inthra",
+        "nameTh": "วงแหวนรามอินทรา",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.67703583850658,
+          13.82471592254116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "nopparat",
+        "name": "Nopparat",
+        "nameTh": "นพรัตน์",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.68556630697543,
+          13.81672932517985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "bang_chan",
+        "name": "Bang Chan",
+        "nameTh": "บางชัน",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.70348162627795,
+          13.812683961174884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "setthabutbamphen",
+        "name": "Setthabutbamphen",
+        "nameTh": "เศรษฐบุตรบำเพ็ญ",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.71343112819295,
+          13.812572659884282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "min_buri_market",
+        "name": "Min Buri Market",
+        "nameTh": "ตลาดมีนบุรี",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.72541848803093,
+          13.812492349769073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "min_buri",
+        "name": "Min Buri",
+        "nameTh": "มีนบุรี",
+        "lines": [
+          "pink"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.73246914261165,
+          13.808472711940269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "impact_muang_thong",
+        "name": "Impact Muang Thong Thani",
+        "nameTh": "อิมแพ็ค เมืองทองธานี",
+        "lines": [
+          "pink_mt"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5441487648344,
+          13.91052656707565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "lake_muang_thong",
+        "name": "Lake Muang Thong Thani",
+        "nameTh": "ทะเลสาบเมืองทองธานี",
+        "lines": [
+          "pink_mt"
+        ],
+        "colors": [
+          "#E6007E"
+        ],
+        "isInterchange": false,
+        "transferMin": 1.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.54559530395977,
+          13.918097277145407
+        ]
+      }
+    }
+  ]
+}

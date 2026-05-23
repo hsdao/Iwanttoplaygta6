@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.local
+
+# Binary documents — share separately (Drive/Zalo)
+*.docx
+*.pdf
+~$*
+
+# OS & editor
+.DS_Store
+.vscode/
+.idea/
+.claude/
+
+# Python venv
+venv/
+.venv/
