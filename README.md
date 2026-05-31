@@ -29,7 +29,7 @@ Mở trình duyệt: [http://localhost:5000](http://localhost:5000)
 | Tính giá vé | Tự động tính giá theo từng nhà khai thác (BTS / MRT / ARL / SRT) |
 | Giờ khởi hành | Chọn giờ + phút cụ thể, tự động điều chỉnh thời gian chờ theo khung giờ |
 | Ước tính giờ đến | Hiển thị giờ đến dự kiến sau khi tìm đường |
-| Xử lý vượt khung giờ | Tính lại thời gian chờ đúng nếu hành trình vượt qua 9:00 / 17:00 / 20:00 |
+| Xử lý vượt khung giờ | Tính lại thời gian chờ đúng nếu hành trình vượt qua 6:00 / 9:00 / 17:00 / 20:00 |
 | Admin panel | Chặn đoạn tuyến / đóng ga để mô phỏng bảo trì |
 
 ---
@@ -59,7 +59,8 @@ metro_simple/
 | MRT Blue Line | `blue` | 17–45 ฿ |
 | MRT Purple Line | `purple` | 14–42 ฿ |
 | MRT Yellow Line | `yellow` | 15–45 ฿ |
-| MRT Pink Line | `pink` / `pink_mt` | 15–45 ฿ |
+| MRT Pink Line | `pink` | 15–45 ฿ |
+| MRT Pink Line (Muang Thong Spur) | `pink_mt` | 15–45 ฿ |
 | Airport Rail Link | `arl` | 15–45 ฿ |
 | SRT Dark Red | `dark_red` | 14–42 ฿ |
 | SRT Light Red | `light_red` | 14–42 ฿ |
