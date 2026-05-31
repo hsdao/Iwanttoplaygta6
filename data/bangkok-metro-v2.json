@@ -338,7 +338,7 @@
       "id": "samrong_bts",
       "name": "Samrong",
       "nameTh": "สำโรง",
-      "lat": 13.64650,
+      "lat": 13.6465,
       "lng": 100.59584
     },
     {
@@ -3655,11 +3655,11 @@
         },
         {
           "lineId": "silom",
-          "initialWaitMin": 1.5
+          "initialWaitMin": 2.0
         },
         {
           "lineId": "gold",
-          "initialWaitMin": 2.5
+          "initialWaitMin": 5.0
         },
         {
           "lineId": "blue",
@@ -3675,7 +3675,7 @@
         },
         {
           "lineId": "dark_red",
-          "initialWaitMin": 6.0
+          "initialWaitMin": 7.5
         },
         {
           "lineId": "light_red",
@@ -3691,7 +3691,7 @@
         },
         {
           "lineId": "pink_mt",
-          "initialWaitMin": 4.0
+          "initialWaitMin": 3.0
         }
       ]
     },
@@ -3702,7 +3702,7 @@
       "waitTimes": [
         {
           "lineId": "sukhumvit",
-          "initialWaitMin": 2.5
+          "initialWaitMin": 3.5
         },
         {
           "lineId": "silom",
@@ -3710,7 +3710,7 @@
         },
         {
           "lineId": "gold",
-          "initialWaitMin": 3.5
+          "initialWaitMin": 5.0
         },
         {
           "lineId": "blue",
@@ -3726,7 +3726,7 @@
         },
         {
           "lineId": "dark_red",
-          "initialWaitMin": 8.5
+          "initialWaitMin": 10.0
         },
         {
           "lineId": "light_red",
@@ -3742,7 +3742,7 @@
         },
         {
           "lineId": "pink_mt",
-          "initialWaitMin": 6.5
+          "initialWaitMin": 5.0
         }
       ]
     },
@@ -3757,11 +3757,11 @@
         },
         {
           "lineId": "silom",
-          "initialWaitMin": 1.5
+          "initialWaitMin": 2.0
         },
         {
           "lineId": "gold",
-          "initialWaitMin": 2.5
+          "initialWaitMin": 5.0
         },
         {
           "lineId": "blue",
@@ -3777,7 +3777,7 @@
         },
         {
           "lineId": "dark_red",
-          "initialWaitMin": 6.0
+          "initialWaitMin": 7.5
         },
         {
           "lineId": "light_red",
@@ -3793,7 +3793,7 @@
         },
         {
           "lineId": "pink_mt",
-          "initialWaitMin": 4.0
+          "initialWaitMin": 3.5
         }
       ]
     },
@@ -3808,19 +3808,19 @@
         },
         {
           "lineId": "silom",
-          "initialWaitMin": 4.0
+          "initialWaitMin": 3.5
         },
         {
           "lineId": "gold",
-          "initialWaitMin": 5.0
+          "initialWaitMin": 6.0
         },
         {
           "lineId": "blue",
-          "initialWaitMin": 4.5
+          "initialWaitMin": 3.5
         },
         {
           "lineId": "purple",
-          "initialWaitMin": 5.0
+          "initialWaitMin": 4.5
         },
         {
           "lineId": "arl",
@@ -3832,7 +3832,7 @@
         },
         {
           "lineId": "light_red",
-          "initialWaitMin": 13.5
+          "initialWaitMin": 10.0
         },
         {
           "lineId": "yellow",
@@ -3844,7 +3844,7 @@
         },
         {
           "lineId": "pink_mt",
-          "initialWaitMin": 7.5
+          "initialWaitMin": 5.0
         }
       ]
     }
