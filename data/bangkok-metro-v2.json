@@ -3651,31 +3651,31 @@
       "waitTimes": [
         {
           "lineId": "sukhumvit",
-          "initialWaitMin": 1.5
+          "initialWaitMin": 2.6
         },
         {
           "lineId": "silom",
-          "initialWaitMin": 2.0
+          "initialWaitMin": 2.3
         },
         {
           "lineId": "gold",
-          "initialWaitMin": 5.0
+          "initialWaitMin": 4.5
         },
         {
           "lineId": "blue",
-          "initialWaitMin": 2.0
-        },
-        {
-          "lineId": "purple",
           "initialWaitMin": 2.5
         },
         {
+          "lineId": "purple",
+          "initialWaitMin": 2.7
+        },
+        {
           "lineId": "arl",
-          "initialWaitMin": 5.0
+          "initialWaitMin": 5.3
         },
         {
           "lineId": "dark_red",
-          "initialWaitMin": 7.5
+          "initialWaitMin": 7.3
         },
         {
           "lineId": "light_red",
@@ -3683,15 +3683,15 @@
         },
         {
           "lineId": "yellow",
-          "initialWaitMin": 2.5
+          "initialWaitMin": 3.3
         },
         {
           "lineId": "pink",
-          "initialWaitMin": 2.5
+          "initialWaitMin": 3.3
         },
         {
           "lineId": "pink_mt",
-          "initialWaitMin": 3.0
+          "initialWaitMin": 3.7
         }
       ]
     },
@@ -3702,7 +3702,7 @@
       "waitTimes": [
         {
           "lineId": "sukhumvit",
-          "initialWaitMin": 3.5
+          "initialWaitMin": 3.1
         },
         {
           "lineId": "silom",
@@ -3710,19 +3710,19 @@
         },
         {
           "lineId": "gold",
-          "initialWaitMin": 5.0
+          "initialWaitMin": 5.4
         },
         {
           "lineId": "blue",
-          "initialWaitMin": 3.0
+          "initialWaitMin": 3.2
         },
         {
           "lineId": "purple",
-          "initialWaitMin": 4.0
+          "initialWaitMin": 4.2
         },
         {
           "lineId": "arl",
-          "initialWaitMin": 6.0
+          "initialWaitMin": 6.1
         },
         {
           "lineId": "dark_red",
@@ -3738,7 +3738,7 @@
         },
         {
           "lineId": "pink",
-          "initialWaitMin": 5.0
+          "initialWaitMin": 4.8
         },
         {
           "lineId": "pink_mt",
@@ -3753,11 +3753,11 @@
       "waitTimes": [
         {
           "lineId": "sukhumvit",
-          "initialWaitMin": 1.5
+          "initialWaitMin": 2.7
         },
         {
           "lineId": "silom",
-          "initialWaitMin": 2.0
+          "initialWaitMin": 1.9
         },
         {
           "lineId": "gold",
@@ -3765,19 +3765,19 @@
         },
         {
           "lineId": "blue",
-          "initialWaitMin": 2.0
+          "initialWaitMin": 1.9
         },
         {
           "lineId": "purple",
-          "initialWaitMin": 2.5
+          "initialWaitMin": 2.4
         },
         {
           "lineId": "arl",
-          "initialWaitMin": 5.0
+          "initialWaitMin": 5.3
         },
         {
           "lineId": "dark_red",
-          "initialWaitMin": 7.5
+          "initialWaitMin": 7.3
         },
         {
           "lineId": "light_red",
@@ -3789,11 +3789,11 @@
         },
         {
           "lineId": "pink",
-          "initialWaitMin": 2.5
+          "initialWaitMin": 2.9
         },
         {
           "lineId": "pink_mt",
-          "initialWaitMin": 3.5
+          "initialWaitMin": 3.3
         }
       ]
     },
@@ -3804,7 +3804,7 @@
       "waitTimes": [
         {
           "lineId": "sukhumvit",
-          "initialWaitMin": 3.5
+          "initialWaitMin": 3.3
         },
         {
           "lineId": "silom",
@@ -3816,19 +3816,19 @@
         },
         {
           "lineId": "blue",
-          "initialWaitMin": 3.5
+          "initialWaitMin": 3.4
         },
         {
           "lineId": "purple",
-          "initialWaitMin": 4.5
+          "initialWaitMin": 4.4
         },
         {
           "lineId": "arl",
-          "initialWaitMin": 6.5
+          "initialWaitMin": 6.3
         },
         {
           "lineId": "dark_red",
-          "initialWaitMin": 11.0
+          "initialWaitMin": 10.0
         },
         {
           "lineId": "light_red",
