@@ -60,6 +60,12 @@ STATION_LINES: dict[str, list[str]] = {}
 for sl in DATA["stationLines"]:
     STATION_LINES.setdefault(sl["stationId"], []).append(sl["lineId"])
 
+# (lineId, fromStation, toStation) -> distanceKm  (bidirectional)
+SEG_DIST: dict[tuple, float] = {}
+for _seg in SEGMENTS:
+    SEG_DIST[(_seg["lineId"], _seg["fromStation"], _seg["toStation"])] = _seg["distanceKm"]
+    SEG_DIST[(_seg["lineId"], _seg["toStation"], _seg["fromStation"])] = _seg["distanceKm"]
+
 # In-memory block rules: {(lineId, fromStation, toStation): reason_str}
 BLOCKED: dict[tuple, str] = {}
 # In-memory closed stations: {stationId: reason_str}
@@ -348,8 +354,9 @@ def build_legs(path, from_lat, from_lon, to_lat, to_lon, walk_speed_kmh=5.0, wai
     # ── Walking leg to first station ──────────────────────────
     first_sid, first_lid = path[0].split(":", 1)
     first_st = STATIONS[first_sid]
-    walk_dist = haversine_km(from_lat, from_lon, first_st["lat"], first_st["lng"]) * 1.35
+    walk_dist = haversine_km(from_lat, from_lon, first_st["lat"], first_st["lng"])
     walk_min  = walk_dist / walk_speed_kmh * 60
+    first_wait = (waits or {}).get(first_lid, 0)
     add_name(first_sid)
     legs.append({
         "type":        "walk",
@@ -357,7 +364,8 @@ def build_legs(path, from_lat, from_lon, to_lat, to_lon, walk_speed_kmh=5.0, wai
         "from_lon":    from_lon,
         "to_station":  first_sid,
         "distance_km": round(walk_dist, 3),
-        "minutes":     round(walk_min, 1),
+        "minutes":     round(walk_min + first_wait, 1),
+        "boarding_wait": first_wait,
     })
 
     # ── Train / transfer legs ─────────────────────────────────
@@ -373,11 +381,14 @@ def build_legs(path, from_lat, from_lon, to_lat, to_lon, walk_speed_kmh=5.0, wai
             return
         lid   = current_line
         color = LINES[lid]["color"]
-        mins  = current_wait  # boarding wait counted once
+        mins  = 0
         for i in range(len(current_train) - 1):
-            sa = STATIONS[current_train[i]]
-            sb = STATIONS[current_train[i + 1]]
-            d  = haversine_km(sa["lat"], sa["lng"], sb["lat"], sb["lng"])
+            sa_id = current_train[i]
+            sb_id = current_train[i + 1]
+            sa = STATIONS[sa_id]
+            sb = STATIONS[sb_id]
+            d = SEG_DIST.get((lid, sa_id, sb_id),
+                             haversine_km(sa["lat"], sa["lng"], sb["lat"], sb["lng"]))
             mins += d / LINES[lid]["speedKmh"] * 60
         legs.append({
             "type":         "train",
@@ -415,7 +426,7 @@ def build_legs(path, from_lat, from_lon, to_lat, to_lon, walk_speed_kmh=5.0, wai
                 "to_line_name": LINES[lid]["name"],
                 "from_color":   LINES[prev_lid]["color"],
                 "to_color":     LINES[lid]["color"],
-                "minutes":      3.0 if prev_sid == sid else 5.0,
+                "minutes":      (3.0 if prev_sid == sid else 5.0) + waits.get(lid, 0),
             })
 
         prev_sid = sid
@@ -426,7 +437,7 @@ def build_legs(path, from_lat, from_lon, to_lat, to_lon, walk_speed_kmh=5.0, wai
     # ── Walking leg from last station ─────────────────────────
     last_sid = path[-1].split(":")[0]
     last_st  = STATIONS[last_sid]
-    walk_dist2 = haversine_km(last_st["lat"], last_st["lng"], to_lat, to_lon) * 1.35
+    walk_dist2 = haversine_km(last_st["lat"], last_st["lng"], to_lat, to_lon)
     walk_min2  = walk_dist2 / walk_speed_kmh * 60
     add_name(last_sid)
     legs.append({
@@ -456,15 +467,19 @@ def adjust_waits_for_time(legs: list, dep_hour: int, dep_minute: int = 0) -> Non
     correct schedulePeriod for the actual boarding time.
     """
     elapsed = dep_hour * 60 + dep_minute
-    for leg in legs:
+    for i, leg in enumerate(legs):
         if leg["type"] == "train":
             actual_hour = (elapsed // 60) % 24
             correct_wait = get_wait_times(actual_hour).get(leg["line_id"], 5)
             old_wait = leg["boarding_wait"]
             diff = correct_wait - old_wait
             if diff:
-                leg["minutes"] = round(leg["minutes"] + diff, 1)
                 leg["boarding_wait"] = correct_wait
+                prev = legs[i - 1] if i > 0 else None
+                if prev and prev["type"] in ("transfer", "walk"):
+                    prev["minutes"] = round(prev["minutes"] + diff, 1)
+                    if "boarding_wait" in prev:
+                        prev["boarding_wait"] = round(prev.get("boarding_wait", 0) + diff, 1)
         elapsed += leg["minutes"]
 
 
@@ -527,7 +542,7 @@ def find_path():
     waits = get_wait_times(hour)
 
     # Enter graph at every non-excluded line at the start station
-    start_walk_min = start_dist * 1.35 / walk_speed * 60
+    start_walk_min = start_dist / walk_speed * 60
     start_nodes = [
         (start_walk_min + waits.get(lid, 5), f"{start_sid}:{lid}")
         for lid in STATION_LINES.get(start_sid, [])
@@ -557,7 +572,7 @@ def find_path():
             trial, trial_g = astar(graph, start_nodes, {sid}, to_lat, to_lon)
             if trial is not None:
                 path, total_min_g = trial, trial_g
-                fallback_walk_km = round(d_km * 1.35, 2)
+                fallback_walk_km = round(d_km, 2)
                 break
 
     if path is None:
