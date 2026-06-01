@@ -4,67 +4,67 @@
       "id": "sukhumvit",
       "name": "BTS Sukhumvit Line",
       "color": "#9ACA3C",
-      "speedKmh": 50
+      "speedKmh": 32.487
     },
     {
       "id": "silom",
       "name": "BTS Silom Line",
       "color": "#006D38",
-      "speedKmh": 50
+      "speedKmh": 31.55
     },
     {
       "id": "gold",
       "name": "Gold Line",
       "color": "#C9A227",
-      "speedKmh": 25
+      "speedKmh": 20.5
     },
     {
       "id": "blue",
       "name": "MRT Blue Line",
       "color": "#1F4490",
-      "speedKmh": 45
+      "speedKmh": 40.987
     },
     {
       "id": "purple",
       "name": "MRT Purple Line",
       "color": "#7D3F98",
-      "speedKmh": 50
+      "speedKmh": 35.385
     },
     {
       "id": "arl",
       "name": "Airport Rail Link",
       "color": "#B7282E",
-      "speedKmh": 90
+      "speedKmh": 89.994
     },
     {
       "id": "dark_red",
       "name": "SRT Dark Red Line",
       "color": "#A91A1A",
-      "speedKmh": 80
+      "speedKmh": 52.222
     },
     {
       "id": "light_red",
       "name": "SRT Light Red Line",
       "color": "#F38FA9",
-      "speedKmh": 70
+      "speedKmh": 47.5
     },
     {
       "id": "yellow",
       "name": "MRT Yellow Line",
       "color": "#FFD324",
-      "speedKmh": 35
+      "speedKmh": 34.636
     },
     {
       "id": "pink",
       "name": "MRT Pink Line",
       "color": "#E6007E",
-      "speedKmh": 35
+      "speedKmh": 29.431
     },
     {
       "id": "pink_mt",
       "name": "MRT Pink Line (Muang Thong Spur)",
       "color": "#E6007E",
-      "speedKmh": 35
+      "speedKmh": 30.0
     }
   ],
   "stations": [
@@ -2414,283 +2414,330 @@
       "lineId": "sukhumvit",
       "fromStation": "khu_khot",
       "toStation": "yaek_kor_por_aor",
-      "distanceKm": 2.309
+      "distanceKm": 2.5,
+      "speedKmh": 50.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "yaek_kor_por_aor",
       "toStation": "royal_thai_air_force_museum",
-      "distanceKm": 0.712
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "royal_thai_air_force_museum",
       "toStation": "bhumibol_adulyadej_hospital",
-      "distanceKm": 0.607
+      "distanceKm": 0.95,
+      "speedKmh": 28.5
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "bhumibol_adulyadej_hospital",
       "toStation": "saphan_mai",
-      "distanceKm": 1.963
+      "distanceKm": 1.7,
+      "speedKmh": 51.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "saphan_mai",
       "toStation": "sai_yud",
-      "distanceKm": 1.807
+      "distanceKm": 0.95,
+      "speedKmh": 28.5
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "sai_yud",
       "toStation": "phahon_yothin_59",
-      "distanceKm": 1.814
+      "distanceKm": 0.6,
+      "speedKmh": 36.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "phahon_yothin_59",
       "toStation": "wat_phra_sri_mahathat_bts",
-      "distanceKm": 0.907
+      "distanceKm": 0.9,
+      "speedKmh": 18.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "wat_phra_sri_mahathat_bts",
       "toStation": "infantry_regiment_11",
-      "distanceKm": 0.998
+      "distanceKm": 0.9,
+      "speedKmh": 10.8
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "infantry_regiment_11",
       "toStation": "bang_bua",
-      "distanceKm": 1.477
+      "distanceKm": 1.4,
+      "speedKmh": 28.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "bang_bua",
       "toStation": "royal_forest_department",
-      "distanceKm": 0.0
+      "distanceKm": 0.6,
+      "speedKmh": 18.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "royal_forest_department",
       "toStation": "kasetsart_university",
-      "distanceKm": 1.758
+      "distanceKm": 0.85,
+      "speedKmh": 25.5
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "kasetsart_university",
       "toStation": "sena_nikhom",
-      "distanceKm": 0.757
+      "distanceKm": 0.85,
+      "speedKmh": 25.5
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "sena_nikhom",
       "toStation": "ratchayothin",
-      "distanceKm": 0.852
+      "distanceKm": 0.85,
+      "speedKmh": 25.5
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "ratchayothin",
       "toStation": "phahon_yothin_24",
-      "distanceKm": 0.72
+      "distanceKm": 0.55,
+      "speedKmh": 16.5
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "phahon_yothin_24",
       "toStation": "ha_yaek_lat_phrao",
-      "distanceKm": 0.953
+      "distanceKm": 0.95,
+      "speedKmh": 28.5
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "ha_yaek_lat_phrao",
       "toStation": "mo_chit",
-      "distanceKm": 1.8
+      "distanceKm": 1.7,
+      "speedKmh": 34.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "mo_chit",
       "toStation": "saphan_khwai",
-      "distanceKm": 1.121
+      "distanceKm": 1.1,
+      "speedKmh": 22.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "saphan_khwai",
       "toStation": "ari",
-      "distanceKm": 1.663
+      "distanceKm": 1.5,
+      "speedKmh": 45.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "ari",
       "toStation": "sanam_pao",
-      "distanceKm": 0.834
+      "distanceKm": 0.7,
+      "speedKmh": 42.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "sanam_pao",
       "toStation": "victory_monument",
-      "distanceKm": 1.223
+      "distanceKm": 1.3,
+      "speedKmh": 39.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "victory_monument",
       "toStation": "phaya_thai_bts",
-      "distanceKm": 0.742
+      "distanceKm": 0.7,
+      "speedKmh": 42.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "phaya_thai_bts",
       "toStation": "ratchathewi",
-      "distanceKm": 0.618
+      "distanceKm": 0.6,
+      "speedKmh": 18.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "ratchathewi",
       "toStation": "siam",
-      "distanceKm": 0.751
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "siam",
       "toStation": "chit_lom",
-      "distanceKm": 0.979
+      "distanceKm": 0.75,
+      "speedKmh": 45.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "chit_lom",
       "toStation": "phloen_chit",
-      "distanceKm": 0.648
+      "distanceKm": 0.6,
+      "speedKmh": 36.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "phloen_chit",
       "toStation": "nana",
-      "distanceKm": 0.752
+      "distanceKm": 0.7,
+      "speedKmh": 42.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "nana",
       "toStation": "asok",
-      "distanceKm": 0.659
+      "distanceKm": 0.7,
+      "speedKmh": 21.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "asok",
       "toStation": "phrom_phong",
-      "distanceKm": 1.25
+      "distanceKm": 1.5,
+      "speedKmh": 45.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "phrom_phong",
       "toStation": "thong_lo",
-      "distanceKm": 1.174
+      "distanceKm": 1.2,
+      "speedKmh": 36.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "thong_lo",
       "toStation": "ekkamai",
-      "distanceKm": 0.884
+      "distanceKm": 0.8,
+      "speedKmh": 24.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "ekkamai",
       "toStation": "phra_khanong",
-      "distanceKm": 0.821
+      "distanceKm": 0.8,
+      "speedKmh": 24.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "phra_khanong",
       "toStation": "on_nut",
-      "distanceKm": 1.497
+      "distanceKm": 1.6,
+      "speedKmh": 96.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "on_nut",
       "toStation": "bang_chak",
-      "distanceKm": 1.091
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "bang_chak",
       "toStation": "punnawithi",
-      "distanceKm": 0.921
+      "distanceKm": 0.85,
+      "speedKmh": 17.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "punnawithi",
       "toStation": "udom_suk",
-      "distanceKm": 1.047
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "udom_suk",
       "toStation": "bang_na",
-      "distanceKm": 1.405
+      "distanceKm": 1.2,
+      "speedKmh": 36.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "bang_na",
       "toStation": "bearing",
-      "distanceKm": 0.833
+      "distanceKm": 0.7,
+      "speedKmh": 21.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "bearing",
       "toStation": "samrong_bts",
-      "distanceKm": 0.0
+      "distanceKm": 1.8,
+      "speedKmh": 21.6
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "samrong_bts",
       "toStation": "pu_chao",
-      "distanceKm": 0.0
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "pu_chao",
       "toStation": "chang_erawan",
-      "distanceKm": 0.0
+      "distanceKm": 1.8,
+      "speedKmh": 36.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "chang_erawan",
       "toStation": "royal_thai_naval_academy",
-      "distanceKm": 2.857
+      "distanceKm": 1.4,
+      "speedKmh": 42.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "royal_thai_naval_academy",
       "toStation": "pak_nam",
-      "distanceKm": 1.934
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "pak_nam",
       "toStation": "srinagarindra_bts",
-      "distanceKm": 0.0
+      "distanceKm": 1.8,
+      "speedKmh": 36.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "srinagarindra_bts",
       "toStation": "phraek_sa",
-      "distanceKm": 1.755
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "phraek_sa",
       "toStation": "sai_luat",
-      "distanceKm": 0.0
+      "distanceKm": 0.75,
+      "speedKmh": 22.5
     },
     {
       "lineId": "sukhumvit",
       "fromStation": "sai_luat",
       "toStation": "kheha",
-      "distanceKm": 1.553
+      "distanceKm": 1.0,
+      "speedKmh": 60.0
     },
     {
       "lineId": "silom",
       "fromStation": "national_stadium",
       "toStation": "siam",
-      "distanceKm": 0.563
+      "distanceKm": 0.5,
+      "speedKmh": 30.0
     },
     {
       "lineId": "silom",
@@ -2708,7 +2755,8 @@
       "lineId": "silom",
       "fromStation": "sala_daeng",
       "toStation": "chong_nonsi",
-      "distanceKm": 0.758
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "silom",
@@ -2738,307 +2786,358 @@
       "lineId": "silom",
       "fromStation": "krung_thon_buri_bts",
       "toStation": "wongwian_yai",
-      "distanceKm": 2.075
+      "distanceKm": 0.7,
+      "speedKmh": 42.0
     },
     {
       "lineId": "silom",
       "fromStation": "wongwian_yai",
       "toStation": "pho_nimit",
-      "distanceKm": 0.243
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "silom",
       "fromStation": "pho_nimit",
       "toStation": "talat_phlu",
-      "distanceKm": 1.014
+      "distanceKm": 0.85,
+      "speedKmh": 25.5
     },
     {
       "lineId": "silom",
       "fromStation": "talat_phlu",
       "toStation": "wutthakat",
-      "distanceKm": 1.147
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "silom",
       "fromStation": "wutthakat",
       "toStation": "bang_wa_bts",
-      "distanceKm": 0.0
+      "distanceKm": 1.9,
+      "speedKmh": 57.0
     },
     {
       "lineId": "gold",
       "fromStation": "krung_thon_buri_gold",
       "toStation": "charoen_nakhon_iconsiam",
-      "distanceKm": 1.017
+      "distanceKm": 1.3,
+      "speedKmh": 26.0
     },
     {
       "lineId": "gold",
       "fromStation": "charoen_nakhon_iconsiam",
       "toStation": "khlong_san",
-      "distanceKm": 0.452
+      "distanceKm": 0.5,
+      "speedKmh": 15.0
     },
     {
       "lineId": "blue",
       "fromStation": "tha_phra",
       "toStation": "charan_13",
-      "distanceKm": 1.256
+      "distanceKm": 1.2,
+      "speedKmh": 36.0
     },
     {
       "lineId": "blue",
       "fromStation": "charan_13",
       "toStation": "fai_chai",
-      "distanceKm": 1.744
+      "distanceKm": 1.7,
+      "speedKmh": 51.0
     },
     {
       "lineId": "blue",
       "fromStation": "fai_chai",
       "toStation": "bang_khun_non",
-      "distanceKm": 0.94
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_khun_non",
       "toStation": "bang_yi_khan",
-      "distanceKm": 2.028
+      "distanceKm": 1.8,
+      "speedKmh": 108.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_yi_khan",
       "toStation": "sirindhorn",
-      "distanceKm": 1.132
+      "distanceKm": 1.0,
+      "speedKmh": 60.0
     },
     {
       "lineId": "blue",
       "fromStation": "sirindhorn",
       "toStation": "bang_phlat",
-      "distanceKm": 1.569
+      "distanceKm": 1.6,
+      "speedKmh": 48.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_phlat",
       "toStation": "bang_o",
-      "distanceKm": 0.902
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_o",
       "toStation": "bang_pho",
-      "distanceKm": 1.466
+      "distanceKm": 1.6,
+      "speedKmh": 96.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_pho",
       "toStation": "tao_poon_blue",
-      "distanceKm": 1.055
+      "distanceKm": 1.3,
+      "speedKmh": 39.0
     },
     {
       "lineId": "blue",
       "fromStation": "tao_poon_blue",
       "toStation": "bang_sue_blue",
-      "distanceKm": 0.509
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_sue_blue",
       "toStation": "kamphaeng_phet",
-      "distanceKm": 2.635
+      "distanceKm": 1.3,
+      "speedKmh": 78.0
     },
     {
       "lineId": "blue",
       "fromStation": "kamphaeng_phet",
       "toStation": "chatuchak_park",
-      "distanceKm": 0.279
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "blue",
       "fromStation": "chatuchak_park",
       "toStation": "phahon_yothin_blue",
-      "distanceKm": 1.458
+      "distanceKm": 1.8,
+      "speedKmh": 36.0
     },
     {
       "lineId": "blue",
       "fromStation": "phahon_yothin_blue",
       "toStation": "lat_phrao_blue",
-      "distanceKm": 2.149
+      "distanceKm": 1.8,
+      "speedKmh": 54.0
     },
     {
       "lineId": "blue",
       "fromStation": "lat_phrao_blue",
       "toStation": "ratchadaphisek",
-      "distanceKm": 0.891
+      "distanceKm": 0.85,
+      "speedKmh": 25.5
     },
     {
       "lineId": "blue",
       "fromStation": "ratchadaphisek",
       "toStation": "sutthisan",
-      "distanceKm": 1.056
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "blue",
       "fromStation": "sutthisan",
       "toStation": "huai_khwang",
-      "distanceKm": 1.202
+      "distanceKm": 1.3,
+      "speedKmh": 39.0
     },
     {
       "lineId": "blue",
       "fromStation": "huai_khwang",
       "toStation": "thailand_cultural_centre",
-      "distanceKm": 1.429
+      "distanceKm": 1.4,
+      "speedKmh": 42.0
     },
     {
       "lineId": "blue",
       "fromStation": "thailand_cultural_centre",
       "toStation": "phra_ram_9",
-      "distanceKm": 1.076
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "blue",
       "fromStation": "phra_ram_9",
       "toStation": "phetchaburi",
-      "distanceKm": 0.981
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "blue",
       "fromStation": "phetchaburi",
       "toStation": "sukhumvit_blue",
-      "distanceKm": 1.39
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "blue",
       "fromStation": "sukhumvit_blue",
       "toStation": "queen_sirikit",
-      "distanceKm": 1.599
+      "distanceKm": 1.7,
+      "speedKmh": 51.0
     },
     {
       "lineId": "blue",
       "fromStation": "queen_sirikit",
       "toStation": "khlong_toei",
-      "distanceKm": 0.602
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "blue",
       "fromStation": "khlong_toei",
       "toStation": "lumphini",
-      "distanceKm": 1.011
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "blue",
       "fromStation": "lumphini",
       "toStation": "si_lom",
-      "distanceKm": 1.017
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "blue",
       "fromStation": "si_lom",
       "toStation": "sam_yan",
-      "distanceKm": 0.815
+      "distanceKm": 0.85,
+      "speedKmh": 25.5
     },
     {
       "lineId": "blue",
       "fromStation": "sam_yan",
       "toStation": "hua_lamphong",
-      "distanceKm": 1.531
+      "distanceKm": 1.5,
+      "speedKmh": 45.0
     },
     {
       "lineId": "blue",
       "fromStation": "hua_lamphong",
       "toStation": "wat_mangkon",
-      "distanceKm": 0.935
+      "distanceKm": 0.85,
+      "speedKmh": 25.5
     },
     {
       "lineId": "blue",
       "fromStation": "wat_mangkon",
       "toStation": "sam_yot",
-      "distanceKm": 0.979
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "blue",
       "fromStation": "sam_yot",
       "toStation": "sanam_chai",
-      "distanceKm": 0.881
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "blue",
       "fromStation": "sanam_chai",
       "toStation": "itsaraphap",
-      "distanceKm": 1.182
+      "distanceKm": 0.7,
+      "speedKmh": 14.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_phai",
       "toStation": "bang_wa_blue",
-      "distanceKm": 1.706
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_wa_blue",
       "toStation": "phetkasem_48",
-      "distanceKm": 3.533
+      "distanceKm": 1.3,
+      "speedKmh": 39.0
     },
     {
       "lineId": "blue",
       "fromStation": "phetkasem_48",
       "toStation": "phasi_charoen",
-      "distanceKm": 1.355
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "blue",
       "fromStation": "phasi_charoen",
       "toStation": "bang_khae",
-      "distanceKm": 2.585
+      "distanceKm": 1.2,
+      "speedKmh": 36.0
     },
     {
       "lineId": "blue",
       "fromStation": "bang_khae",
       "toStation": "lak_song",
-      "distanceKm": 0.0
+      "distanceKm": 2.0,
+      "speedKmh": 60.0
     },
     {
       "lineId": "purple",
       "fromStation": "khlong_bang_phai",
       "toStation": "talad_bang_yai",
-      "distanceKm": 1.858
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "purple",
       "fromStation": "talad_bang_yai",
       "toStation": "sam_yaek_bang_yai",
-      "distanceKm": 1.639
+      "distanceKm": 1.4,
+      "speedKmh": 42.0
     },
     {
       "lineId": "purple",
       "fromStation": "sam_yaek_bang_yai",
       "toStation": "bang_phlu_purple",
-      "distanceKm": 1.527
+      "distanceKm": 1.2,
+      "speedKmh": 36.0
     },
     {
       "lineId": "purple",
       "fromStation": "bang_phlu_purple",
       "toStation": "bang_rak_yai",
-      "distanceKm": 1.383
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "purple",
       "fromStation": "bang_rak_yai",
       "toStation": "bang_rak_noi_tha_it",
-      "distanceKm": 2.874
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "purple",
       "fromStation": "bang_rak_noi_tha_it",
       "toStation": "sai_ma",
-      "distanceKm": 1.207
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "purple",
       "fromStation": "sai_ma",
       "toStation": "phra_nang_klao_bridge",
-      "distanceKm": 2.938
+      "distanceKm": 1.5,
+      "speedKmh": 45.0
     },
     {
       "lineId": "purple",
       "fromStation": "phra_nang_klao_bridge",
       "toStation": "yaek_nonthaburi_1",
-      "distanceKm": 2.442
+      "distanceKm": 1.7,
+      "speedKmh": 34.0
     },
     {
       "lineId": "purple",
@@ -3056,25 +3155,29 @@
       "lineId": "purple",
       "fromStation": "nonthaburi_civic_purple",
       "toStation": "ministry_of_public_health",
-      "distanceKm": 1.644
+      "distanceKm": 1.7,
+      "speedKmh": 34.0
     },
     {
       "lineId": "purple",
       "fromStation": "ministry_of_public_health",
       "toStation": "yaek_tiwanon",
-      "distanceKm": 1.264
+      "distanceKm": 0.8,
+      "speedKmh": 24.0
     },
     {
       "lineId": "purple",
       "fromStation": "yaek_tiwanon",
       "toStation": "wong_sawang",
-      "distanceKm": 0.0
+      "distanceKm": 1.4,
+      "speedKmh": 42.0
     },
     {
       "lineId": "purple",
       "fromStation": "wong_sawang",
       "toStation": "bang_son_purple",
-      "distanceKm": 1.558
+      "distanceKm": 1.5,
+      "speedKmh": 45.0
     },
     {
       "lineId": "purple",
@@ -3092,439 +3195,512 @@
       "lineId": "arl",
       "fromStation": "ratchaprarop",
       "toStation": "makkasan",
-      "distanceKm": 3.223
+      "distanceKm": 2.0,
+      "speedKmh": 40.0
     },
     {
       "lineId": "arl",
       "fromStation": "makkasan",
       "toStation": "ramkhamhaeng",
-      "distanceKm": 3.275
+      "distanceKm": 4.4,
+      "speedKmh": 208.37
     },
     {
       "lineId": "arl",
       "fromStation": "ramkhamhaeng",
       "toStation": "hua_mak_arl",
-      "distanceKm": 5.262
+      "distanceKm": 4.9,
+      "speedKmh": 73.5
     },
     {
       "lineId": "arl",
       "fromStation": "hua_mak_arl",
       "toStation": "ban_thap_chang",
-      "distanceKm": 3.885
+      "distanceKm": 5.0,
+      "speedKmh": 75.0
     },
     {
       "lineId": "arl",
       "fromStation": "ban_thap_chang",
       "toStation": "lat_krabang",
-      "distanceKm": 7.707
+      "distanceKm": 6.3,
+      "speedKmh": 75.6
     },
     {
       "lineId": "arl",
       "fromStation": "lat_krabang",
       "toStation": "suvarnabhumi",
-      "distanceKm": 4.227
+      "distanceKm": 4.5,
+      "speedKmh": 67.5
     },
     {
       "lineId": "dark_red",
       "fromStation": "krung_thep_aphiwat_dark_red",
       "toStation": "chatuchak_dark_red",
-      "distanceKm": 3.397
+      "distanceKm": 2.5,
+      "speedKmh": 50.0
     },
     {
       "lineId": "dark_red",
       "fromStation": "chatuchak_dark_red",
       "toStation": "wat_samian_nari",
-      "distanceKm": 2.185
+      "distanceKm": 1.8,
+      "speedKmh": 54.0
     },
     {
       "lineId": "dark_red",
       "fromStation": "wat_samian_nari",
       "toStation": "bang_khen_dark_red",
-      "distanceKm": 1.658
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "dark_red",
       "fromStation": "bang_khen_dark_red",
       "toStation": "thung_song_hong",
-      "distanceKm": 1.751
+      "distanceKm": 1.6,
+      "speedKmh": 32.0
     },
     {
       "lineId": "dark_red",
       "fromStation": "thung_song_hong",
       "toStation": "lak_si_dark_red",
-      "distanceKm": 3.639
+      "distanceKm": 3.2,
+      "speedKmh": 64.0
     },
     {
       "lineId": "dark_red",
       "fromStation": "lak_si_dark_red",
       "toStation": "kan_kheha",
-      "distanceKm": 2.859
+      "distanceKm": 1.5,
+      "speedKmh": 45.0
     },
     {
       "lineId": "dark_red",
       "fromStation": "kan_kheha",
       "toStation": "don_mueang",
-      "distanceKm": 3.03
+      "distanceKm": 2.8,
+      "speedKmh": 42.0
     },
     {
       "lineId": "dark_red",
       "fromStation": "don_mueang",
       "toStation": "lak_hok",
-      "distanceKm": 4.625
+      "distanceKm": 5.1,
+      "speedKmh": 102.0
     },
     {
       "lineId": "dark_red",
       "fromStation": "lak_hok",
       "toStation": "rangsit",
-      "distanceKm": 3.502
+      "distanceKm": 2.7,
+      "speedKmh": 54.0
     },
     {
       "lineId": "light_red",
       "fromStation": "krung_thep_aphiwat_light_red",
       "toStation": "bang_son_light_red",
-      "distanceKm": 0.0
+      "distanceKm": 1.5,
+      "speedKmh": 18.0
     },
     {
       "lineId": "light_red",
       "fromStation": "bang_son_light_red",
       "toStation": "bang_bamru",
-      "distanceKm": 4.743
+      "distanceKm": 7.0,
+      "speedKmh": 60.0
     },
     {
       "lineId": "light_red",
       "fromStation": "bang_bamru",
       "toStation": "taling_chan",
-      "distanceKm": 4.063
+      "distanceKm": 4.3,
+      "speedKmh": 64.5
     },
     {
       "lineId": "yellow",
       "fromStation": "lat_phrao_yellow",
       "toStation": "phawana",
-      "distanceKm": 1.268
+      "distanceKm": 1.4,
+      "speedKmh": 21.0
     },
     {
       "lineId": "yellow",
       "fromStation": "phawana",
       "toStation": "chok_chai_4",
-      "distanceKm": 1.276
+      "distanceKm": 1.6,
+      "speedKmh": 48.0
     },
     {
       "lineId": "yellow",
       "fromStation": "chok_chai_4",
       "toStation": "lat_phrao_71",
-      "distanceKm": 1.637
+      "distanceKm": 1.6,
+      "speedKmh": 32.0
     },
     {
       "lineId": "yellow",
       "fromStation": "lat_phrao_71",
       "toStation": "lat_phrao_83",
-      "distanceKm": 0.758
+      "distanceKm": 0.8,
+      "speedKmh": 24.0
     },
     {
       "lineId": "yellow",
       "fromStation": "lat_phrao_83",
       "toStation": "mahat_thai",
-      "distanceKm": 2.363
+      "distanceKm": 1.2,
+      "speedKmh": 24.0
     },
     {
       "lineId": "yellow",
       "fromStation": "mahat_thai",
       "toStation": "lat_phrao_101",
-      "distanceKm": 1.416
+      "distanceKm": 0.85,
+      "speedKmh": 25.5
     },
     {
       "lineId": "yellow",
       "fromStation": "lat_phrao_101",
       "toStation": "bang_kapi",
-      "distanceKm": 1.776
+      "distanceKm": 1.2,
+      "speedKmh": 24.0
     },
     {
       "lineId": "yellow",
       "fromStation": "bang_kapi",
       "toStation": "yaek_lam_sali",
-      "distanceKm": 0.0
+      "distanceKm": 1.2,
+      "speedKmh": 36.0
     },
     {
       "lineId": "yellow",
       "fromStation": "yaek_lam_sali",
       "toStation": "si_kritha",
-      "distanceKm": 1.634
+      "distanceKm": 1.3,
+      "speedKmh": 26.0
     },
     {
       "lineId": "yellow",
       "fromStation": "si_kritha",
       "toStation": "hua_mak_yellow",
-      "distanceKm": 0.0
+      "distanceKm": 1.6,
+      "speedKmh": 32.0
     },
     {
       "lineId": "yellow",
       "fromStation": "hua_mak_yellow",
       "toStation": "kalantan",
-      "distanceKm": 1.212
+      "distanceKm": 1.5,
+      "speedKmh": 30.0
     },
     {
       "lineId": "yellow",
       "fromStation": "kalantan",
       "toStation": "si_nut",
-      "distanceKm": 1.597
+      "distanceKm": 1.7,
+      "speedKmh": 51.0
     },
     {
       "lineId": "yellow",
       "fromStation": "si_nut",
       "toStation": "srinagarindra_38",
-      "distanceKm": 1.136
+      "distanceKm": 1.2,
+      "speedKmh": 72.0
     },
     {
       "lineId": "yellow",
       "fromStation": "srinagarindra_38",
       "toStation": "suan_luang_rama_9",
-      "distanceKm": 1.143
+      "distanceKm": 1.1,
+      "speedKmh": 22.0
     },
     {
       "lineId": "yellow",
       "fromStation": "suan_luang_rama_9",
       "toStation": "si_udom",
-      "distanceKm": 1.585
+      "distanceKm": 1.6,
+      "speedKmh": 48.0
     },
     {
       "lineId": "yellow",
       "fromStation": "si_udom",
       "toStation": "si_iam",
-      "distanceKm": 0.0
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "yellow",
       "fromStation": "si_iam",
       "toStation": "si_la_salle",
-      "distanceKm": 1.003
+      "distanceKm": 1.3,
+      "speedKmh": 39.0
     },
     {
       "lineId": "yellow",
       "fromStation": "si_la_salle",
       "toStation": "si_bearing",
-      "distanceKm": 1.363
+      "distanceKm": 1.6,
+      "speedKmh": 32.0
     },
     {
       "lineId": "yellow",
       "fromStation": "si_bearing",
       "toStation": "si_dan",
-      "distanceKm": 2.626
+      "distanceKm": 1.4,
+      "speedKmh": 42.0
     },
     {
       "lineId": "yellow",
       "fromStation": "si_dan",
       "toStation": "si_thepha",
-      "distanceKm": 1.84
+      "distanceKm": 1.2,
+      "speedKmh": 24.0
     },
     {
       "lineId": "yellow",
       "fromStation": "si_thepha",
       "toStation": "thipphawan",
-      "distanceKm": 1.387
+      "distanceKm": 1.6,
+      "speedKmh": 48.0
     },
     {
       "lineId": "yellow",
       "fromStation": "thipphawan",
       "toStation": "samrong_yellow",
-      "distanceKm": 0.0
+      "distanceKm": 1.9,
+      "speedKmh": 28.5
     },
     {
       "lineId": "pink",
       "fromStation": "nonthaburi_civic_pink",
       "toStation": "khae_rai",
-      "distanceKm": 2.271
+      "distanceKm": 1.3,
+      "speedKmh": 26.0
     },
     {
       "lineId": "pink",
       "fromStation": "khae_rai",
       "toStation": "sanambin_nam",
-      "distanceKm": 0.426
+      "distanceKm": 1.38,
+      "speedKmh": 27.6
     },
     {
       "lineId": "pink",
       "fromStation": "sanambin_nam",
       "toStation": "samakkhi",
-      "distanceKm": 2.614
+      "distanceKm": 1.8,
+      "speedKmh": 36.0
     },
     {
       "lineId": "pink",
       "fromStation": "samakkhi",
       "toStation": "royal_irrigation_dept",
-      "distanceKm": 2.097
+      "distanceKm": 1.1,
+      "speedKmh": 22.0
     },
     {
       "lineId": "pink",
       "fromStation": "royal_irrigation_dept",
       "toStation": "yaek_pak_kret",
-      "distanceKm": 2.226
+      "distanceKm": 1.0,
+      "speedKmh": 15.0
     },
     {
       "lineId": "pink",
       "fromStation": "yaek_pak_kret",
       "toStation": "pak_kret_bypass",
-      "distanceKm": 0.733
+      "distanceKm": 1.2,
+      "speedKmh": 24.0
     },
     {
       "lineId": "pink",
       "fromStation": "pak_kret_bypass",
       "toStation": "chaeng_watthana_pak_kret_28",
-      "distanceKm": 2.586
+      "distanceKm": 1.5,
+      "speedKmh": 30.0
     },
     {
       "lineId": "pink",
       "fromStation": "chaeng_watthana_pak_kret_28",
       "toStation": "si_rat",
-      "distanceKm": 0.805
+      "distanceKm": 1.3,
+      "speedKmh": 39.0
     },
     {
       "lineId": "pink",
       "fromStation": "si_rat",
       "toStation": "muang_thong_thani",
-      "distanceKm": 0.847
+      "distanceKm": 1.15,
+      "speedKmh": 23.0
     },
     {
       "lineId": "pink",
       "fromStation": "muang_thong_thani",
       "toStation": "chaeng_watthana_14",
-      "distanceKm": 1.174
+      "distanceKm": 1.5,
+      "speedKmh": 30.0
     },
     {
       "lineId": "pink",
       "fromStation": "chaeng_watthana_14",
       "toStation": "government_complex",
-      "distanceKm": 1.248
+      "distanceKm": 0.8,
+      "speedKmh": 16.0
     },
     {
       "lineId": "pink",
       "fromStation": "government_complex",
       "toStation": "national_telecom",
-      "distanceKm": 0.0
+      "distanceKm": 1.6,
+      "speedKmh": 32.0
     },
     {
       "lineId": "pink",
       "fromStation": "national_telecom",
       "toStation": "lak_si_pink",
-      "distanceKm": 2.075
+      "distanceKm": 0.82,
+      "speedKmh": 16.4
     },
     {
       "lineId": "pink",
       "fromStation": "lak_si_pink",
       "toStation": "rajabhat_phranakhon",
-      "distanceKm": 0.97
+      "distanceKm": 0.85,
+      "speedKmh": 17.0
     },
     {
       "lineId": "pink",
       "fromStation": "rajabhat_phranakhon",
       "toStation": "wat_phra_sri_mahathat_pink",
-      "distanceKm": 2.865
+      "distanceKm": 0.9,
+      "speedKmh": 18.0
     },
     {
       "lineId": "pink",
       "fromStation": "wat_phra_sri_mahathat_pink",
       "toStation": "ram_inthra_3",
-      "distanceKm": 2.1
+      "distanceKm": 0.85,
+      "speedKmh": 17.0
     },
     {
       "lineId": "pink",
       "fromStation": "ram_inthra_3",
       "toStation": "lat_pla_khao",
-      "distanceKm": 0.944
+      "distanceKm": 1.9,
+      "speedKmh": 57.0
     },
     {
       "lineId": "pink",
       "fromStation": "lat_pla_khao",
       "toStation": "ram_inthra_kor_mor_4",
-      "distanceKm": 0.963
+      "distanceKm": 1.0,
+      "speedKmh": 30.0
     },
     {
       "lineId": "pink",
       "fromStation": "ram_inthra_kor_mor_4",
       "toStation": "maiyalap",
-      "distanceKm": 0.985
+      "distanceKm": 0.75,
+      "speedKmh": 22.5
     },
     {
       "lineId": "pink",
       "fromStation": "maiyalap",
       "toStation": "vacharaphol",
-      "distanceKm": 1.028
+      "distanceKm": 1.4,
+      "speedKmh": 42.0
     },
     {
       "lineId": "pink",
       "fromStation": "vacharaphol",
       "toStation": "ram_inthra_kor_mor_6",
-      "distanceKm": 0.986
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "pink",
       "fromStation": "ram_inthra_kor_mor_6",
       "toStation": "khu_bon",
-      "distanceKm": 1.028
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "pink",
       "fromStation": "khu_bon",
       "toStation": "ram_inthra_kor_mor_9",
-      "distanceKm": 1.048
+      "distanceKm": 1.2,
+      "speedKmh": 36.0
     },
     {
       "lineId": "pink",
       "fromStation": "ram_inthra_kor_mor_9",
       "toStation": "outer_ring_road_ram_inthra",
-      "distanceKm": 1.145
+      "distanceKm": 1.7,
+      "speedKmh": 34.0
     },
     {
       "lineId": "pink",
       "fromStation": "outer_ring_road_ram_inthra",
       "toStation": "nopparat",
-      "distanceKm": 1.662
+      "distanceKm": 1.3,
+      "speedKmh": 39.0
     },
     {
       "lineId": "pink",
       "fromStation": "nopparat",
       "toStation": "bang_chan",
-      "distanceKm": 1.788
+      "distanceKm": 2.1,
+      "speedKmh": 42.0
     },
     {
       "lineId": "pink",
       "fromStation": "bang_chan",
       "toStation": "setthabutbamphen",
-      "distanceKm": 2.101
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     },
     {
       "lineId": "pink",
       "fromStation": "setthabutbamphen",
       "toStation": "min_buri_market",
-      "distanceKm": 2.244
+      "distanceKm": 1.4,
+      "speedKmh": 42.0
     },
     {
       "lineId": "pink",
       "fromStation": "min_buri_market",
       "toStation": "min_buri",
-      "distanceKm": 1.427
+      "distanceKm": 0.9,
+      "speedKmh": 27.0
     },
     {
       "lineId": "pink_mt",
       "fromStation": "muang_thong_thani",
       "toStation": "impact_muang_thong",
-      "distanceKm": 4.242
+      "distanceKm": 1.8,
+      "speedKmh": 36.0
     },
     {
       "lineId": "pink_mt",
       "fromStation": "impact_muang_thong",
       "toStation": "lake_muang_thong",
-      "distanceKm": 0.0
+      "distanceKm": 0.8,
+      "speedKmh": 24.0
     },
     {
       "lineId": "blue",
       "fromStation": "itsaraphap",
       "toStation": "tha_phra",
-      "distanceKm": 1.621
+      "distanceKm": 2.0,
+      "speedKmh": 60.0
     },
     {
       "lineId": "blue",
       "fromStation": "tha_phra",
       "toStation": "bang_phai",
-      "distanceKm": 1.26
+      "distanceKm": 1.1,
+      "speedKmh": 33.0
     }
   ],
   "interchanges": [
